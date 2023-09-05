@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+
+    /* colors */
+   
+   --red: red;
+   --black: rgb(0, 0, 0);
+   --white: rgb(255, 255, 255);
+
+
+    /* typography */
+  
+    --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+
+    /* spacing section */
+ 
+   --section-padding: 80px;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --- */
+/* NAVBAR */
+/* --- */
+
+.my-searchbar{
+    position: relative;
+    width: 50vh;
+
+}
+
+.my-btn-searchbar{
+    background-color: orange;
+    position: absolute;
+    left: 858px;
+    
+
+    padding: 7px;
+    margin-left: 1%;
+
+    border-radius: 0px 15px 15px 0px;
+}
+
+.my-btn-login{
+
+    background-color: orange;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.my-btn-login:hover{
+
+    background-color: rgb(255, 130, 4) !important;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+
+}
