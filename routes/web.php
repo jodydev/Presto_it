@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AnnouncementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use App\Http\Controllers\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+    //routes HomeController
+Route::get('/', [HomeController::class ,'index'])->name('index');
 
-Route::get('/', [HomeController::class ,'index']);
+    //routes AnnouncementController
+Route::get('/articoli/crea', [AnnouncementController::class, 'create'])->name('announcements.create')
 ;

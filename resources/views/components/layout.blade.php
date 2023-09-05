@@ -21,13 +21,13 @@
 
     <header>
         <x-navbar/>
-    <header/>    
+    </header>    
 
    {{ $slot }} 
 
    <!-- livewire -->
 
-   @livewireStyles
+   @livewireScripts
    
 </body>
 </html>

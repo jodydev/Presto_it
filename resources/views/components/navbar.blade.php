@@ -1,7 +1,8 @@
  <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
 
-    <a class="navbar-brand ms-5 text-white" href="#">Presto.it</a>
+    <a class="navbar-brand ms-5 text-white" href="/">Presto.it</a>
+    <a class="navbar-brand ms-5 text-white" href="{{route('announcements.create')}}">crea annuncio</a>
 
     <!-- collapse button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,8 +19,8 @@
 
     <!-- login | register -->
     <form class="d-flex">
-        <a href="#" class="btn my-btn-login me-2" type="submit">Accedi</a>
-        <a href="#" class="btn my-btn-login me-2" type="submit">Registrati</a>
+        <a href="/login" class="btn my-btn-login me-2" type="submit">Accedi</a>
+        <a href="/register" class="btn my-btn-login me-2" type="submit">Registrati</a>
     </form>
 
   </div>
