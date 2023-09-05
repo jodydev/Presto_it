@@ -12,7 +12,8 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <!-- livewire -->
+    @livewireStyles
 </head>
 <body>
    
@@ -23,6 +24,10 @@
     <header/>    
 
    {{ $slot }} 
+
+   <!-- livewire -->
+
+   @livewireStyles
    
 </body>
 </html>
