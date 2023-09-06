@@ -1,18 +1,10 @@
 <x-layout>
-
-    <form action="#" method="post">
-        @csrf
-        <label for="title" >titolo</label>
-        <br>
-        <input type="text" name="title">
-        <br>
-        <label for="price">prezzo</label>
-        <br>
-        <input type="text"name="price">
-        <br>
-        <label for="description">descrizione</label>
-        <br>
-        <textarea name="description" id="" cols="30" rows="30"></textarea>
-    </form>
-
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            @livewire('create-announcement')
+        </div>
+    </div>
+</div>
+   
 </x-layout>
