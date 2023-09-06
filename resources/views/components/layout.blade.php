@@ -20,7 +20,7 @@
     <!-- Navbar -->
 
     <header>
-        <x-navbar/>
+        <x-navbar></x-navbar>
     </header>    
 
    {{ $slot }} 

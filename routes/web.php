@@ -18,5 +18,6 @@ use App\Http\Controllers\AnnouncementController;
 Route::get('/', [HomeController::class ,'index'])->name('index');
 
     //routes AnnouncementController
-Route::get('/articoli/crea', [AnnouncementController::class, 'create'])->name('announcements.create')
-;
+Route::get('/annunci/crea', [AnnouncementController::class, 'create'])->name('announcements.create')->middleware(['auth']);
+Route::get('/annunci/dettaglio/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
+
