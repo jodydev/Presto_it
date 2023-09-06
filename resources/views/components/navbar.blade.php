@@ -1,32 +1,38 @@
- <nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-
-    <a class="navbar-brand ms-5 text-white" href="/">Presto.it</a>
-    <a class="navbar-brand ms-5 text-white" href="{{route('announcements.create')}}">crea annuncio</a>
-
-    <!-- collapse button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- search bar -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 py-1">
-          <input class="form-control me-2 my-searchbar" type="search" placeholder="Search" aria-label="Search">
-          <a href="#" class="my-btn-searchbar" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i></a>
-      </div>
-    </div>
-
-    <!-- login | register -->
-    <form class="d-flex">
-        <a href="/login" class="btn my-btn-login me-2" type="submit">Accedi</a>
-        <a href="/register" class="btn my-btn-login me-2" type="submit">Registrati</a>
-    </form>
-    <form class="d-flex" method="post" action="/logout">
-      @csrf
-      <button class="btn btn-danger">logout</button>
-    </form>
-    
-
-  </div>
-</nav>
+<!-- Header Section Begin -->
+<header class="header">
+        <div class="container-fluid">
+            <div class="row fixed-top bg-nav">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" class="logo" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <nav class="header__menu">
+                        <ul class="text-center fs-1">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="">Categorie</a>
+                                <ul class="dropdown">
+                                    <li><a href="">Motori</a></li>
+                                    <li><a href="">Abbigliamento</a></li>
+                                    <li><a href="">Elettronica</a></li>
+                                    <li><a href="">Casa</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Contatti</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__right">
+                        <button class=" button-login" role="button"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</button>
+                        <button class=" button-register" role="button"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> Registrati</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
