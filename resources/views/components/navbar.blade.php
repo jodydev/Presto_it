@@ -22,6 +22,11 @@
         <a href="/login" class="btn my-btn-login me-2" type="submit">Accedi</a>
         <a href="/register" class="btn my-btn-login me-2" type="submit">Registrati</a>
     </form>
+    <form class="d-flex" method="post" action="/logout">
+      @csrf
+      <button class="btn btn-danger">logout</button>
+    </form>
+    
 
   </div>
 </nav>

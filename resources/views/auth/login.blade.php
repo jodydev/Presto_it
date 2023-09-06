@@ -1,5 +1,6 @@
 <x-layout>
-    <form action="#" method="post" class="form-control">
+    <form action="/login" method="post" class="form-control">
+        @csrf
         
         <label for="email">la tua email</label> 
         <br>
@@ -9,6 +10,6 @@
         <input type="password" name="password" id="passwordLogin">
         <br>
         
-    
+        <input type="submit" class="btn btn-primary"value="accedi">
     </form>
 </x-layout>
