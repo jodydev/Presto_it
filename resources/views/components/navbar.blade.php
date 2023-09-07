@@ -13,10 +13,10 @@
                             <li class="active"><a href="{{route('index')}}">Home</a></li>
                             <li><a href="">Categorie</a>
                                 <ul class="dropdown">
-                                    <li><a href="">Motori</a></li>
-                                    <li><a href="">Abbigliamento</a></li>
-                                    <li><a href="">Elettronica</a></li>
-                                    <li><a href="">Casa</a></li>
+                                    <li><a href="{{route('announcements.index')}}">Tutte le Categorie</a></li>
+                                @foreach ($categories as $category)
+                                    <li><a href="">{{$category->title}}</a></li>
+                                @endforeach    
                                 </ul>
                             </li>
                             <li><a href="">Contatti</a></li>
@@ -25,14 +25,15 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="header__right">
+                        @if(!auth()->user())
                        <a href="/login"> <button class=" button-login" role="button"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</button></a>
                         <a href="/register"><button class=" button-register" role="button"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> Registrati</button></a>
-
+                        @else
                         <form action="/logout" method="post">
                             @csrf
-                            <input type="submit" value="logout">
+                            <input type="submit" value="logout" class="btn button-login">
                         </form>
-
+                        @endif
                     </div>
                 </div>
             </div>

@@ -8,6 +8,15 @@ use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
 {
+
+    public function index(){
+        $announcements = Announcement::all();
+        $categories = Category::all();
+        return view('announcements.index', [
+            'announcements' => $announcements,
+            'categories' => $categories,
+        ]);
+    }
     public function create(){
         $announcements = Announcement::all();
         $categories = Category::all();
