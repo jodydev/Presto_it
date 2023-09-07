@@ -10,7 +10,7 @@
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul class="text-center fs-1">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="{{route('index')}}">Home</a></li>
                             <li><a href="">Categorie</a>
                                 <ul class="dropdown">
                                     <li><a href="">Motori</a></li>
