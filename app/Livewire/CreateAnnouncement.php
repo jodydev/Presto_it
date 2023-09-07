@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\Category;
 use App\Models\Announcement;
 use GuzzleHttp\Promise\Create;
 
@@ -23,21 +24,31 @@ class CreateAnnouncement extends Component
      
 
     public function store(){
+
+
+
         $validated = $this->validate([
             'title' => 'required|min:5',
         'description' => 'required|min:8',
         'price' => 'required|numeric'
         
         ]);
+        $category = Category::find($this->category);
         
-        $announcement = new Announcement();
+        
+        $announcement = $category->announcements()->create([
+            'title' => $this->title,
+            'price'=> $this->price,
+            'description' => $this->description 
+        ]);
 
-        $announcement->title = $this->title;
-        $announcement->description = $this->description;
-        $announcement->price = $this->price;
-        $announcement->user_id = auth()->user()->id;
-        $announcement->category_id = Category::find($id);
-        $announcement->save();
+        auth()->user()->announcements()->save($announcement);
+        
+        
+
+       
+        
+       
 
         $this->title='';
         $this->price='';

@@ -1,4 +1,6 @@
 <div>
+    <br><br><br><br>brbr
+    <br><br>
 
 @if ($errors->any())
     <div class="alert alert-danger my-5">
@@ -25,9 +27,9 @@
             </div>
             <div class="mb-3">
                 <label for="text">Categorie</label>
-               <select wire:model="categories" class="form-control text-dark">
+               <select wire:model.defer="category" class="form-control text-dark">
                     @foreach($categories as $category)
-                        <option value="category->id">{{$category->title}}</option>
+                        <option value="{{$category->id}}">{{$category->title}}</option>
                     @endforeach
                </select>
             </div>
