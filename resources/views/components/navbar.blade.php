@@ -25,8 +25,8 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="header__right">
-                        <button class=" button-login" role="button"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</button>
-                        <button class=" button-register" role="button"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> Registrati</button>
+                       <a href="/login"> <button class=" button-login" role="button"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</button></a>
+                        <a href="/register"><button class=" button-register" role="button"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> Registrati</button></a>
                         <form action="/logout" method="post">
                             @csrf
                             <input type="submit" value="logout">

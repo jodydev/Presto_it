@@ -1,7 +1,17 @@
 <div>
+
+@if ($errors->any())
+    <div class="alert alert-danger my-5">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <div class="container mt-5 ">
-    <div class="row myform ">
-        <div class="col-12">
+    <div class="row myform w-50 my-5 mx-auto">
+        <div class="col-12 mt-5">
             <div class="mb-3">
                 <label for="text" class="form-label">Titolo</label>
                 <input wire:model="title" type="text" class="form-control shadow">
@@ -9,6 +19,13 @@
             <div class="mb-3">
                 <label for="text" class="form-label">Descrizione</label>
                 <textarea wire:model="description" cols="10" rows="10"class="form-control shadow"></textarea>
+            </div>
+            <div class="mb-3">
+               <select wire:model="categories" class="form-control text-dark">
+                    @foreach($categories as $category)
+                        <option value="category->id">{{$category->name}}</option>
+                    @endforeach
+               </select>
             </div>
             <div class="mb-3">
                 <label for="text" class="form-label">prezzo</label>

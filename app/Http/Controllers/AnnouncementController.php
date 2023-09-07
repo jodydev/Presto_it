@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
@@ -10,7 +12,7 @@ class AnnouncementController extends Controller
         $announcements = Announcement::all();
         $categories = Category::all();
         return view('announcements.create', [
-            'announcements' => $announcement,
+            'announcements' => $announcements,
             'categories' => $categories,
         ]);
     }

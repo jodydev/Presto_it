@@ -11,9 +11,7 @@ class CategoryController extends Controller
 
     public $categories;
 
-    public function __construct($categories){
-        $this->categories = Category::all();
-    }
+    
     /**
      * Display a listing of the resource.
      */
