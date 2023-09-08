@@ -28,6 +28,7 @@
         <label for="password_confirmation" >conferma password</label>
         <br> 
         <input type="password" name="password_confirmation" id="password_confirmationRegister" class="form-control">
-        <input type="submit" class="btn btn-primary"value="registrati">
+        <br>
+        <input type="submit" class="button-register"value="registrati">
     </form>
 </x-layout>

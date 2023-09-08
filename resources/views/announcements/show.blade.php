@@ -1,4 +1,20 @@
 <x-layout>
+    <br><br><br><br>
+
+    <!-- 
+        Per Marcello:
+    1: la pagina show deve contenere i dati dell'annuncio in modo dinamico
+    2: devi mettere le immagini nel carosello(vedi lorem picsum)
+    3: i dati che servono sono i seguenti:
+        - titolo annuncio
+        - descrizione annuncio
+        - categoria annuncio
+        - autore annuncio
+        - prezzo annuncio
+    4: devi lavorare solo su questa vista, hai tutto ciò che ti serve
+    5: ti consiglio di eliminare gli annunci che hai nel database e crearne di altri perché non avevi implementato le categorie
+    6: copia e incolla assoutamente vietato (puoi copiare ed incollare solo lorem picsum)
+-->
 <div class="row">
     <div class="col-6">
         <div id="carouselExample" class="carousel slide">
@@ -24,7 +40,7 @@
         </div>
      </div> 
         <div class="col-6">  
-                            <div class="mb-3">Titolo<h1>
+                            <div class="mb-3"><h1>titolo
                             </h1></div>
                             <br>
                          <div-container>  <p>

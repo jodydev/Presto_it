@@ -1,20 +1,12 @@
 <x-layout>
-<br>
-<br>
-<br>
-<br>
-<br>
-  @if(auth()->user())
-<a href="{{route('announcements.create')}}" class=" button-login">Crea un Annuncio</a>
-    @endif
-
-    <section id="announcementCards">
-        <p class="h1 text-center">
-            Gli ultimi annunci
+    <br><br><br><br>
+<section id="categoryCards" class="mt-5">
+        <p class="h1 text-center mt-5">
+            Tutti gli annunci della categoria: {{$category->title}}
         </p>
         <div class="container my-5">
-            <div class="row justify-content-center">
-            @foreach($announcements as $announcement)
+            <div class="row justify-content-center my-5">
+            @foreach($category->announcements as $announcement)
                 <div class="col-12 col-md-3">
                     <div class="card " style="width: 18rem;"> 
                    
@@ -22,7 +14,7 @@
                     
                         <div class="card-body">
                            
-                            <p class=" card-text"> {{$announcement->category->title}}</p>
+                            
                             <p class=" card-text">Posted by: {{$announcement->user->name}}</p>
                             <p class=" card-text">€ {{$announcement->price}}</p>
                             

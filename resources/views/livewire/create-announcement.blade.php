@@ -38,7 +38,7 @@
                 <input wire:model="price" type="text" class="form-control shadow">
             </div>
 
-            <button type="button" class="btn btn-primary" wire:click="store">Crea</button>
+            <button type="button" class="button-register" wire:click="store">Crea</button>
         </div>
     </div>
 </div>

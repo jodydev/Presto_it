@@ -1,20 +1,20 @@
-<x-layout>
-<br>
-<br>
-<br>
-<br>
-<br>
-  @if(auth()->user())
-<a href="{{route('announcements.create')}}" class=" button-login">Crea un Annuncio</a>
-    @endif
+<div>
+<div class="container">
+        <div class="row">
+            <div class="col-12 myform text-center">
+                <label for="text" class="form-label">Filtra per Titolo</label>
+                <input type="text" wire:model="filter"  class="form-control shadow">
+                <p class="d-none" wire:poll.100ms>{{$filter}}</p>
+                <!-- usare wire:poll per searchbar, anche se non mi è chiaro del tutto il funzionamento -->
+            </div>
+        </div>
+    </div>
 
-    <section id="announcementCards">
-        <p class="h1 text-center">
-            Gli ultimi annunci
-        </p>
-        <div class="container my-5">
-            <div class="row justify-content-center">
-            @foreach($announcements as $announcement)
+
+    <div class="container mt-5">
+        <div class="row">
+    
+        @foreach($announcements as $announcement)
                 <div class="col-12 col-md-3">
                     <div class="card " style="width: 18rem;"> 
                    
@@ -37,8 +37,7 @@
                     </div>
                 </div>
             @endforeach
-            </div>
         </div>
+    </div>
 
-    </section>
-</x-layout>
+</div>

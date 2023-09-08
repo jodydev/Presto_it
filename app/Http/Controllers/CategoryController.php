@@ -39,9 +39,11 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Category $category)
+    public function show($id)
     {
-        //
+        $category = Category::find($id);
+
+        return view('categories.show' , ['category' => $category]);
     }
 
     /**

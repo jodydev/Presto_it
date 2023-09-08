@@ -11,6 +11,6 @@
         <input type="password" name="password" id="passwordLogin"class="form-control">
         <br>
         
-        <input type="submit" class="btn btn-primary" value="Accedi"/>
+        <input type="submit" class="button-register" value="Accedi"/>
     </form>
 </x-layout>

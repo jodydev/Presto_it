@@ -15,7 +15,7 @@
                                 <ul class="dropdown">
                                     <li><a href="{{route('announcements.index')}}">Tutte le Categorie</a></li>
                                 @foreach ($categories as $category)
-                                    <li><a href="">{{$category->title}}</a></li>
+                                    <li><a href="{{route('categories.show', $category->id)}}">{{$category->title}}</a></li>
                                 @endforeach    
                                 </ul>
                             </li>
@@ -31,7 +31,7 @@
                         @else
                         <form action="/logout" method="post">
                             @csrf
-                            <input type="submit" value="logout" class="btn button-login">
+                            <input type="submit" value="logout" class=" button-login">
                         </form>
                         @endif
                     </div>
