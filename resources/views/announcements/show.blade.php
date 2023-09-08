@@ -20,13 +20,13 @@
         <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://picsum.photos/seed/picsum/200/300" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://picsum.photos/seed/picsum/200/300" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://picsum.photos/seed/picsum/200/300" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -40,18 +40,21 @@
         </div>
      </div> 
         <div class="col-6">  
-                            <div class="mb-3"><h1>titolo
+                            <div class="mb-3"><h1>{{$announcement->title}}
                             </h1></div>
                             <br>
-                         <div-container>  <p>
-                                <h3>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit aliquid alias architecto, magni unde. Blanditiis autem officia ut quasi accusamus voluptas quos necessitatibus corrupti non tenetur, dolore iusto dolorem ipsum, praesentium magnam illo at vel distinctio nostrum omnis neque. Dicta porro enim ipsum autem.
-                                </h3>
-                            </div-container> 
+                             <div-container>
+                            <h3 class= "card-title">{{$announcement->title}}</h3>  
+                              <p class="card-text">{{$announcement->description}}</p>
+                              <p class="card-text">{{$announcement->price}}</p>
 
-                            </p>
-                            <br>
-                            <h2>prezzo: 12.000</h2>
+                              <p>{{$announcement->category->title }}</p> 
+                    
+                            </h3>
+
+                            </div-container> 
+                        
+
         </div> 
 
    <div>
