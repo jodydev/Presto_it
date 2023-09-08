@@ -30,6 +30,7 @@
                             
                             <p class="card-text">{!!substr($announcement->description, 0, 20)!!}...</p>
                             <!-- substr($variabile, da carattere , a carattere) -->
+                            <p class=" card-text"> Postato il {{$announcement->created_at->format('d/m/y')}}</p>
                             <div class="col-8 my-2">  
                                 <a href="{{route('announcements.show', $announcement->id)}}" class="button-register">In dettaglio</a>
                             </div>
