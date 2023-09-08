@@ -514,8 +514,8 @@ ol {
 -----------------------*/
 
 .banner {
-	height: 800px;
-	
+	height: 1100px;
+
 }
 
 .container-banner{
@@ -564,13 +564,13 @@ ol {
 
 .banner__slider {
 	text-align: center;
-	padding: 150px 0 0;
+	padding: 50px 0 0;
 }
 
 .banner__slider.owl-carousel .owl-dots {
 	position: absolute;
 	left: 0;
-	top: 430px;
+	top: 750px;
 	width: 100%;
 	text-align: center;
 	
@@ -1137,8 +1137,10 @@ ol {
 
 .filter__controls {
 	text-align: right;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
+
+
 
 .filter__controls li {
 	font-size: 14px;
@@ -4079,4 +4081,3 @@ ol {
 /* 
 
 RESUSED STYLE */
-
