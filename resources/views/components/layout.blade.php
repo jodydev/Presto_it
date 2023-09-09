@@ -41,18 +41,23 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-   
-    <!-- Navbar -->
 
-    <header>
-        <x-navbar></x-navbar>
-    </header>    
+     
+   
+    <!-- Header -->
+        <x-header></x-header>
+      
 
    {{ $slot }} 
 
-   <!-- livewire -->
+ 
+   
+
+    <x-footer/>
+
+    <!-- livewire -->
 
    @livewireScripts
-   
+
 </body>
 </html>

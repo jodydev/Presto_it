@@ -1,4 +1,4 @@
-<!-- Header Section Begin -->
+<!-- Header Section -->
 <header class="header">
         <div class="container-fluid">
             <div class="row fixed-top bg-nav">
@@ -14,9 +14,9 @@
                             <li><a href="">Categorie</a>
                                 <ul class="dropdown">
                                     <li><a href="{{route('announcements.index')}}">Tutte le Categorie</a></li>
-                                @foreach ($categories as $category)
-                                    <li><a href="{{route('categories.show', $category->id)}}">{{$category->title}}</a></li>
-                                @endforeach    
+                                    @foreach ($categories as $category)
+                                        <li><a href="{{route('categories.show', $category->id)}}">{{$category->title}}</a></li>
+                                    @endforeach    
                                 </ul>
                             </li>
                             <li><a href="">Contatti</a></li>
@@ -31,7 +31,7 @@
                         @else
                         <form action="/logout" method="post">
                             @csrf
-                            <input type="submit" value="logout" class=" button-login">
+                            <input type="submit" value="Logout" class=" button-logout">
                         </form>
                         @endif
                     </div>
