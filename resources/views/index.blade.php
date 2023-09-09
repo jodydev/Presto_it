@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-6 p-0">
                     <div class="discount__pic">
-                        <img src="/img/recenzioni.png" alt="">
+                        <img src="/img/recenzioni.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 p-0">
