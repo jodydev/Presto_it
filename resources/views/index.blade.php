@@ -1,5 +1,5 @@
 <x-layout>
-
+<br><br><br><br><br><br><br>
 @if(auth()->user())
     <a href="{{route('announcements.create')}}" class=" button-login">Crea un Annuncio</a>
 @endif
@@ -51,7 +51,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="product__price">{{$announcement->price}}</div>
+                            <div class="product__price">€{{$announcement->price}}</div>
                         </div>
                     </div>
                     

@@ -21,8 +21,8 @@ Route::get('/', [HomeController::class ,'index'])->name('index');
     //routes AnnouncementController
 Route::get('/annunci', [AnnouncementController::class, 'index'])->name('announcements.index');
 Route::get('/annunci/crea', [AnnouncementController::class, 'create'])->name('announcements.create')->middleware(['auth']);
-Route::get('/annunci/dettaglio/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
-
+Route::get('/annunci/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
+//trovare modo per mettere nome annuncio in url
 //routes CategoryController
 Route::get('/categoria/{id}', [CategoryController::class, 'show'])->name('categories.show');
 

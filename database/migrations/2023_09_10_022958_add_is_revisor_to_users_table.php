@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('announcements', function (Blueprint $table) {
-            $table->foreignId('category_id')->nullable()->constrained()->onDelete('cascade');
+        Schema::table('users', function (Blueprint $table) {
+            $table->boolean('is_revisor')->default(false);
         });
     }
 
@@ -21,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('announcements', function (Blueprint $table) {
-            $table->dorpColumn('category_id');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dorpColumn('is_revisor');
         });
     }
 };
