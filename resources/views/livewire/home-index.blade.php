@@ -10,10 +10,11 @@
         </div>
         <div class="col-lg-8 col-md-8">
             <ul class="filter__controls">
-                <li class="active">Tutte le categorie</li>
-                @foreach ($categories as $category)
-                    <li><a href="" >{{ $category->title }}</a></li>
-                @endforeach
+                <!-- assegno il valore alla variabile selectCategory al click dell'utente con il metodo nativo livewire $set e con un if else in line assegno o tolgo la classe active -->
+            <li wire:click="$set('selectedCategory', null)" class="{{ !$selectedCategory ? 'active' : '' }}">Tutte le categorie</li>
+        @foreach ($categories as $category)
+            <li wire:click="$set('selectedCategory', {{ $category->id }})" class="{{ $selectedCategory == $category->id ? 'active' : '' }}">{{ $category->title }}</li>
+        @endforeach
             </ul>
         </div>
 </div>
