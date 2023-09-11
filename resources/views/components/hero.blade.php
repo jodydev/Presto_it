@@ -5,7 +5,8 @@
             <div class="row">
                 <div class="col-lg-6 p-0">
 
-                    <div class="categories__item categories__large__item set-bg"  style="background-image:url({{ asset ('img/hero/hero-1.jpg') }}); background-size: contain;">
+                    <div class="categories__items categories__large__item set-bg" style="background-image:url({{ asset ('img/hero/hero-1.png') }}); background-position: center center;" >
+
                     
                 </div>
             </div>

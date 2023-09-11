@@ -1,17 +1,10 @@
 <x-layout>
 
-@if(auth()->user())
-    <a href="{{route('announcements.create')}}" class=" button-login">Crea un Annuncio</a>
-@endif
-
-
 <x-hero/>
-
 
 
 @livewire('home-index')
  
-
 
 <!-- Recenzioni Start -->
 
@@ -35,7 +28,7 @@
 
 <!-- Banner Foto Start-->
 
-<section class="instagram"> 
+<section class="instagram mb-5"> 
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 col-md-4 col-sm-4 p-0">
@@ -94,7 +87,7 @@
 
 
 <!-- Sezione Chi siamo? Start -->
-<section class="section" id="chi-siamo">
+<section class="section p-5 mt-5" id="chi-siamo">
     <div class="row p-5 chi-siamo-banner">
 
         <h2 class="fs-1 text-center">Chi siamo?</h2>
@@ -103,7 +96,7 @@
     </div>
 </section>
 
-<section id="jody" class="chi-siamo">
+<section id="jody" class="chi-siamo mt-5">
 
     <div class="container p-5">
         <div class="row">
