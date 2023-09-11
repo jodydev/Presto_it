@@ -4,6 +4,8 @@
         <p class="h1 text-center">
             Tutti gli annunci
         </p>
-@livewire('announcement-index')
+        @foreach ($announcements as $announcement)
+            <li>{{ $announcement}}</li>
+        @endforeach
 </section>
 </x-layout>

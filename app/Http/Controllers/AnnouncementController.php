@@ -29,7 +29,20 @@ class AnnouncementController extends Controller
     public function show($id){
         $announcement = Announcement::find($id);
 
-        return view ('announcements.show', ['announcement' => $announcement]);
+        return view ('announcements.show', ['announcement' => $announcement])
+
+    ;}
+
+    public function searchAnnouncements(Request  $request){
+     
+        
+    {
+     Announcement::search($request->searched)->where('is_accepted',true)->paginate(12);
+
+        return view('announcements.index', compact('results'));
+    }
+
+
 
     }
 }
