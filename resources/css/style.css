@@ -510,6 +510,43 @@ ol {
   }
 
 
+  /* Button Logout */
+
+.button-logout {
+	background: red;
+	border: 2px solid var(--black);
+	border-radius: 6px;
+	box-shadow: var(--black) 2px 4px;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 16px;
+	min-height: 40px;
+	outline: 0;
+	padding: 6px 8px;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	margin-right: 25px;
+  }
+  
+  .button-logout:hover,
+  .button-logout:active {
+	background-color: initial;
+	background-position: 0 0;
+	color: red;
+  }
+  
+  .button-logout:active {
+	opacity: .5;
+  }
+  
+
+
 
   /* Button Form */
 
@@ -540,6 +577,7 @@ ol {
   
   .button-form-login:active {
 	opacity: .5;
+	
   }
 
 
@@ -584,8 +622,6 @@ ol {
   #login-form form{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
-
 
 
 
@@ -977,29 +1013,22 @@ ol {
 
 .footer__about {
 	margin-bottom: 30px;
+	
 }
 
 .footer__about p {
 	margin-bottom: 20px;
+	margin-left: 60px;
 }
 
 .footer__logo {
-	margin-bottom: 10px;
-	margin-right: 50px;
-}
-
-.footer__payment a {
-	margin-right: 6px;
-	margin-bottom: 10px;
-	display: inline-block;
-}
-
-.footer__payment a:last-child {
-	margin-right: 0;
+	margin-bottom: 40px;
+	width: 300px;
 }
 
 .footer__widget {
 	margin-bottom: 30px;
+	
 }
 
 .footer__widget h6 {
@@ -1007,6 +1036,7 @@ ol {
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 12px;
+	margin-left: 30px;
 }
 
 .footer__widget ul li {
@@ -4356,7 +4386,7 @@ ol {
 
   .item-2{
 	height: 350px;
-	width: 350px;
+	width: 350px !important;
 	background-color: var(--white);
 	position: absolute;
 	left: 800px;
