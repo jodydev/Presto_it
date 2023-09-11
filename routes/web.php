@@ -15,10 +15,14 @@ use App\Http\Controllers\AnnouncementController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-    //routes HomeController
+
+//routes HomeController
 Route::get('/', [HomeController::class ,'index'])->name('index');
 
-    //routes AnnouncementController
+//rotta contatti
+Route::get('/contatti', [HomeController::class ,'contacts'])->name('contacts');
+
+ //routes AnnouncementController
 Route::get('/annunci', [AnnouncementController::class, 'index'])->name('announcements.index');
 Route::get('/annunci/crea', [AnnouncementController::class, 'create'])->name('announcements.create')->middleware(['auth']);
 Route::get('/annunci/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');

@@ -1,6 +1,6 @@
 <x-layout>
-<section>
 
+<section>
     <div class="sezione">
         <div class="breadcrumb-option mt-5">
             <div class="container">
@@ -30,16 +30,16 @@
                                 </li>
                                 <li>
                                     <h6><i class="fa fa-phone" style="color: #ff5114;"></i> Telefono</h6>
-                                    <p><span>+39 </span><span>333-696969</span></p>
+                                    <p><span>+39 </span><span class="text-dark">333-696969</span></p>
                                 </li>
                                 <li>
                                     <h6><i class="fa fa-headphones" style="color: #ff5114;"></i> Email</h6>
-                                    <p>presto.it@gmail.com</p>
+                                    <p>info.presto.it@gmail.com</p>
                                 </li>
                             </ul>
                         </div>
-                        <div class="contact__form px-5">
-                            <h5>MANDACI UN MESSAGGIO</h5>
+                        <div class="contact__form px-4">
+                            <h5>MANDACI IL TUO CURRICULUM</h5>
                             <form action="#">
                                 <input type="text" placeholder="Nome e Cognome">
                                 <input type="text" placeholder="Indirizzo email">
@@ -59,6 +59,5 @@
     </div>
     </div>
 </section>
-
 
 </x-layout>

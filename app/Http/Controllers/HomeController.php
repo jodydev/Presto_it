@@ -17,4 +17,9 @@ class HomeController extends Controller
             'announcements' => $announcements
         ]);
     }
+
+    public function contacts (){
+
+        return view ('contatti');
+    }
 }

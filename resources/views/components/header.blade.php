@@ -19,7 +19,7 @@
                                     @endforeach    
                                 </ul>
                             </li>
-                            <li><a href="">Contatti</a></li>
+                            <li><a href="/contatti">Contatti</a></li>
                         </ul>
                     </nav>
                 </div>
