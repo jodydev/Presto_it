@@ -39,7 +39,7 @@ class AnnouncementController extends Controller
     {
      $announcements = Announcement::search($request->searched)->where('is_accepted',true)->paginate(12);
 
-        return view('announcements.index', compact('results'));
+        return view('announcements.index', compact('announcements'));
     }
 
 
