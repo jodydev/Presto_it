@@ -21,10 +21,11 @@ class Announcement extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function setAccepted($value){
+    public static function setAccepted($value, $id){
+        $announcement = self::find($id);
         //assegno alla colonna is_accepted dell'annuncio il valore scelto dall'utente (true o false a seconda del tasto che preme)
-        $this->is_accepted = $value;
-        $this->save();
+        $announcement->is_accepted = $value;
+        $announcement->save();
         return true;
     }
 
