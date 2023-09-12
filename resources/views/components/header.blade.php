@@ -20,7 +20,7 @@
                                 </ul>
                             </li>
                             <li><a href="/contatti">Contatti</a></li>
-                            @if (auth()->user()->is_revisor)
+                            @if  (auth()->check() && auth()->user()->is_revisor)
                             <li>
                                 <a href="{{route('revisors.index')}}">Zona Revisore  
                                     <span class="badge bg-danger text-white rounded-pill">

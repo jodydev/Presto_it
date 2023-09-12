@@ -38,7 +38,8 @@
             <span class="visually-hidden">Next</span>
         </button>
         </div>
-     </div> 
+     </div>
+     <br> <br> <br> 
         <div class="col-6">  
                             <div class="mb-3"><h1>{{$announcement->title}}
                             </h1></div>
@@ -50,7 +51,7 @@
 
                               <p>{{$announcement->category->title }}</p> 
                     
-                            </h3>
+                            
 
                             </div-container> 
                         
@@ -58,6 +59,10 @@
         </div> 
 
    <div>
+
+
+
+   
 
 
 

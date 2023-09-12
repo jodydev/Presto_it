@@ -1,10 +1,10 @@
-<!-- CARD -->
 
-<div class="container mt-5 mb-3">
     <div class="row">
 
       @foreach ($announcements as $announcement)
-        <div class="col-md-4">
+    <!-- CARD -->
+
+<div class="container mt-5 mb-3">    <div class="col-md-4">
             <div class="card p-3 mb-2">
                 <div class="d-flex justify-content-between">
 

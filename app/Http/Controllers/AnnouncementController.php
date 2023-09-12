@@ -29,19 +29,15 @@ class AnnouncementController extends Controller
     public function show($id){
         $announcement = Announcement::find($id);
 
-        return view ('announcements.show', ['announcement' => $announcement]);
+        return view ('announcements.show', ['announcement' => $announcement])
 
-    }
-
-    public static function toBeRevisionedCount(){
-        return Announcement::where('is_accepted', null )->count();
-    }
+    ;}
 
     public function searchAnnouncements(Request  $request){
      
         
     {
-     Announcement::search($request->searched)->where('is_accepted',true)->paginate(12);
+     $announcements = Announcement::search($request->searched)->where('is_accepted',true)->paginate(12);
 
         return view('announcements.index', compact('results'));
     }
@@ -49,4 +45,4 @@ class AnnouncementController extends Controller
 
 
     }
-}
+};
