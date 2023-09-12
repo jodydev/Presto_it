@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="header__right">
-                        @if(!auth()->user())
+                        @if(!auth()->user()->check())
 
                         <button class=" button-login" role="button"><a href="/login"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</a></button>
                         <button class=" button-register" role="button"><a href="/register"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> Registrati</a></button>
@@ -45,7 +45,7 @@
                         
                         <div class="d-flex">
 
-                        <a href="" class="button-create">Crea un Annuncio</a>
+                        <a href="{{route('announcements.create')}}" class="button-create">Crea un Annuncio</a>
                             
                             
                             <form action="/logout" method="post">

@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="section-title">
-                        @if ($announcement_to_accept)
+                        @if ($announcement)
                         <h4>Ecco gli annunci da revisionare</h4>
                         @else
                         <h4>Non ci sono annunci da revisionare</h4>
@@ -15,11 +15,11 @@
             </div>
         </div>
 
-        @if($announcement_to_accept)
+        @if($announcement)
         <!-- MODIFICARE ASSOLUTAMENTE IL CAROSELLO PERCHE è VERAMENTE BRUTTO <3 -->
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 m-auto">
                         <div id="carouselExample" class="carousel slide">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -42,10 +42,10 @@
                             </button>
                             </div>
                         </div> 
-                            <div class="col-12 col-lg-6 m-5">  
+                            <div class="col-12 col-lg-6 m-auto">  
                                 <h3 class= "card-title">{{$announcement->title}}</h3>  
                                 <p class="card-text">{{$announcement->description}}</p>
-                                <p class="card-text">{{$announcement->price}}</p>
+                                <p class="card-text">€{{$announcement->price}}</p>
                                 <p>{{$announcement->category->title }}</p> 
                             </div> 
                         <div>
@@ -55,20 +55,21 @@
         @endif
        <div class="container my-3">
         <div class="row">
-        <div class="col-6 me-auto">
-                <form action="{{route('revisors.accept')}}" method="post">
+        <div class="col-6 ms-auto">
+                <form action="{{route('revisors.accept', $announcement)}}" method="post">
                     @method('PATCH')
                     @csrf
                     <input type="submit" value="Accetta" class="button-login">
                 </form>
 
             </div>
-            <div class="col-6 ms-auto">
-                <form action="{{route('revisors.decline')}}" method="post">
+            <div class="col-6 me-auto">
+                <form action="{{route('revisors.decline', $announcement)}}" method="post">
                     @method('PATCH')
                     @csrf
                     <input type="submit" value="Rifiuta" class="button-logout">
                 </form>
+
 
             </div>
             

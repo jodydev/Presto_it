@@ -17,10 +17,19 @@ class Announcement extends Model
     }
     
     public function category(){
+        //relazione one to may 
         return $this->belongsTo(Category::class);
     }
 
+    public function setAccepted($value){
+        //assegno alla colonna is_accepted dell'annuncio il valore scelto dall'utente (true o false a seconda del tasto che preme)
+        $this->is_accepted = $value;
+        $this->save();
+        return true;
+    }
+
     public static function toBeRevisionedCount(){
+        //se il valore è null il conteggio aumenta
         return Announcement::where('is_accepted', null)->count();
     }
 
