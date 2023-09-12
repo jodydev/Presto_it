@@ -1,5 +1,5 @@
 <div>
-    <br><br><br><br>brbr
+    <br><br><br><br>
     <br><br>
 
 @if ($errors->any())
@@ -16,7 +16,8 @@
 </div>
 <div class="container mt-5 ">
     <div class="row myform w-50 my-5 mx-auto">
-        <div class="col-12 mt-5">
+        <div class="col-12 mt-5">    
+        <p><h2>Crea il tuo annuncio</h2></p>
             <div class="mt-5 mb-3">
                 <label for="text" class="form-label">Titolo</label>
                 <input wire:model="title" type="text" class="form-control shadow">
@@ -34,8 +35,8 @@
                </select>
             </div>
             <div class="mb-3">
-                <label for="text" class="form-label">prezzo</label>
-                <input wire:model="price" type="text" class="form-control shadow">
+                <label for="text" class="form-label">Prezzo</label>
+                <input wire:model="price" placeholder="€ 1234.00" type="text" class="form-control shadow">
             </div>
 
             <button type="button" class="button-register" wire:click="store">Crea</button>
