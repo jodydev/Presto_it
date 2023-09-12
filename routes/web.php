@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\AnnouncementController;
 
@@ -18,8 +19,6 @@ use App\Http\Controllers\AnnouncementController;
 
 //routes HomeController
 Route::get('/', [HomeController::class ,'index'])->name('index');
-
-//rotta contatti
 Route::get('/contatti', [HomeController::class ,'contacts'])->name('contacts');
 
  //routes AnnouncementController
@@ -31,4 +30,11 @@ Route::get('/annunci/ricerca/annuncio', [AnnouncementController::class, 'searchA
 //trovare modo per mettere nome annuncio in url
 //routes CategoryController
 Route::get('/categoria/{id}', [CategoryController::class, 'show'])->name('categories.show');
+
+//routes RevisorController
+Route::get('/revisore/home', [RevisorController::class , 'index'])->name('revisors.index');
+//patch per accettare annuncio, la patch modifica un dato di una colonna
+Route::patch('/revisore/accetta/{annuncio}', [RevisorController::class , 'acceptAnnouncement'])->name('revisors.accept');
+//patch per rifiutare annuncio
+Route::patch('/revisore/rifiuta/{annuncio}', [RevisorController::class , 'declineAnnouncement'])->name('revisors.decline');
 

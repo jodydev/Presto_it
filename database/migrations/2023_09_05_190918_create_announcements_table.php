@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('announcements', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->float('price',8,2);
+            $table->decimal('price',8,2);
             $table->longText('description');
             $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
             

@@ -20,6 +20,10 @@ class Announcement extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public static function toBeRevisionedCount(){
+        return Announcement::where('is_accepted', null)->count();
+    }
+
     public function toSearchableArray()
 {
     $category = $this->category;

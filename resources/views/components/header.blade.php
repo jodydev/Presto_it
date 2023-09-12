@@ -20,6 +20,16 @@
                                 </ul>
                             </li>
                             <li><a href="/contatti">Contatti</a></li>
+                            @if (auth()->user()->is_revisor)
+                            <li>
+                                <a href="{{route('revisors.index')}}">Zona Revisore  
+                                    <span class="badge bg-danger text-white rounded-pill">
+                               {{App\Models\Announcement::toBeRevisionedCount()}} 
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </li>
+                            @endif
                         </ul>
                     </nav>
                 </div>
@@ -35,7 +45,7 @@
                         
                         <div class="d-flex">
 
-                        <a href="{{route('announcements.create')}}" class="button-create">Crea un Annuncio</a>
+                        <a href="" class="button-create">Crea un Annuncio</a>
                             
                             
                             <form action="/logout" method="post">

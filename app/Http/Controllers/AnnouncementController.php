@@ -29,9 +29,13 @@ class AnnouncementController extends Controller
     public function show($id){
         $announcement = Announcement::find($id);
 
-        return view ('announcements.show', ['announcement' => $announcement])
+        return view ('announcements.show', ['announcement' => $announcement]);
 
-    ;}
+    }
+
+    public static function toBeRevisionedCount(){
+        return Announcement::where('is_accepted', null )->count();
+    }
 
     public function searchAnnouncements(Request  $request){
      
