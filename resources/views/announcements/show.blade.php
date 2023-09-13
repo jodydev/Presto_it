@@ -51,8 +51,6 @@
 
                               <p>{{$announcement->category->title }}</p>
 
-
-
                             </div-container>
 
 
