@@ -25,7 +25,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 px-5">
                     <div class="trend__content">
                     
-                        <div class="trend__item">
+                        <div class="trend__item zoom-wrapper">
                             <div class="trend__item__pic">
                                 <img src="https://picsum.photos/100/100" class="img-card-annuncement rounded-4" alt="">
                             </div>
@@ -40,6 +40,7 @@
                                     <i class="fa fa-star" style="color: #ff5114 !important"></i>
                                 </div>
                                 <div class="product__price">€{{$announcement->price}}</div>
+                                <a href="{{route('announcements.show', $announcement->id)}}">Scopri!</a>
                             </div>
                         </div>
                         

@@ -1,11 +1,11 @@
 <!-- Sezione Hero -->
 
-<section class="categories">
+<section class="categories mt-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 p-0">
 
-                    <div class="categories__items categories__large__item set-bg" style="background-image:url({{ asset ('img/hero/hero-1.png') }}); background-position: center center;" >
+                    <div class="categories__items categories__large__item set-bg p-5 " style="background-image:url({{ asset ('img/hero/hero.jpg') }});" >
 
                     
                 </div>

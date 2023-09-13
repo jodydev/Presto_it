@@ -1,5 +1,5 @@
 <!-- Footer Section -->
-<footer class="footer p-5 mt-5">
+<footer class="footer grey">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-7">
