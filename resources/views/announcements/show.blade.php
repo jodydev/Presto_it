@@ -98,7 +98,7 @@
             <div class="description">
             <h2 class= "card-title">{{$announcement->title}}</h2>
             <h4 class= "card-text">{{$announcement->category->title }}</h4>
-            <h1 class= "card-text">{{$announcement->price}}</h1>
+            <h1 class= "card-text">€ {{$announcement->price}}</h1>
             <p class= "card-text">{{$announcement->description}}</p>
             <button>Add to Cart</button>
             <button>Wishlist</button>
