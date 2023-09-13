@@ -38,7 +38,7 @@ Route::patch('/revisore/accetta/{annuncio}', [RevisorController::class , 'accept
 //patch per rifiutare annuncio
 Route::patch('/revisore/rifiuta/{annuncio}', [RevisorController::class , 'declineAnnouncement'])->middleware(['isRevisor'])->name('revisors.decline');
 //route per richiedere di diventare revisore
-Route::get('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('revisors.become-revisor');
+Route::get('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('become.revisor');
 //route per far diventare utente revisore
-Route::get('/fai/revisore/{user}', [RevisorController::class , 'makeRevisor'])->name('revisors.make-revisor');
+Route::get('/fai/revisore/{user}', [RevisorController::class , 'makeRevisor'])->name('make.revisor');
 

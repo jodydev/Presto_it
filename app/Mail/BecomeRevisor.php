@@ -2,12 +2,14 @@
 
 namespace App\Mail;
 
+use App\Models\User;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class BecomeRevisor extends Mailable
 {
@@ -30,7 +32,7 @@ class BecomeRevisor extends Mailable
     {
         return new Envelope(
             from: new Address('no-reply@presto.it' ,'Presto.it'),
-            subject: 'Diventa Revisore in Presto.it',
+            subject: "L'utente vuole diventare Revisore in Presto.it",
         );
     }
 
@@ -40,7 +42,7 @@ class BecomeRevisor extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'mail.become-revisor',
         );
     }
 

@@ -43,10 +43,13 @@
 </head>
 <body>
 
-     
-   
+    
     <!-- Header -->
         <x-header></x-header>
+        <br><br><br><br><br>
+        <x-error/>
+        <x-session/>
+   
       
 
    {{ $slot }} 

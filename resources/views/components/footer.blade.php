@@ -18,7 +18,7 @@
                         @if (!auth()->check())
                         <li><a href="#">FAQ</a></li>
                         @else
-                        <li><a href="#">Diventa revisore</a></li>
+                        <li><a href="{{route('become.revisor')}}">Diventa revisore</a></li>
                         @endif
                         
                     </ul>
