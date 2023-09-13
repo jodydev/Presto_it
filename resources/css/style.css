@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
-/* 
+/*
 1.  Template default CSS
 	1.1	Variables
 	1.2	Mixins
@@ -500,14 +500,14 @@ ol {
 	margin-right: 25px;
 
   }
-  
+
   .button-register:hover,
   .button-register:active {
 	background-color: initial;
 	background-position: 0 0;
 	color: var(--black);
   }
-  
+
   .button-register:active {
 	opacity: .5;
   }
@@ -536,18 +536,18 @@ ol {
 	text-transform: none;
 	margin-left: 25px !important;
   }
-  
+
   .button-logout:hover,
   .button-logout:active {
 	background-color: initial;
 	background-position: 0 0;
 	color: red;
   }
-  
+
   .button-logout:active {
 	opacity: .5;
   }
-  
+
 
   /* Button Create */
 
@@ -572,14 +572,14 @@ ol {
 	text-transform: none;
 	margin-left: 60px !important;
   }
-  
+
   .button-create:hover,
   .button-create:active {
 	background-color: initial;
 	background-position: 0 0;
 	color: #919191;
   }
-  
+
   .button-create:active {
 	opacity: .5;
   }
@@ -608,7 +608,7 @@ ol {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
-  
+
   .button-form-login:hover,
   .button-form-login:active {
 	background-color: var(--white);
@@ -616,10 +616,10 @@ ol {
 	color: #ff5114;
 	border: 1px solid #919191;
   }
-  
+
   .button-form-login:active {
 	opacity: .5;
-	
+
   }
 
 
@@ -639,7 +639,7 @@ ol {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
-  
+
   .button-form-register:hover,
   .button-form-register:active {
 	background-color: var(--white);
@@ -647,7 +647,7 @@ ol {
 	color: #ff5114;
 	border: 1px solid #919191;
   }
-  
+
   .button-form-register:active {
 	opacity: .5;
   }
@@ -732,7 +732,7 @@ ol {
 	top: 750px;
 	width: 100%;
 	text-align: center;
-	
+
 }
 
 .banner__slider.owl-carousel .owl-dots button {
@@ -914,7 +914,7 @@ ol {
 }
 
 .discount__countdown {
-	
+
 	text-align: center;
 	margin-bottom: 10px;
 }
@@ -1055,7 +1055,7 @@ ol {
 
 .footer__about {
 	margin-bottom: 30px;
-	
+
 }
 
 .footer__about p {
@@ -1070,7 +1070,7 @@ ol {
 
 .footer__widget {
 	margin-bottom: 30px;
-	
+
 }
 
 .footer__widget h6 {
@@ -1293,7 +1293,7 @@ ol {
 .categories__item.categories__large__item {
 	height: 638px;
 	padding-left: 70px;
-	
+
 }
 
 .categories__items{
@@ -1316,7 +1316,7 @@ ol {
 	color: var(--black);
 	font-weight: 700;
 	display: none;
-	
+
 }
 
 .categories__item:hover .categories__text h4, p, a{
@@ -1633,7 +1633,7 @@ ol {
 	font-size: 13px;
 	font-weight: bold;
 	color: red;
-	
+
 }
 .old-price{
 	font-size: 8px;
@@ -1652,7 +1652,7 @@ ol {
 .creme{
 	background-color: #fff;
 	border: 2px solid grey;
-	
+
 
 }
 .creme:hover {
@@ -1668,7 +1668,7 @@ ol {
 .red{
 	background-color: #fff;
 	border: 2px solid red;
-	
+
 }
 
 
@@ -1773,7 +1773,7 @@ ol {
 	font-weight: bold;
 }
 .voutcher-right{
-	width: 40%;	 
+	width: 40%;
 	background-color: purple;
 	color: #fff;
 }
@@ -3861,7 +3861,7 @@ ol {
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
-	
+
 
 	.canvas__open {
 		display: block;
@@ -3941,12 +3941,12 @@ ol {
 	}
 	.slicknav_nav ul {
 		margin-top: 40px;
-	
-		
+
+
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
-		
+
 		padding: 7px 0;
 		margin: 0;
 		color: #111111;
@@ -3968,7 +3968,7 @@ ol {
 	}
 	.offcanvas__logo {
 		margin-bottom: 50px;
-		
+
 	}
 
 	.logo{
@@ -4166,7 +4166,7 @@ ol {
     border: none;
     border-radius: 10px;
 	width: 300px;
-	
+
 }
 
 .c-details {
@@ -4196,7 +4196,7 @@ ol {
     color: #ffffff;
     justify-content: center;
     align-items: center;
-	
+
 }
 
 .text1 {
@@ -4229,21 +4229,21 @@ ol {
 		text-transform: none;
 		margin-right: 7px;
 	  }
-	  
+
 	  .button-card:hover,
 	  .button-card:active {
 		background-color: initial;
 		background-position: 0 0;
 		color: #ff5114;
 	  }
-	  
+
 	  .button-card:active {
 		opacity: .5;
 	  }
-	  
+
 .i-card{
 	color: #ff5114;
-	
+
 }
 
 
@@ -4255,7 +4255,7 @@ ol {
    position: absolute;
 	 top: -10px;
    right: -10px;
- 
+
 }
 .ribbon__content {
    left: -25px;
@@ -4273,9 +4273,9 @@ ol {
    text-shadow: 0 1px 1px rgba(0,0,0,.2);
    text-transform: uppercase;
    text-align: center;
-   outline : 5px solid  ##ff5114;
+   outline : 5px solid  #ff5114;
 
- 
+
 }
 .ribbon::before {
    top: 0;
@@ -4300,8 +4300,8 @@ ol {
    content: '';
    display: block;
    border: 5px solid #f19066;
-   
-}  
+
+}
 
 
 /* LOGIN END REGISTER FORM */
@@ -4319,13 +4319,13 @@ ol {
 	position: relative;
 	overflow: hidden;
   }
-  
+
   .form_main {
 	background-image: url(/img/login-bg.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
   }
-  
+
   .heading {
 	font-size: 2em;
 	color: #2e2e2e;
@@ -4333,7 +4333,7 @@ ol {
 	margin: 5px 0 10px 0;
 	z-index: 2;
   }
-  
+
   .inputContainer {
 	width: 50%;
 	position: relative;
@@ -4342,12 +4342,12 @@ ol {
 	justify-content: center;
 	z-index: 2;
   }
-  
+
   .inputIcon {
 	position: absolute;
 	left: 3px;
   }
-  
+
   .inputField {
 	width: 100%;
 	height: 30px;
@@ -4361,18 +4361,18 @@ ol {
 	box-sizing: border-box;
 	padding-left: 30px;
   }
-  
+
   .inputField:focus {
 	outline: none;
 	border-bottom: 2px solid var(--organge);
   }
-  
+
   .inputField::placeholder {
 	color: rgb(80, 80, 80);
 	font-size: 1em;
 	font-weight: 500;
   }
-  
+
   #button {
 	z-index: 2;
 	width: 25%;
@@ -4388,7 +4388,7 @@ ol {
 	margin-top: 10px;
 
   }
-  
+
   #button:hover {
 	background-color: var(--organge);
 	color: white;
@@ -4402,7 +4402,7 @@ ol {
   .chi-siamo-banner h2 ,span{
 	color: #ff5114 !important;
   }
-  
+
 
   .chi-siamo{
 	position: relative;
@@ -4447,7 +4447,7 @@ ol {
   .chi-siamo h2 {
 	font-weight: 400;
 	font-size: 35px;
-	
+
   }
 
   .chi-siamo h3 {
@@ -4457,16 +4457,16 @@ ol {
   }
 
   .chi-siamo p {
-		
+
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		white-space: wrap;
 		text-overflow: clip;
-		width: 200px; 
+		width: 200px;
 		margin-top: 30px;
 		font-weight: 600;
-	
+
   }
 
   .claudio{
@@ -4558,7 +4558,7 @@ ol {
 	text-overflow: ellipsis;
 	white-space: wrap;
 	text-overflow: clip;
-	width: 200px; 
+	width: 200px;
 	margin-bottom: 50px;
 	font-weight: 600;
 }
@@ -4597,3 +4597,110 @@ a {
 	box-shadow: 10px 5px 10px rgba(91, 91, 91, 0.1);
 
 }
+
+/* SHOWDETAILS_ANNOUNCEMENT */
+
+#details_announcement .card {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 115px;
+	/* position: absolute;
+	background: white;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	transition: all 0.3s;
+  }
+  #details_announcement .card:hover {
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #details_announcement .card nav {
+	width: 100%;
+	color: #727272;
+	text-transform: uppercase;
+	padding: 20px;
+	border-bottom: 2px solid #efefef;
+	font-size: 12px;
+  }
+  #details_announcement .card nav svg.heart {
+	height: 24px;
+	width: 24px;
+	float: right;
+	margin-top: -3px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+  }
+  #details_announcement .card nav svg.heart:hover {
+	fill: red;
+  }
+  #details_announcement .card nav svg.arrow {
+	float: left;
+	height: 15px;
+	width: 15px;
+	margin-right: 10px;
+  }
+  #details_announcement .card .photo {
+	padding: 10px;
+	/* width: 45%; */
+	text-align: center;
+	/* float: left; */
+  }
+  #details_announcement .card .photo img {
+	max-height: 240px;
+  }
+  #details_announcement .card .description {
+	padding: 10px;
+	/* float: left;
+	width: 55%; */
+	border-left: 2px solid #efefef;
+  }
+  #details_announcement .card .description h1 {
+	color: #515151;
+	font-weight: 300;
+	padding-top: 15px;
+	margin: 0;
+	font-size: 30px;
+	font-weight: 300;
+  }
+  #details_announcement .card .description h2 {
+	color: #515151;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+  }
+  #details_announcement .card .description h4 {
+	margin: 0;
+	color: #727272;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 12px;
+  }
+  #details_announcement .card .description p {
+	font-size: 12px;
+	line-height: 20px;
+	color: #727272;
+	padding: 20px 0;
+	margin: 0;
+  }
+  #details_announcement .card .description button {
+	outline: 0;
+	border: 0;
+	background: none;
+	border: 1px solid #d9d9d9;
+	padding: 8px 0px;
+	margin-bottom: 30px;
+	color: #515151;
+	text-transform: uppercase;
+	width: 125px;
+	font-family: inherit;
+	margin-right: 5px;
+	transition: all 0.3s ease;
+	font-weight: 500;
+  }
+  #details_announcement .card .description button:hover {
+	border: 1px solid #aedaa6;
+	color: #aedaa6;
+	cursor: pointer;
+  }
