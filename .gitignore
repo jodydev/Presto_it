@@ -20,3 +20,5 @@ yarn-error.log
 /storage/*.index
 /storage/announcements.index-shm
 /storage/announcements.index-wal
+/storage/announcements.index
+storage/announcements.index
