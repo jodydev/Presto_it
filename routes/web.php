@@ -32,9 +32,13 @@ Route::get('/annunci/ricerca/annuncio', [AnnouncementController::class, 'searchA
 Route::get('/categoria/{id}', [CategoryController::class, 'show'])->name('categories.show');
 
 //routes RevisorController
-Route::get('/revisore/home', [RevisorController::class , 'index'])->name('revisors.index');
+Route::get('/revisore/home', [RevisorController::class , 'index'])->middleware('isRevisor')->name('revisors.index');
 //patch per accettare annuncio, la patch modifica un dato di una colonna
-Route::patch('/revisore/accetta/{annuncio}', [RevisorController::class , 'acceptAnnouncement'])->name('revisors.accept');
+Route::patch('/revisore/accetta/{annuncio}', [RevisorController::class , 'acceptAnnouncement'])->middleware(['isRevisor'])->name('revisors.accept');
 //patch per rifiutare annuncio
-Route::patch('/revisore/rifiuta/{annuncio}', [RevisorController::class , 'declineAnnouncement'])->name('revisors.decline');
+Route::patch('/revisore/rifiuta/{annuncio}', [RevisorController::class , 'declineAnnouncement'])->middleware(['isRevisor'])->name('revisors.decline');
+//route per richiedere di diventare revisore
+Route::get('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('revisors.become-revisor');
+//route per far diventare utente revisore
+Route::get('/fai/revisore/{user}', [RevisorController::class , 'makeRevisor'])->name('revisors.make-revisor');
 

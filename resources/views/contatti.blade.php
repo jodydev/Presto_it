@@ -34,7 +34,7 @@
                                 </li>
                                 <li>
                                     <h6><i class="fa fa-headphones" style="color: #ff5114;"></i> Email</h6>
-                                    <p>info.presto.it@gmail.com</p>
+                                    <p>info@presto.it</p>
                                 </li>
                             </ul>
                         </div>

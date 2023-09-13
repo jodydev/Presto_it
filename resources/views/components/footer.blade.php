@@ -15,7 +15,12 @@
                     <ul>
                         <li><a href="#">Altro</a></li>
                         <li><a href="#">Contatti</a></li>
+                        @if (!auth()->check())
                         <li><a href="#">FAQ</a></li>
+                        @else
+                        <li><a href="#">Diventa revisore</a></li>
+                        @endif
+                        
                     </ul>
                 </div>
             </div>
