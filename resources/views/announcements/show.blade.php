@@ -40,8 +40,9 @@
         </div>
      </div> -->
      <!-- <br> <br> <br>
+
         <div class="col-6">
-                            <div class="mb-3"><h1>{{$announcement->title}}
+                            <div class="mb-3"> <h1>{{$announcement->title}}
                             </h1></div>
                             <br>
                              <div-container>
@@ -50,6 +51,8 @@
                               <p class="card-text">{{$announcement->price}}</p>
 
                               <p>{{$announcement->category->title }}</p>
+
+
 
                             </div-container>
 
@@ -76,7 +79,7 @@
             <img src="https://picsum.photos/seed/picsum/200/200" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="https://picsum.photos/seed/picsum/200/200" class="d-block w-100" alt="...">
+            <img src="https://picsum.photos/seed/picsum/200/00" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -90,13 +93,13 @@
         </div>
             </div>
         </div>
-    
+
         <div class="col-sm-12 col-md-8">
             <div class="description">
-            <h2 class="card-title">{{$announcement->title}}</h2>
-            <h4>{{$announcement->category->title }}</h4>
-            <h1 class="card-text">{{$announcement->price}}</h1>
-            <p class="card-text">{{$announcement->description}}</p>
+            <h2 class= "card-title">{{$announcement->title}}</h2>
+            <h4 class= "card-text">{{$announcement->category->title }}</h4>
+            <h1 class= "card-text">{{$announcement->price}}</h1>
+            <p class= "card-text">{{$announcement->description}}</p>
             <button>Add to Cart</button>
             <button>Wishlist</button>
         </div>
@@ -105,6 +108,8 @@
     
     </div>
 
+
+  
 </div>
 
 
