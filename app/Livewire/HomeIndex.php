@@ -10,7 +10,7 @@ class HomeIndex extends Component
 {
     public $selectedCategory;
     public $announcements;
-
+    
     public function render()
     {
         // Carica tutte le categorie
@@ -18,11 +18,12 @@ class HomeIndex extends Component
 
         // Filtra gli annunci in base alla categoria selezionata
         if ($this->selectedCategory) {
-            $this->announcements = Announcement::where('category_id', $this->selectedCategory)->take(8)->get()->sortByDesc('created_at');
+            $this->announcements = Announcement::where('is_accepted', true)->where('category_id', $this->selectedCategory)->get()->sortByDesc('created_at')->take(6);
         } else {
-            $this->announcements = Announcement::take(8)->get()->sortByDesc('created_at');
+            $this->announcements = Announcement::where('is_accepted', true)->get()->sortByDesc('created_at')->take(6);
         }
 
         return view('livewire.home-index', compact('categories'));
     }
+
 }

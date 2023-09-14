@@ -29,8 +29,8 @@ class CreateAnnouncement extends Component
 
         $validated = $this->validate([
             'title' => 'required|min:5',
-        'description' => 'required|min:8',
-        'price' => 'required|numeric'
+            'description' => 'required|min:8',
+            'price' => 'required|numeric'
         
         ]);
         $category = Category::find($this->category);

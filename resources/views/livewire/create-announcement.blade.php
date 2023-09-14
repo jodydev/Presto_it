@@ -2,15 +2,7 @@
     <br><br><br><br>
     <br><br>
 
-@if ($errors->any())
-    <div class="alert alert-danger my-5">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+
 <div class="alert text-success mt-5 fixed-top">
     <p class="h4">{{$message}}</p>
 </div>
@@ -28,9 +20,10 @@
             </div>
             <div class="mb-3">
                 <label for="text">Categorie</label>
-               <select wire:model.defer="category" class="form-control text-dark">
+               <select wire:model.defer="category" class="dropdown form-select text-dark"aria-label="Default select example">
+               <option selected class="dropdown-menu">Scegli Categoria</option>
                     @foreach($categories as $category)
-                        <option value="{{$category->id}}">{{$category->title}}</option>
+                        <option class = "dropdown-item"value="{{$category->id}}">{{$category->title}}</option>
                     @endforeach
                </select>
             </div>

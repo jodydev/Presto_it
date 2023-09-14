@@ -41,6 +41,7 @@
                                 </div>
                                 <div class="product__price">€{{$announcement->price}}</div>
                                 <a href="{{route('announcements.show', $announcement->id)}}">Scopri!</a>
+                                <small>{{$announcement->created_at->format('d/m/y')}}</small>
                             </div>
                         </div>
                         
