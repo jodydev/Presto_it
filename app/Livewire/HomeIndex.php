@@ -14,7 +14,7 @@ class HomeIndex extends Component
     public function render()
     {
         // Carica tutte le categorie
-        $categories = Category::all();
+        $categories = Category::orderBy('title')->get();
 
         // Filtra gli annunci in base alla categoria selezionata
         if ($this->selectedCategory) {

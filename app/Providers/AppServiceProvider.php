@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //mostro le categorie in tutte le viste. lo spero perche mi stanno facendo impazzire.
         if (Schema::hasTable('categories')){
-            View::share('categories', Category::all());
+            View::share('categories', Category::orderBy('title')->get());
         }
     }
 }

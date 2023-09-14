@@ -22,11 +22,17 @@
                             <li><a href="/contatti">Contatti</a></li>
                             @if  (auth()->check() && auth()->user()->is_revisor)
                             <li>
-                                <a href="{{route('revisors.index')}}">Zona Revisore  
+                                <!-- se il count è zero tolgo il badge -->
+                                <a href="{{ route('revisors.index') }}">Zona Revisore  
+                                    @php
+                                    $toBeRevisionedCount = App\Models\Announcement::toBeRevisionedCount();
+                                    @endphp
+                                    @if ($toBeRevisionedCount > 0)
                                     <span class="badge bg-danger text-white rounded-pill">
-                               {{App\Models\Announcement::toBeRevisionedCount()}} 
+                                        {{ $toBeRevisionedCount }} 
                                         <span class="visually-hidden">unread messages</span>
                                     </span>
+                                    @endif
                                 </a>
                             </li>
                             @endif
