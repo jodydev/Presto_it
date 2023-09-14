@@ -1,6 +1,8 @@
 <x-layout>
 
-<x-hero/>
+
+<x-hero></x-hero> 
+
 
 
 @livewire('home-index')

@@ -1,6 +1,7 @@
-<!-- Sezione Hero -->
-
 <section class="categories mt-5">
+
+<img src="{{ asset ('img/hero/bg-hero.png') }}" class="img-fluid" alt="" srcset="">
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 p-0">
