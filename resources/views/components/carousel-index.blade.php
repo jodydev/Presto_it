@@ -3,10 +3,10 @@
         <div class="swiper sample-slider">
             <div class="swiper-wrapper">
                 
-                <div class="swiper-slide"><img src="{{ asset ('img/banner-categorie/foto-2.jpeg') }}"></div>
-                <div class="swiper-slide"><img src="{{ asset ('img/banner-categorie/foto-3.webp') }}"></div>
-                <div class="swiper-slide"><img src="{{ asset ('img/banner-categorie/foto-2.jpeg') }}"></div>
-                <div class="swiper-slide"><img src="{{ asset ('img/banner-categorie/foto-3.webp') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/jody.png') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/claudio.png') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/alice.png') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/marcello.png') }}"></div>
                 
             </div>
         
