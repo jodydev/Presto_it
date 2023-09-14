@@ -6,7 +6,9 @@
         </p>
         <div class="container my-5">
             <div class="row justify-content-center my-5">
+                
             @foreach($category->announcements as $announcement)
+            @if($announcement->is_accepted)
                 <div class="col-12 col-md-3">
                     <div class="card " style="width: 18rem;"> 
                    
@@ -28,6 +30,15 @@
                         </div>
                     </div>
                 </div>
+                @else
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mt-5 text-center">
+                            <h3>Non ci sono annunci per questa categoria</h3>
+                        </div>
+                    </div>
+                </div>
+                @endif
             @endforeach
             </div>
         </div>
