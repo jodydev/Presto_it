@@ -4906,3 +4906,76 @@ input[placeholder] {
 }
 
 
+    /* Button Buy */
+
+	.button-buy {
+		background: var(--white);
+		border: 2px solid var(--organge);
+		border-radius: 6px;
+		box-shadow: var(--organge) 2px 4px;
+		box-sizing: border-box;
+		color: var(--black);
+		cursor: pointer;
+		display: inline-block;
+		font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+		font-size: 14px;
+		font-weight: 800;
+		line-height: 16px;
+		min-height: 40px;
+		outline: 0;
+		padding: 6px 8px;
+		text-align: center;
+		text-rendering: geometricprecision;
+		text-transform: none;
+		margin-right: 25px;
+		margin-bottom: 0 !important;
+	
+	  }
+	  
+	  .button-buy:hover,
+	  .button-buy:active {
+		background-color: initial;
+		background-position: 0 0;
+		color: var(--black);
+	  }
+	  
+	  .button-buy:active {
+		opacity: .5;
+	  }
+	
+	
+	/* SEARCHBAR*/
+	
+	  .searchbar {
+		display: inline-block;
+		position: relative;
+	  }
+	  
+	  .searchbar input[type="text"] {
+		width: 350px;
+		padding: 10px;
+		border: none;
+		border-radius: 20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	  }
+	  
+	  .searchbar button[type="submit"] {
+		background-color: #ff5114;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		padding: 10px 20px;
+		border-radius: 20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		position: absolute;
+		top: 0;
+		right: 0;
+		transition: .9s ease;
+	  }
+	  
+	  .searchbar button[type="submit"]:hover {
+		transform: scale(1.1);
+		color: rgb(255, 255, 255);
+		background-color: #ff4400;
+	  }
+	

@@ -1,13 +1,14 @@
 <x-layout>
-    <br><br><br><br><br>
-    <form action="{{route('announcements.search')}}" method ="GET" class="d-flex">
-      <input name="searched" pclass="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-       <button class= "btn btn-outline-success" type="submit">Search</button>
-
-    </form>
-<section id="announcementCards">
         <p class="h1 text-center mb-5">
-            Tutti gli annunci!        </p>
+            Tutti gli annunci
+        </p>
+    
+        <form action="{{route('announcements.search')}}" method ="GET" class="d-flex justify-content-center mt-2 mb-5">
+    <div class="searchbar">
+        <input name="searched" placeholder="Search..." type="text">
+        <button type="submit">Go</button>
+      </div>    
+    </form>
         <!-- OLD 12set2023 @forelse ($announcements as $announcement)
 
                         <div class="col-6">  
