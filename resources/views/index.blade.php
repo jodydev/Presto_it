@@ -15,9 +15,9 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="discount__pic">
-                <h3 class="text-dark fs-1">Cosa dicono i nostri clienti?</h3>
+                <h3 class="text-dark fs-1 mt-5">Cosa dicono i nostri clienti?</h3>
 
-                <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae laudantium sunt fugit quasi, dolorem suscipit laboriosam alias qui? Nemo, cumque? Autem recusandae magni voluptas delectus sit accusantium, ullam eius a amet voluptatibus quis reprehenderit id aspernatur, est adipisci? Voluptates iste ea molestias quod praesentium voluptate, obcaecati pariatur repellendus voluptatem fugit harum aut iure voluptatum quia sint! Nemo nesciunt corrupti, repudiandae animi consectetur aliquam? Qui quis sapiente ea architecto maiores neque nobis, ex excepturi nisi praesentium distinctio quaerat minus reiciendis. Facere voluptate unde laboriosam rerum fuga excepturi architecto quam sed possimus est beatae, modi consequatur, at odio sit id aut!</p>
+                <p class="mt-5 w-75 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae laudantium sunt fugit quasi, dolorem suscipit laboriosam alias qui? Nemo, cumque? Autem recusandae magni voluptas delectus sit accusantium, ullam eius a amet voluptatibus quis reprehenderit id aspernatur, est adipisci? Voluptates iste ea molestias quod praesentium voluptate, obcaecati pariatur repellendus voluptatem fugit harum aut iure voluptatum quia sint! Nemo nesciunt corrupti, repudiandae animi consectetur aliquam? Qui quis sapiente ea architecto maiores neque nobis, ex excepturi nisi praesentium distinctio quaerat minus reiciendis. Facere voluptate unde laboriosam rerum fuga excepturi architecto quam sed possimus est beatae, modi consequatur, at odio sit id aut!</p>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -102,7 +102,7 @@
     </div>
 
 
-    <x-carousel-index/>
+    <!-- <x-carousel-index/> -->
 
 </section>
 

@@ -19,6 +19,7 @@
                                     <i class="fa fa-star" style="color: #ff5114 !important"></i>
                                 </div>
                                 <div class="product__price">€{{$announcement->price}}</div>
+                                
                             </div>
                         </div>
                         

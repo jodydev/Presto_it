@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 /* 
 1.  Template default CSS
 	1.1	Variables
@@ -25,42 +26,52 @@
 html,
 body {
 	height: 100%;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif !important;
 	-webkit-font-smoothing: antialiased;
 }
 
 
 h1 {
 	font-size: 70px;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 h2 {
 	font-size: 36px;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 h3 {
 	font-size: 30px;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 h4 {
 	font-size: 24px;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 h5 {
 	font-size: 18px;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 h6 {
 	font-size: 16px;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 p {
 	font-size: 14px;
-	font-family: "Montserrat", sans-serif;
 	color: #666666;
 	font-weight: 400;
 	line-height: 24px;
 	margin: 0 0 15px 0;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+a{
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 img {
@@ -78,6 +89,7 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 ul,
@@ -313,9 +325,6 @@ ol {
 	box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
 }
 
-.header__logo{
-	margin-bottom: 50px;
-}
 
 .header__logo a {
 	display: inline-block;
@@ -330,8 +339,9 @@ ol {
 	display: inline-block;
 	margin-right: 40px;
 	position: relative;
-	font-family: 'Roboto', sans-serif;
+
 	font-weight:bold;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 .header__menu ul li.active a:after {
@@ -451,7 +461,6 @@ ol {
   color: var(--black);
   cursor: pointer;
   display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 16px;
@@ -462,6 +471,7 @@ ol {
   text-rendering: geometricprecision;
   text-transform: none;
   margin-right: 7px;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .button-login:hover,
@@ -487,7 +497,6 @@ ol {
 	color: var(--black);
 	cursor: pointer;
 	display: inline-block;
-	font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
 	font-size: 14px;
 	font-weight: 800;
 	line-height: 16px;
@@ -498,7 +507,7 @@ ol {
 	text-rendering: geometricprecision;
 	text-transform: none;
 	margin-right: 25px;
-
+	font-family: 'Montserrat', sans-serif !important;
   }
   
   .button-register:hover,
@@ -535,6 +544,7 @@ ol {
 	text-rendering: geometricprecision;
 	text-transform: none;
 	margin-left: 25px !important;
+	font-family: 'Montserrat', sans-serif !important;
   }
   
   .button-logout:hover,
@@ -557,7 +567,6 @@ ol {
 	border-radius: 6px;
 	box-shadow: var(--black) 2px 4px;
 	box-sizing: border-box;
-	color: white;
 	cursor: pointer;
 	display: inline-block;
 	font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
@@ -571,13 +580,14 @@ ol {
 	text-rendering: geometricprecision;
 	text-transform: none;
 	margin-left: 60px !important;
+	color: rgb(255, 255, 255) !important;
   }
   
   .button-create:hover,
   .button-create:active {
 	background-color: initial;
 	background-position: 0 0;
-	color: #919191;
+	color: #ffffff ;
   }
   
   .button-create:active {
@@ -593,8 +603,7 @@ ol {
   /* Button Form */
 
   .button-form-login {
-	z-index: 2;
-	width: 25%;
+	width: 50%;
 	border: none;
 	background-color: var(--organge);
 	height: 30px;
@@ -603,7 +612,6 @@ ol {
 	font-weight: 500;
 	letter-spacing: 1px;
 	cursor: pointer;
-	margin-right: 130px;
 	margin-top: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -624,18 +632,17 @@ ol {
 
 
   .button-form-register {
-	z-index: 2;
-	width: 25%;
+	width: 50% !important;
 	border: none;
-	background-color: var(--organge);
+	background-color: var(--organge) !important;
 	height: 30px;
-	color: white;
+	color: white !important;
 	font-size: .8em;
 	font-weight: 500;
 	letter-spacing: 1px;
 	cursor: pointer;
-	margin-right: 130px;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-right: 10px !important;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
@@ -652,10 +659,14 @@ ol {
 	opacity: .5;
   }
 
+  #login-form{
+	padding: 0px !important;
+	margin-top: 100px;
+  }
 
   #login-form h1{
-	margin-bottom: 40px;
-	font-size: 40px;
+	margin-bottom: 70px;
+	font-size: 0px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 
@@ -781,18 +792,21 @@ ol {
 .trend__item__text {
 	overflow: hidden;
 }
+.trend__item__text a {
+	color: #ff5114;
+}
 .trend__item__text span {
 	font-size: 14px;
-}
-.trend__item__text strong {
-	font-size: 14px;
+	color: grey !important;
 }
 
 
 .trend__item__text h6 {
-	font-size: 14px;
+	font-size: 15px;
 	color: #111111;
 	margin-bottom: 5px;
+	font-weight: bold;
+
 }
 
 .trend__item__text .rating {
@@ -3655,6 +3669,8 @@ ol {
 	.container {
 		max-width: 1170px;
 	}
+
+
 }
 
 /* Medium Device = 1200px */
@@ -3675,6 +3691,7 @@ ol {
 	.nav::after {
 		width: 240px;
 	}
+	
 }
 
 /* Tablet Device = 768px */
@@ -4322,16 +4339,44 @@ ol {
 	align-items: center;
 	justify-content: center;
 	background-color: rgb(255, 255, 255);
-	padding: 30px 30px 30px 30px;
+	padding: 0px 0px 50px 0px;
 	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
 	position: relative;
 	overflow: hidden;
+  }
+
+  .form_main_register {
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+	padding: 0px 0px 50px 0px;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+	position: relative;
+	overflow: hidden;
+  }
+
+  .form_main_register a {
+	font-size: 10px;
   }
   
   .form_main {
 	background-image: url(/img/login-bg.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
+  }
+
+  .form_main a {
+font-size: 10px !important;
+  }
+
+  .form_main h1 {
+	font-size: 50px !important; 
+	font-weight: 600 !important;
+	font-family: 'Montserrat', sans-serif !important;
   }
   
   .heading {
@@ -4407,8 +4452,8 @@ ol {
 	background-color: #d8d8d8;
   }
 
-  .grey{
-	background-color: #d8d8d8;
+  .bg-black{
+	background-color: #000000;
   }
 
 .instagram{
@@ -4756,3 +4801,108 @@ a {
 	color: #aedaa6;
 	cursor: pointer;
   }
+
+
+  .hero-title{
+	display: flex;
+  }
+
+  .hero-title h1{
+	color: black !important;
+	font-size: 110px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 280px;
+  }
+
+  .hero-bg{
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+  }
+
+.bg-auth{
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	
+}
+
+.bg-create{
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	
+}
+
+.form-control{
+	background-color: #F6F6F6!important;
+	padding: 30px !important;
+	border-style: none !important;
+}
+
+.form-main h1{
+	margin-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#text {
+margin-top: 80px;
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+
+#text h1 {
+	font-size: 25px !important;
+	font-weight: 300;
+}
+
+#text h2 { 
+	margin-top: 50px;
+	font-size: 45px !important;
+	font-weight: 600;
+	margin-bottom: 100px !important;
+}
+
+#text span { 
+	font-size: 17px !important;
+	font-weight: 300;
+	color: white !important;
+}
+
+
+input[placeholder] {
+	color: black !important; 
+	font-family: 'Montserrat', sans-serif !important;
+	font-style:italic;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
+    color: black !important;
+	font-family: 'Montserrat', sans-serif !important;
+	font-style:italic;
+}
+
+#text h3 { 
+	font-size: 35px !important;
+	font-weight: 600;
+	margin-bottom: 40px !important;
+	
+}
+
+#text img{
+	width: 50%;
+	margin-left: 120px;
+	
+}
+
+#create-btn a{
+	color: rgb(255, 255, 255) !important;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+#create-btn a:hover{
+	color: rgb(0, 0, 0) !important;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+

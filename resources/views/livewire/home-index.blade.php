@@ -31,7 +31,7 @@
                             </div>
                             <div class="trend__item__text">
                                 <h6>{{$announcement->title}}</h6>
-                                <strong>{{$announcement->category->title}}</strong>
+                                <span>{{$announcement->category->title}}</span>
                                 <div class="rating">
                                     <i class="fa fa-star" style="color: #ff5114 !important"></i>
                                     <i class="fa fa-star" style="color: #ff5114 !important"></i>

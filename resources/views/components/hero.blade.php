@@ -1,17 +1,22 @@
 <section class="categories mt-5">
-
-<img src="{{ asset ('img/hero/bg-hero.png') }}" class="img-fluid" alt="" srcset="">
+    
+    <div class="hero-bg" style="background-image:url({{ asset ('img/hero/bg-hero.png') }});">
+    <div class="hero-title d-flex">
+        <h1 class="text-center">Semplice, Affidabile, questo è Presto.it</h1>
+    </div>
+    </div>
+ 
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 p-0">
+                <div class="col-lg-6 p-0 mt-5">
 
-                    <div class="categories__items categories__large__item set-bg p-5 " style="background-image:url({{ asset ('img/hero/hero.jpg') }});" >
+                    <div class="categories__items categories__large__item set-bg" style="background-image:url({{ asset ('img/hero/hero-1.png') }});" >
 
                     
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 p-5 mt-5">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="categories__item set-bg" style="background-image:url({{ asset ('img/hero/hero-2.png') }}); background-position: center center;">                        
