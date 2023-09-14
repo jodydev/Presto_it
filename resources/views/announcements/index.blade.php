@@ -7,8 +7,7 @@
     </form>
 <section id="announcementCards">
         <p class="h1 text-center mb-5">
-            Tutti gli annunci
-        </p>
+            Tutti gli annunci!        </p>
         <!-- OLD 12set2023 @forelse ($announcements as $announcement)
 
                         <div class="col-6">  
