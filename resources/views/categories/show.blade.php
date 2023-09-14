@@ -11,26 +11,28 @@
             @endphp
             @foreach($category->announcements as $announcement)
             @if($announcement->is_accepted)
-                <div class="col-12 col-md-3">
-                    <div class="card " style="width: 18rem;"> 
-                   
-                    <img src="https://picsum.photos/200/120" class="card-img-top" alt="{{$announcement->title}}">
-                    
-                        <div class="card-body">
-                           
-                            
-                            <p class=" card-text">Posted by: {{$announcement->user->name}}</p>
-                            <p class=" card-text">€ {{$announcement->price}}</p>
-                            
-                            <h5 class="card-title">{{$announcement->title}}</h5>
-                            
-                            <p class="card-text">{!!substr($announcement->description, 0, 20)!!}...</p>
-                            <!-- substr($variabile, da carattere , a carattere) -->
-                            <div class="col-8 my-2">  
-                                <a href="{{route('announcements.show', $announcement->id)}}" class="button-register">In dettaglio</a>
+            <div class="col-lg-4 col-md-4 col-sm-6 px-5">
+                    <div class="trend__content mt-3">                  
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="https://picsum.photos/100/100" class="img-card-annuncement rounded-4" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>{{$announcement->title}}</h6>
+                                <strong>{{$announcement->category->title}}</strong>
+                                <div class="rating">
+                                    <i class="fa fa-star" style="color: #ff5114 !important"></i>
+                                    <i class="fa fa-star" style="color: #ff5114 !important"></i>
+                                    <i class="fa fa-star" style="color: #ff5114 !important"></i>
+                                    <i class="fa fa-star" style="color: #ff5114 !important"></i>
+                                    <i class="fa fa-star" style="color: #ff5114 !important"></i>
+                                </div>
+                                <div class="product__price">€{{$announcement->price}}</div>
+                                <a href="{{route('announcements.show', $announcement->id)}}">Scopri!</a>
+                                <small>{{$announcement->created_at->format('d/m/y')}}</small>
                             </div>
                         </div>
-                    </div>
+                        </div>
                 </div>
                 
                 @php

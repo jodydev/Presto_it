@@ -1,9 +1,9 @@
 <section class="categories mt-5">
     
-    <div class="hero-bg" style="background-image:url({{ asset ('img/hero/bg-hero.png') }});">
-    <div class="hero-title d-flex">
-        <h1 class="text-center">Semplice, Affidabile, questo è Presto.it</h1>
-    </div>
+    <div class="hero-bg" style="background-image:url({{ asset ('img/background/home.png') }});">
+        <!-- <div class="hero-title d-flex">
+            <h1 class="text-center">Semplice, Affidabile, questo è Presto.it</h1>
+        </div> -->
     </div>
  
 

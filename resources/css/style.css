@@ -74,6 +74,10 @@ a{
 	font-family: 'Montserrat', sans-serif !important;
 }
 
+span{
+	font-family: 'Montserrat', sans-serif !important;
+}
+
 img {
 	max-width: 100%;
 }
@@ -1078,8 +1082,7 @@ ol {
 }
 
 .footer__logo {
-	margin-bottom: 40px;
-	width: 300px;
+	width: 350px;
 }
 
 .footer__widget {
@@ -4816,6 +4819,7 @@ a {
 
   .hero-bg{
 	background-size: cover;
+	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
   }
@@ -4978,4 +4982,8 @@ input[placeholder] {
 		color: rgb(255, 255, 255);
 		background-color: #ff4400;
 	  }
-	
+
+
+	  .swiper-button-prev , .swiper-button-next{
+		color: #ff5114 !important;
+	  }
