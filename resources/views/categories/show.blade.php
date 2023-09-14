@@ -6,7 +6,9 @@
         </p>
         <div class="container my-5">
             <div class="row justify-content-center my-5">
-                
+            @php
+                $hasAcceptedAnnouncement = false;
+            @endphp
             @foreach($category->announcements as $announcement)
             @if($announcement->is_accepted)
                 <div class="col-12 col-md-3">
@@ -30,7 +32,15 @@
                         </div>
                     </div>
                 </div>
-                @else
+                
+                @php
+                    $hasAcceptedAnnouncement = true;
+                @endphp
+                @endif
+               
+            @endforeach
+
+            @if(!$hasAcceptedAnnouncement)
                 <div class="container">
                     <div class="row">
                         <div class="col-12 mt-5 text-center">
@@ -38,8 +48,7 @@
                         </div>
                     </div>
                 </div>
-                @endif
-            @endforeach
+            @endif
             </div>
         </div>
 
