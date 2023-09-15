@@ -4,8 +4,10 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="section-title p-5">
-                        @if ($announcement)
+                        @if ($announcement->user_id !== auth()->user()->id)
                         <h4>Ecco gli annunci da revisionare</h4>
+                        @elseif ($announcement->user_id == auth()->user()->id )
+                        <h4>Ci dispiace ma non puoi revisionare i tuoi stessi annunci, <br> attendi con pazienza un tuo collega</h4>
                         @else
                         <h4>Non ci sono annunci da revisionare</h4>
                         @endif
@@ -15,7 +17,7 @@
             </div>
         </div>
 
-        @if($announcement)
+        @if($announcement && $announcement->user_id !== auth()->user()->id)
         <!-- MODIFICARE ASSOLUTAMENTE IL CAROSELLO PERCHE è VERAMENTE BRUTTO <3 -->
         
         <div id="details_revisore">
