@@ -1,9 +1,6 @@
-<section class="categories mt-5">
+<section id="hero" class="categories">
     
-    <div class="hero-bg" style="background-image:url({{ asset ('img/background/home.png') }});">
-        <!-- <div class="hero-title d-flex">
-            <h1 class="text-center">Semplice, Affidabile, questo è Presto.it</h1>
-        </div> -->
+    <div class="bg-hero" style="background-image:url({{ asset ('img/background/bg-heroo.png') }});">
     </div>
  
 
@@ -11,7 +8,7 @@
             <div class="row">
                 <div class="col-lg-6 p-0 mt-5">
 
-                    <div class="categories__items categories__large__item set-bg" style="background-image:url({{ asset ('img/hero/hero-1.png') }});" >
+                    <div class="categories__items categories__large__item set-bg-hero-1" style="background-image:url({{ asset ('img/hero/hero-1.png') }});" >
 
                     
                 </div>

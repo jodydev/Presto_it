@@ -1,9 +1,9 @@
 <x-layout>
     <section id="annunci-da-revisionare">
-        <div class="container p-5 mt-5">
+        <div class="container p-3 mt-5">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <div class="section-title">
+                    <div class="section-title p-5">
                         @if ($announcement)
                         <h4>Ecco gli annunci da revisionare</h4>
                         @else
@@ -24,7 +24,7 @@
         <div class="col-sm-12 col-md-4 border-right pr-0">
             <div class="photo">
             <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
+        <div class="carousel-inner rounded-4">
             <div class="carousel-item active">
             <img src="https://picsum.photos/seed/picsum/200/200" class="d-block w-100" alt="...">
             </div>

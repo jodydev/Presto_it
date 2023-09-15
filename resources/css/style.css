@@ -4740,6 +4740,7 @@ a {
 	height: 15px;
 	width: 15px;
 	margin-right: 10px;
+	margin-bottom: 12px;
   }
   #details_announcement .card .photo {
 	padding: 10px;
@@ -4817,13 +4818,6 @@ a {
 	margin-top: 280px;
   }
 
-  .hero-bg{
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100vh;
-	width: 100%;
-  }
-
 .bg-auth{
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -4832,10 +4826,10 @@ a {
 }
 
 .bg-create{
-	background-size: contain;
-	background-repeat: no-repeat;
-	
-	
+		background-size: cover;
+		background-repeat: no-repeat !important;
+		background-position: center center;
+		
 }
 
 .form-control{
@@ -4861,17 +4855,10 @@ font-family: 'Montserrat', sans-serif;
 }
 
 #text h2 { 
-	margin-top: 50px;
 	font-size: 45px !important;
 	font-weight: 600;
-	margin-bottom: 100px !important;
 }
 
-#text span { 
-	font-size: 17px !important;
-	font-weight: 300;
-	color: white !important;
-}
 
 
 input[placeholder] {
@@ -4982,11 +4969,12 @@ input[placeholder] {
 	font-weight: 500;
   }
   #details_revisore .card .description h4 {
-	margin: 0;
-	color: #727272;
+	margin-top: 10px;
+	color: #515151;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 12px;
+	font-weight: bold;
   }
   #details_revisore .card .description p {
 	font-size: 12px;
@@ -5031,9 +5019,11 @@ input[placeholder] {
   .hero-bg{
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
-	width: 100%;
+	background-position: center center;
+	background-attachment: fixed;
   }
+
+
 
 .bg-auth{
 	background-size: cover;
@@ -5197,4 +5187,18 @@ input[placeholder] {
 
 	  .swiper-button-prev , .swiper-button-next{
 		color: #ff5114 !important;
+	  }
+
+	  .set-bg-hero-1{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	  }
+
+	  .bg-hero{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100vh;
 	  }
