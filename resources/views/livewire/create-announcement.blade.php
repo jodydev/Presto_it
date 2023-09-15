@@ -34,7 +34,7 @@
                         <h1 class="text-center text-dark fs-1 fw-bold ">Crea Annuncio</h1>
                         <div class="inputContainer">
                             
-                            <input wire:model="title" placeholder="Titolo" type="text" class="form-control shadow-lg rounded-4">
+                            <input wire:model="title" wire:input="capitalizeTitle" placeholder="Titolo" type="text" class="form-control shadow-lg rounded-4">
 
                         </div>
                         
@@ -57,7 +57,7 @@
 
                     <div class="inputContainer">
 
-                       <textarea wire:model="description" placeholder="Descrizione" cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
+                       <textarea wire:model="description" wire:input="capitalizeDescription" placeholder="Descrizione" cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
 
                     </div>
                                 

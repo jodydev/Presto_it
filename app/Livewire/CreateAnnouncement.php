@@ -21,7 +21,14 @@ class CreateAnnouncement extends Component
       {
           return view('livewire.create-announcement');
       }
-     
+      public function capitalizeTitle()
+      {
+          $this->title = ucfirst($this->title);
+      }
+      public function capitalizeDescription()
+{
+    $this->description = ucfirst($this->description);
+}
 
     public function store(){
 
