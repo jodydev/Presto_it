@@ -53,6 +53,7 @@ class CreateAnnouncement extends Component
         $this->title='';
         $this->price='';
         $this->description= '';
+        $this->category= '';
         $this->message = 'Articolo aggiunto con successo!!!';
 
         
