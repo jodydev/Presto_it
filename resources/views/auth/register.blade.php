@@ -54,6 +54,21 @@
                 
                 <input  type="password" name="password_confirmation" id="password_confirmationRegister" class="inputField form-control rounded-4" placeholder=" Conferma la tua password">
             </div>
+            
+               
+            
+
+            
+            <a class="text-dark mt-3" href="https://www.sammontana.it/informative-privacy/informativa-privacy-registrazione.html"><h6>Normativa sulla privacy.</h6></a>
+
+
+
+            <div class="form-group">
+                <label for="privacy_policy">
+                    <input type="checkbox" name="privacy_policy" id="privacy_policy" value="1" required>
+                    Accetto la normativa sulla privacy
+                </label>
+            </div>
                         
                     
             <input type="submit" id="button" class="rounded-4 button-form-register" value="Registrati"/>
