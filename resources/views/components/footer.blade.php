@@ -12,11 +12,11 @@
             <div class="col-lg-2 col-md-3 col-sm-5">
                 <div class="footer__widget">
                     <h6 class="text-light">Link veloci</h6>
-                    <ul>
-                        <li><a href="#">Altro</a></li>
-                        <li><a href="#">Contatti</a></li>
+                    <ul>   
+                        <li><a href="/contatti">Contatti</a></li>
                         @if (!auth()->check() || auth()->user()->is_revisor)
                         <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy</a></li>
                         @else
                         <li><a href="{{route('become.revisor')}}">Diventa revisore</a></li>
                         @endif

@@ -59,7 +59,7 @@
             
 
             
-            <a class="text-dark mt-3" href="https://www.sammontana.it/informative-privacy/informativa-privacy-registrazione.html"><h6>Normativa sulla privacy.</h6></a>
+            <a class="text-dark mt-3" href="https://www.sammontana.it/informative-privacy/informativa-privacy-registrazione.html"><h6>Normativa sulla privacy</h6></a>
 
 
 

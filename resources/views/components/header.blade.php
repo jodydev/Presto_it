@@ -43,8 +43,8 @@
                     <div class="header__right">
                         @if(!auth()->user())
 
-                        <button class=" button-login" role="button"><a href="/login"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</a></button>
-                        <button class=" button-register" role="button"><a href="/register"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> Registrati</a></button>
+                        <button class="button-login" onclick="goLogin()" role="button"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</button>
+                        <button class=" button-register" onclick="goRegister()" role="button"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> Registrati</button>
                        
                         @else
                         
@@ -75,3 +75,13 @@
             </div>
         </div>
     </header>
+
+<script>
+    function goLogin () {
+        window.location.href = "/login";
+    }
+
+    function goRegister () {
+        window.location.href = "/register";
+    }
+</script>
