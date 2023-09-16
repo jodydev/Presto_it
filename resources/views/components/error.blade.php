@@ -1,5 +1,4 @@
 @if ($errors->any())
-    <!-- <div class="alert alert-danger p-3 my-5"> -->
     <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top:100px">  
         <ul>
             @foreach ($errors->all() as $error)

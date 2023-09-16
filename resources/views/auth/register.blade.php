@@ -1,7 +1,8 @@
 <x-layout>
 
 
-@if ($errors->any())
+<!-- commentato perché provoca errore doppio in register
+    @if ($errors->any())
     <div class="alert alert-danger my-5">
         <ul>
             @foreach ($errors->all() as $error)
@@ -9,7 +10,7 @@
             @endforeach
         </ul>
     </div>
-@endif
+@endif -->
 
 
 <section id="register" class="bg-auth p-0" style="background-image:url({{ asset ('img/background/bg-auth.png') }});">

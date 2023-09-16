@@ -1,11 +1,12 @@
 <section class="p-5 mt-5">
 
-    <div class="alert mt-5 fixed-top">
-        
-        <p class="text-success p-2 h4">{{$message}}</p>
-    
-      
+@if (!is_null($message))
+    <div class="alert alert-success mt-5 fixed-top alert-dismissible fade show d-flex align-items-center" role="alert" style="margin-top:100px !important">
+        <i class="fa-solid fa-circle-check me-3" style="color: #0f5132;"></i>    
+        <div style="font-size:20px">{{$message}}</div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+@endif
 
     <div class="container-fluid mt-5 ">
         <div class="row">
@@ -40,13 +41,13 @@
                         
                         <div class="inputContainer">
 
-                            <input wire:model="price" placeholder="Prezzo" type="text" class="form-control shadow-lg rounded-5 mt-3">
+                            <input wire:model="price" placeholder="Prezzo" type="number" min="0" class="form-control shadow-lg rounded-5 mt-3">
 
                         </div>
 
                     <div class="inputContainer">
 
-                        <select wire:model.defer="category" class="dropdown form-select text-dark rounded-4 mt-3" aria-label="Default select example">
+                        <select wire:model.defer="category" class="dropdown form-select text-dark shadow-lg rounded-4 mt-3" aria-label="Default select example">
                         <option selected class="dropdown-menu">Scegli Categoria</option>
                                 @foreach($categories as $category)
                                     <option class = "dropdown-item"value="{{$category->id}}">{{$category->title}}</option>
