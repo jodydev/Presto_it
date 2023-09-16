@@ -22,4 +22,9 @@ class HomeController extends Controller
 
         return view ('contatti');
     }
+
+    public function privacy (){
+
+        return view ('privacy');
+    }
 }

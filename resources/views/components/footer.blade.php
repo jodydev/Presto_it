@@ -16,7 +16,7 @@
                         <li><a href="/contatti">Contatti</a></li>
                         @if (!auth()->check() || auth()->user()->is_revisor)
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
                         @else
                         <li><a href="{{route('become.revisor')}}">Diventa revisore</a></li>
                         @endif
