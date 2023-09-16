@@ -37,22 +37,22 @@
                 <h1 class="text-center text-dark fs-1 fw-bold mt-5">REGISTRATI</h1>
                 <div class="inputContainer">
                     
-                <input type="text" name="name" id="nameRegister" class="inputField form-control rounded-4" placeholder="Nome e Cognome">
+                <input type="text" name="name" id="nameRegister" class="inputField form-control rounded-4" placeholder="Nome e Cognome" required>
                 </div>
                 
                 <div class="inputContainer">
                    
-                <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder="Email">
+                <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder="Email" required>
                 </div>
 
             <div class="inputContainer">
                
-                <input type="password" name="password" id="passwordRegister" class="inputField form-control rounded-4" placeholder="Password">
+                <input type="password" name="password" id="passwordRegister" class="inputField form-control rounded-4" placeholder="Password" required>
             </div>
 
             <div class="inputContainer">
                 
-                <input  type="password" name="password_confirmation" id="password_confirmationRegister" class="inputField form-control rounded-4" placeholder=" Conferma password">
+                <input  type="password" name="password_confirmation" id="password_confirmationRegister" class="inputField form-control rounded-4" placeholder=" Conferma password" required>
             </div>
 
             <div class="form-group d-flex justify-content-center mt-3">
