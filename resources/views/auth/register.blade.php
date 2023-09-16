@@ -30,43 +30,40 @@
             <div class="col-lg-6 p-5 my-5">
 
 
-            <form action="/register" method="post" class="form_main_register form-main rounded-5" >
+            <form action="/register" method="post" class="form_main_register rounded-5" >
 
             @csrf
 
-                <h1 class="text-center text-dark fs-1 fw-bold">REGISTRATI</h1>
+                <h1 class="text-center text-dark fs-1 fw-bold mt-5">REGISTRATI</h1>
                 <div class="inputContainer">
                     
-                <input type="text" name="name" id="nameRegister" class="inputField form-control rounded-4" placeholder=" Inserisci Nome e Cognome">
+                <input type="text" name="name" id="nameRegister" class="inputField form-control rounded-4" placeholder="Nome e Cognome">
                 </div>
                 
                 <div class="inputContainer">
                    
-                <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder=" Inserisci la tua email">
+                <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder="Email">
                 </div>
 
             <div class="inputContainer">
                
-                <input type="password" name="password" id="passwordRegister" class="inputField form-control rounded-4" placeholder=" Inserisci la tua password">
+                <input type="password" name="password" id="passwordRegister" class="inputField form-control rounded-4" placeholder="Password">
             </div>
 
             <div class="inputContainer">
                 
-                <input  type="password" name="password_confirmation" id="password_confirmationRegister" class="inputField form-control rounded-4" placeholder=" Conferma la tua password">
+                <input  type="password" name="password_confirmation" id="password_confirmationRegister" class="inputField form-control rounded-4" placeholder=" Conferma password">
             </div>
-            
-               
-            
 
-            
-            <a class="text-dark mt-3" href="https://www.sammontana.it/informative-privacy/informativa-privacy-registrazione.html"><h6>Normativa sulla privacy</h6></a>
-
-
-
-            <div class="form-group">
-                <label for="privacy_policy">
+            <div class="form-group d-flex justify-content-center mt-3">
+                <label for="privacy_policy" class= "col-12 d-flex align-items-baseline">
                     <input type="checkbox" name="privacy_policy" id="privacy_policy" value="1" required>
-                    Accetto la normativa sulla privacy
+                    <div class="ms-2" style= "font-size:14px">
+                        <div>
+                            Accetto i termini d'uso e la normativa sul trattamento dei dati personali  <a href="/privacy" style="font-size: 12px !important; padding: 0px !important;">Normativa sulla privacy</a>
+                        </div>
+                       
+                    </div>
                 </label>
             </div>
                         

@@ -1,5 +1,10 @@
 <x-layout>
-
+<style>
+    p {
+        font-size: 18px !important;
+        color: black;
+    }
+</style>
 <section>
     <div class="sezione">
         <div class="breadcrumb-option mt-5">
