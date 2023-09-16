@@ -14,10 +14,9 @@
                     <h6 class="text-light">Link veloci</h6>
                     <ul>   
                         <li><a href="/contatti">Contatti</a></li>
-                        @if (!auth()->check() || auth()->user()->is_revisor)
                         <li><a href="#">FAQ</a></li>
                         <li><a href="/privacy">Privacy</a></li>
-                        @else
+                        @if (auth()->check() && !auth()->user()->is_revisor)
                         <li><a href="{{route('become.revisor')}}">Diventa revisore</a></li>
                         @endif
                         
@@ -38,7 +37,7 @@
                 <div class="footer__newslatter">
                     <h6 class="text-light">NEWSLETTER</h6>
                     <form action="#">
-                        <input type="text" placeholder="Inserisci la tua email">
+                        <input type="email" placeholder="Inserisci la tua email">
                         <button type="submit" class="site-btn">Iscriviti</button>
                     </form>
                     <div class="footer__social">

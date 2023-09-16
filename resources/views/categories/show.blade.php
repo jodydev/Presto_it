@@ -2,7 +2,7 @@
     <br><br><br><br>
 <section id="categoryCards" class="mt-5">
         <p class="h1 text-center mt-5">
-            Tutti gli annunci della categoria: {{$category->title}}
+            {{$category->title}}
         </p>
         <div class="container my-5">
             <div class="row justify-content-center my-5">
