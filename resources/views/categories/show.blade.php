@@ -1,7 +1,6 @@
 <x-layout>
 
 <section id="categoryCards" class="mt-5">
-<<<<<<< HEAD
 
         <div class="sezione">
             <div class="breadcrumb-option mt-5">
@@ -25,12 +24,6 @@
         </div>
 
         <div class="container my-5 p-5">
-=======
-        <p class="h1 text-center mt-5">
-            {{$category->title}}
-        </p>
-        <div class="container my-5">
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
             <div class="row justify-content-center my-5">
             @php
                 $hasAcceptedAnnouncement = false;

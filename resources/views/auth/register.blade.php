@@ -1,10 +1,6 @@
 <x-layout>
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
 
 <section id="register" class="bg-auth p-0" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
 
@@ -24,7 +20,6 @@
             <div class="col-lg-6 p-5">
 
 
-<<<<<<< HEAD
             <form action="/register" method="post" class="my-5 form_main_register form-main rounded-5" >
 
             @csrf
@@ -46,21 +41,6 @@
                 </svg>
 
                 <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder=" Inserisci la tua email">
-=======
-            <form action="/register" method="post" class="form_main_register rounded-5" >
-
-            @csrf
-
-                <h1 class="text-center text-dark fs-1 fw-bold mt-5">REGISTRATI</h1>
-                <div class="inputContainer">
-                    
-                <input type="text" name="name" id="nameRegister" class="inputField form-control rounded-4" placeholder="Nome e Cognome" required>
-                </div>
-                
-                <div class="inputContainer">
-                   
-                <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder="Email" required>
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
                 </div>
 
             <div class="inputContainer">

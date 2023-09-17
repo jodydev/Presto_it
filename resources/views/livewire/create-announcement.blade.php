@@ -36,31 +36,19 @@
                         <h1 class="text-center text-dark fs-1 fw-bold ">Crea Annuncio</h1>
                         <div class="inputContainer">
                             
-<<<<<<< HEAD
                             <input wire:model="title" placeholder="Ducati..." type="text" class="form-control shadow-lg rounded-4">
-=======
-                            <input wire:model="title" wire:input="capitalizeTitle" placeholder="Titolo" type="text" class="form-control shadow-lg rounded-4">
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
 
                         </div>
                         
                         <div class="inputContainer">
 
-<<<<<<< HEAD
                             <input wire:model="price" placeholder="15.000" type="text" class="form-control shadow-lg rounded-5 mt-3">
-=======
-                            <input wire:model="price" placeholder="Prezzo" type="number" min="0" class="form-control shadow-lg rounded-5 mt-3">
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
 
                         </div>
 
                     <div class="inputContainer">
 
-<<<<<<< HEAD
                         <select wire:model.defer="category" class="dropdown form-select text-dark rounded-4 mt-3 shadow-lg" aria-label="Default select example">
-=======
-                        <select wire:model.defer="category" class="dropdown form-select text-dark shadow-lg rounded-4 mt-3" aria-label="Default select example">
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
                         <option selected class="dropdown-menu">Scegli Categoria</option>
                                 @foreach($categories as $category)
                                     <option class = "dropdown-item"value="{{$category->id}}">{{$category->title}}</option>
@@ -71,11 +59,7 @@
 
                     <div class="inputContainer">
 
-<<<<<<< HEAD
                        <textarea wire:model="description" placeholder="Condizioni impeccabili..." cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
-=======
-                       <textarea wire:model="description" wire:input="capitalizeDescription" placeholder="Descrizione" cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
 
                     </div>
                                 
