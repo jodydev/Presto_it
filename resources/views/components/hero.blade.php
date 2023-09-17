@@ -1,7 +1,6 @@
 <section id="hero" class="categories">
     
-    <div class="bg-hero" style="background-image:url({{ asset ('img/background/bg-heroo.png') }});">
-    </div>
+    <div class="bg-hero" > </div>
  
 
         <div class="container-fluid">

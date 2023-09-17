@@ -325,20 +325,11 @@ ol {
   Header
 -----------------------*/
 
-.header {
-	background: var(--white);
-	-webkit-box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
-	box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
-}
-
 
 .header__logo a {
 	display: inline-block;
 }
 
-.header__menu {
-	padding: 10px 0 10px;
-}
 
 .header__menu ul li {
 	list-style: none;
@@ -437,19 +428,10 @@ ol {
 }
 
 
-.offcanvas-menu-wrapper {
-	display: none;
-}
-
-.canvas__open {
-	display: none;
-}
-
 .logo{
+	margin-top: 18px;
+	margin-left: 60px;
 	max-width: 150px;
-	position: absolute;
-	top: 25px;
-	margin-left: 40px;
 }
 
 .bg-nav{
@@ -1243,7 +1225,6 @@ ol {
 
 .categories {
 	overflow: hidden;
-	margin-top: 100px;
 }
 
 .categories .container-fluid {
@@ -3657,6 +3638,14 @@ ol {
 	.header {
 		padding: 0 85px;
 	}
+	.bg-hero{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100vh;
+		background-image: url(/public/img/background/bg-heroo.png);
+	  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -3740,12 +3729,12 @@ ol {
 	.canvas__open {
 		display: block;
 		font-size: 22px;
-		color: #000000;
+		color: #222;
 		height: 35px;
 		width: 35px;
 		line-height: 35px;
 		text-align: center;
-		border: 1px solid #000000;
+		border: 1px solid #323232;
 		border-radius: 2px;
 		cursor: pointer;
 		position: absolute;
@@ -3881,28 +3870,46 @@ ol {
 	.header__right {
 		display: none;
 	}
+
+	.bg-hero{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100vh;
+		background-image: url(/public/img/background/bg-heroo.png) !important;
+	  }
 }
 
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
 	
+	.logo{
+		padding-bottom: 20px;
+		margin-left: 25px;
+		max-width: 150px;
+	}
+	
 	.categories__large__item {
 		display: none;
 	}
 
+
 	.canvas__open {
 		display: block;
-		font-size: 30px;
+		font-size: 22px;
 		color: #222;
 		height: 35px;
 		width: 35px;
 		line-height: 35px;
 		text-align: center;
+		border: 1px solid #323232;
+		border-radius: 2px;
 		cursor: pointer;
 		position: absolute;
 		right: 15px;
-		top: 35px;
+		top: 24px;
 	}
 	.offcanvas-menu-overlay {
 		position: fixed;
@@ -3924,11 +3931,10 @@ ol {
 	.offcanvas-menu-wrapper {
 		position: fixed;
 		left: -270px;
-		bottom: 0px;
-		width: 280px;
+		width: 270px;
 		height: 100%;
 		background: #ffffff;
-		padding: 30px 20px 20px 20px;
+		padding: 90px 20px 30px 30px;
 		display: block;
 		z-index: 99;
 		overflow-y: auto;
@@ -3968,18 +3974,14 @@ ol {
 		margin-bottom: 20px;
 	}
 	.slicknav_nav ul {
-		margin-top: 40px;
-	
-		
+		margin: 0;
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
-		
 		padding: 7px 0;
 		margin: 0;
 		color: #111111;
 		font-weight: 600;
-		font-size: 20px;
 	}
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
@@ -3995,12 +3997,7 @@ ol {
 		display: block !important;
 	}
 	.offcanvas__logo {
-		margin-bottom: 50px;
-		
-	}
-
-	.logo{
-		margin-left: 50px;
+		margin-bottom: 25px;
 	}
 	.offcanvas__widget {
 		text-align: center;
@@ -4121,6 +4118,16 @@ ol {
 	.contact__content {
 		margin-bottom: 40px;
 	}
+
+	.bg-hero{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100vh;
+		width: 100%;
+		background-image: url(/public/img/background/bg-hero-sm.png) !important;
+	  }
 }
 
 /* Small Device = 320px */
@@ -5144,6 +5151,7 @@ input[placeholder] {
 		background-position: center center;
 		background-attachment: fixed;
 		height: 100vh;
+		background-image: url(/public/img/background/bg-heroo.png);
 	  }
 
 	  .bg-orange{
@@ -5197,3 +5205,8 @@ input[placeholder] {
 		overflow: hidden;
 	}
 	
+
+	body {
+		padding: 0;
+		margin: 0;
+	}

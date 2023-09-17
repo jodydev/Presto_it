@@ -51,7 +51,7 @@
                         
                         <div id="create-btn" class="d-flex">
 
-                        <a href="{{route('announcements.create')}}" class="button-create">Crea un Annuncio</a>
+                             <a href="{{route('announcements.create')}}" class="button-create">Crea un Annuncio</a>
                             
                             
                             <form action="/logout" method="post">
@@ -59,6 +59,10 @@
 
                                     <input type="submit" value="Logout" class="button-logout">
                             </form>
+
+                            <div class="canvas__open">
+                                <i class="fa fa-bars"></i>
+                            </div>
 
                         </div>
                             
@@ -69,9 +73,6 @@
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="canvas__open">
-                <i class="fa fa-bars"></i>
             </div>
         </div>
     </header>
@@ -85,3 +86,5 @@
         window.location.href = "/register";
     }
 </script>
+
+

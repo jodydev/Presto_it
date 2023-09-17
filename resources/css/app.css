@@ -1,5 +1,6 @@
+@import './style.css';
 @import 'bootstrap';
 @import './bootstrap.min.css';
 @import './magnific-popup.css';
 @import './jquery-ui.min.css';
-@import './style.css';
+@import './slicknav.min.css';

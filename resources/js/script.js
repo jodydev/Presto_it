@@ -10,7 +10,3 @@ const swiper = new Swiper('.sample-slider', {
     },
 })
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8fc92ea365fe812aa1a5d945b79aa51eb565542d
