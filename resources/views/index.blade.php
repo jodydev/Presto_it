@@ -39,7 +39,7 @@
                 <div class="instagram__item set-bg" style="background-image:url({{ asset ('img/banner-categorie/foto-1.jpg') }});">
                     <div class="instagram__text">
                         <i class="fa fa-shirt"></i>
-                        <a href="#">Abbigliamento</a>
+                        <a href="/categoria/2">Abbigliamento</a>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 <div class="instagram__item set-bg" style="background-image:url({{ asset ('img/banner-categorie/foto-2.jpeg') }});">
                     <div class="instagram__text">
                         <i class="fa fa-mobile-phone"></i>
-                        <a href="#">Elettronica</a>
+                        <a href="/categoria/3">Elettronica</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <div class="instagram__item set-bg" style="background-image:url({{ asset ('img/banner-categorie/foto-3.webp') }});">
                     <div class="instagram__text">
                         <i class="fa fa-house"></i>
-                        <a href="#">Casa</a>
+                        <a href="/categoria/10">Casa</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <div class="instagram__item set-bg" style="background-image:url({{ asset ('img/banner-categorie/foto-4.avif') }});">
                     <div class="instagram__text">
                         <i class="fa fa-book"></i>
-                        <a href="#">Libri</a>
+                        <a href="/categoria/4">Libri</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="instagram__item set-bg" style="background-image:url({{ asset ('img/banner-categorie/foto-7.jpeg') }});">
                     <div class="instagram__text">
                         <i class="fa fa-motorcycle"></i>
-                        <a href="#">Motori</a>
+                        <a href="/categoria/1">Motori</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <div class="instagram__item set-bg" style="background-image:url({{ asset ('img/banner-categorie/foto-8.jpeg') }});">
                     <div class="instagram__text">
                         <i class="fa fa-futbol"></i>
-                        <a href="#">Sport</a>
+                        <a href="/categoria/7">Sport</a>
                     </div>
                 </div>
             </div>

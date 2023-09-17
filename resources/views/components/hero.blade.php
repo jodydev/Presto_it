@@ -20,7 +20,7 @@
                             <div class="categories__text">
                                 <h4>Motori</h4>
                                 <p>Count Articoli</p>
-                                <a href="#">Scopri</a>
+                                <a href="/categoria/1">Scopri</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <div class="categories__text">
                                 <h4>Abbigliamento</h4>
                                 <p>Count Articoli</p>
-                                <a href="#">Scopri!</a>
+                                <a href="/categoria/2">Scopri!</a>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                             <div class="categories__text">
                                 <h4>Elettronica</h4>
                                 <p>Count Articoli</p>
-                                <a href="#">Scopri!</a>
+                                <a href="/categoria/3">Scopri!</a>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                             <div class="categories__text">
                                 <h4>Casa</h4>
                                 <p>Count Articoli</p>
-                                <a href="#">Scopri!</a>
+                                <a href="/categoria/10">Scopri!</a>
                             </div>
                         </div>
                     </div>

@@ -1,10 +1,29 @@
 <x-layout>
-    <br><br><br><br>
+
 <section id="categoryCards" class="mt-5">
-        <p class="h1 text-center mt-5">
-            Tutti gli annunci della categoria: {{$category->title}}
-        </p>
-        <div class="container my-5">
+
+        <div class="sezione">
+            <div class="breadcrumb-option mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb__links">
+                                <a href="{{route('index')}}"><i class="fa fa-home"></i> Home</a>
+                                <span>{{$category->title}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+`
+        <div class="mt-5 bg-orange">
+
+            <p class="h2 text-center text-light p-5">Tutti gli annunci della categoria <span class="text-dark fw-semibold">{{$category->title}}.</span> </p>
+
+        </div>
+
+        <div class="container my-5 p-5">
             <div class="row justify-content-center my-5">
             @php
                 $hasAcceptedAnnouncement = false;
@@ -43,14 +62,13 @@
             @endforeach
 
             @if(!$hasAcceptedAnnouncement)
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 mt-5 text-center">
-                            <h3>Non ci sono annunci per questa categoria</h3>
-                        </div>
+                <div class="col-12 p-5">
+                    <div class="alert">
+                        <p class="lead">Al momento non ci sono annunci per questa ricerca. Riprova più tardi.</p>
                     </div>
                 </div>
             @endif
+
             </div>
         </div>
 

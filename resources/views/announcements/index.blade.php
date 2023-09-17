@@ -1,20 +1,37 @@
 <x-layout>
 
 <section>
+
+    <div class="sezione">
+            <div class="breadcrumb-option mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb__links">
+                                <a href="{{route('index')}}"><i class="fa fa-home"></i> Home</a>
+                                <span>Tutte le categorie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
     
-    <div class="p-5 mt-5">
-    <p class="h1 text-center text-dark p-5">
-            Cerca tra tutti gli annunci!
-        </p>
+    <div class="mt-5 p-5 bg-orange">
+
+        <p class="h2 text-center text-light mt-5">Cerca un'annuncio tra tutte le categorie!</p>
+
+        <form action="{{route('announcements.search')}}" method ="GET" class="d-flex justify-content-center my-5">
+            <div class="searchbar">
+                <input name="searched" placeholder="T-shirt, Tablet, Moto..." type="text">
+                <button type="submit">Cerca</button>
+            </div>    
+         </form>
+
     </div>
        
     
-        <form action="{{route('announcements.search')}}" method ="GET" class="d-flex justify-content-center">
-            <div class="searchbar">
-                <input name="searched" placeholder="Search..." type="text">
-                <button type="submit">Go</button>
-            </div>    
-         </form>
+        
         <!-- OLD 12set2023 @forelse ($announcements as $announcement)
 
                         <div class="col-6">  
@@ -80,13 +97,12 @@
                     
                 @empty    
 
-                <div class="col-12">
-                            <div class="alert">
-                                <p class="lead">
-                                    Non ci sono annunci per questa ricerca!!!:
-                                </p>
-                            </div>
+                <div class="col-12 p-5">
+                    <div class="alert">
+                        <p class="lead">Al momento non ci sono annunci per questa ricerca. Riprova più tardi.</p>
+                    </div>
                 </div>
+
         </div> 
         </div>  
 

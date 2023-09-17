@@ -38,21 +38,21 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="contact__form px-4">
-                            <h5>MANDACI IL TUO CURRICULUM</h5>
+                        <div class="contact__form p-5 rounded-5 bg-orange shadow-lg">
+                            <h5 class="text-light">MANDACI IL TUO CURRICULUM</h5>
                             <form action="#">
                                 <input type="text" placeholder="Nome e Cognome">
                                 <input type="text" placeholder="Indirizzo email">
                                 <textarea placeholder="Messaggio"></textarea>
 
-                                <button type="submit" class="site-btn">Invia</button>
+                                <button type="submit" class="text-dark rounded-4 px-3 shadow-lg site-btn" style="background-color: white;">Invia</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="contact__map">
-                        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Gra%20Strada%20S.%20Giorgio%20Martire,%202D,%2070124%20Bari%20BA%20%20%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
+                    <div class="contact__map shadow-lg">
+                        <div style="width: 100%"><iframe width="100%" height="800" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Gra%20Strada%20S.%20Giorgio%20Martire,%202D,%2070124%20Bari%20BA%20%20%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
                 </div>
             </div>
         </div>
