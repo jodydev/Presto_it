@@ -54,7 +54,7 @@
                     <p>&nbsp;</p>
                     <p><b>1.&nbsp;&nbsp;&nbsp; Titolare del Trattamento</b><br>
                     </p>
-                    <p>Il Titolare del trattamento è PRESTO.it Società Benefit, Via Tosco Romagnola n. 56, 50053 Empoli (FI), Tel.: 0571 7076, E-mail: <a href="mailto:PRESTO.it@PRESTO.it.it">privacy@PRESTO.it.it</a>, PEC: <a href="mailto:PRESTO.it@legalmail.it">PRESTO.it@legalmail.it</a></p>
+                    <p>Il Titolare del trattamento è PRESTO.it, Strada S. Giorgio Martire, 2D, 70124 Bari BA, E-mail: privacy@presto.it</p>
                     <p>&nbsp;</p>
                     <p><b>2.&nbsp;&nbsp;&nbsp; Tipologia di dati personali trattati</b></p>
                     <p>PRESTO.it raccoglie e tratta dati personali (di seguito congiuntamente definiti “<b>Dati Personali</b>” o solo “<b>Dati</b>”) relativi all’Utente e, nello specifico:</p>
@@ -122,12 +122,12 @@
                     <p>—&nbsp;&nbsp; <b>Diritto di limitazione di trattamento</b> (art. 18 del Regolamento): nei casi previsti dalla normativa vigente (inesattezza dei dati personali, illecito trattamento dei dati, ecc.) Lei ha il diritto di ottenere la limitazione del trattamento dei Suoi Dati Personali.</p>
                     <p>—&nbsp;&nbsp; <b>Diritto alla portabilità dei dati</b> (art. 20 del Regolamento): Lei ha il diritto di ricevere i Suoi Dati in un formato strutturato, di uso comune e leggibile da dispositivo automatico, al fine di trasmetterli ad un altro titolare, oppure, qualora richiesto, provvederemo alla diretta trasmissione dei Suoi Dati ad altro titolare.</p>
                     <p>—&nbsp;&nbsp; <b>Diritto di opposizione</b> (art. 21 del Regolamento): Lei ha il diritto di opporsi in qualsiasi momento, per motivi connessi alla Sua situazione particolare, al trattamento dei Dati Personali che la riguardano ai sensi dell'art. 6, par. 1, lettere e) o f) del Regolamento, compresa la profilazione sulla base di tali disposizioni (legittimo interesse del Titolare del trattamento).<b></b></p>
-                    <p>Per esercitare tali diritti sarà sufficiente contattare il Titolare mediante lettera raccomandata, telefax o posta elettronica agli indirizzi e ai recapiti indicati al punto 1, eventualmente utilizzando la modulistica messa a disposizione sul sito dell’Autorità Garante per la Protezione dei dati personali (<a href="https://www.garanteprivacy.it/" target="_blank" rel="noopener noreferrer">www.garanteprivacy.it</a>).</p>
+                    <p>Per esercitare tali diritti sarà sufficiente contattare il Titolare mediante lettera raccomandata, telefax o posta elettronica agli indirizzi e ai recapiti indicati al punto 1, eventualmente utilizzando la modulistica messa a disposizione sul sito dell’Autorità Garante per la Protezione dei dati personali www.garanteprivacy.it </p>
                     <p>Dal ricevimento della Sua richiesta PRESTO.it ha a disposizione un mese di tempo per porre in essere tutte le azioni necessarie. Entro questo termine, nonostante l’esercizio dei Suoi diritti, potrebbe ricevere ulteriori comunicazioni automatizzate il cui invio era stato pianificato prima della Sua richiesta.</p>
                     <p>Il termine di un mese può essere prorogato di due mesi in caso di richiesta complessa o di richieste numerose.</p>
                     <p>&nbsp;</p>
                     <p><b>10. Reclamo al Garante per la protezione dei dati personali</b></p>
-                    <p>Nel caso in cui dovesse ritenere che vi sia stata una violazione del Suo diritto alla protezione dei dati personali, è Suo diritto proporre reclamo al Garante per la protezione dei dati personali con le modalità e nel rispetto dei termini riportati sul sito del Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it/" target="_blank" rel="noopener noreferrer">www.garanteprivacy.it</a>).&nbsp;</p>
+                    <p>Nel caso in cui dovesse ritenere che vi sia stata una violazione del Suo diritto alla protezione dei dati personali, è Suo diritto proporre reclamo al Garante per la protezione dei dati personali con le modalità e nel rispetto dei termini riportati sul sito del Garante per la protezione dei dati personali (www.garanteprivacy.it).&nbsp;</p>
                     <p>&nbsp;</p>
                     <p><b>11. Dati personali dei minori</b></p>
                     <p>I servizi di questo Sito sono rivolti a un pubblico generale e non sono destinati a minori di età inferiore ai 18 anni. Non raccogliamo consapevolmente dati personali da parte degli utenti al di sotto di questa fascia di età. In caso di rilascio di dati personali appartenenti ad un minore di anni 18, il Titolare provvederà immediatamente alla loro cancellazione.</p>
@@ -143,37 +143,11 @@
                     <p><b>14. Interazioni con social network</b></p>
                     <p>Il Sito permette di effettuare interazioni con social network attraverso un collegamento diretto mediante i c.d. social buttons, particolari pulsanti presenti sul Sito che raffigurano le icone di Facebook, Twitter, Instagram e YouTube e che consentono agli utenti che stanno navigando di raggiungere e interagire con un “<i>click</i>” direttamente con le piattaforme social che in tal modo potranno acquisire i dati relativi alla Sua visita.</p>
                     <p>Per ulteriori informazioni La invitiamo a consultare le politiche privacy dei singoli social network.</p>
-                    <p>&nbsp;</p>
-                    <p><b>15. Contitolarità del trattamento dati statistici con Facebook</b></p>
-                    <p>La presente informativa è resa anche per la pagina <a href="https://www.facebook.com/GelatiPRESTO.it">https://www.facebook.com/GelatiPRESTO.it</a> rispetto alla quale PRESTO.it è co-titolare del trattamento dei dati statistici, congiuntamente a Facebook Ireland Limited.</p>
-                    <p>I dati personali trattati sono i dati statistici acquisiti tramite la funzione Insight della pagina Facebook, funzione che offre dati aggregati che aiutano a comprendere in che modo le persone interagiscono con le pagine del social network.</p>
-                    <p>A questo <u><a href="https://www.facebook.com/legal/terms/page_controller_addendum" target="_blank" rel="noopener noreferrer">link</a></u> è possibile consultare la sezione della pagina Facebook denominata “Appendice sul titolare del trattamento per Insight della pagina Facebook”, che indica la suddivisione delle responsabilità di Facebook Ireland e dell’utente (in questo caso PRESTO.it) in qualità di amministratore della pagina <a href="https://www.facebook.com/GelatiPRESTO.it">https://www.facebook.com/GelatiPRESTO.it</a>.</p>
-                    <p>&nbsp;</p>
-                    <p>In <u><a href="https://www.facebook.com/policy.php" target="_blank" rel="noopener noreferrer">questa pagina</a></u> è possibile consultare la normativa sui dati di Facebook e trovare, tra le altre, le seguenti informazioni:</p>
-                    <p><b>&nbsp;</b></p>
-                    <p>—&nbsp;&nbsp; Tipologia di informazioni raccolte da Facebook&nbsp;&nbsp;</p>
-                    <p>—&nbsp;&nbsp; Come Facebook usa tali informazioni&nbsp;&nbsp;</p>
-                    <p>—&nbsp;&nbsp; Come vengono condivise queste informazioni</p>
-                    <p>—&nbsp;&nbsp; Come collaborano le aziende di Facebook&nbsp;</p>
-                    <p>—&nbsp;&nbsp; Le basi legali per il trattamento dei dati&nbsp;&nbsp;</p>
-                    <p>—&nbsp;&nbsp; Come esercitare i diritti previsti dal GDPR&nbsp;</p>
-                    <p>—&nbsp;&nbsp; Il periodo di conservazione dei dati, disattivazione e cancellazione dell'account</p>
-                    <p>—&nbsp;&nbsp; Modalità di adempimento delle richieste legali</p>
-                    <p>—&nbsp;&nbsp; Gestione e trasferimento dei dati all'interno dei servizi globali</p>
-                    <p>—&nbsp;&nbsp; Aggiornamenti e modifiche della policy</p>
-                    <p>—&nbsp;&nbsp; I dati di contatto di Facebook Ireland per questioni inerenti la protezione dei dati personali&nbsp;&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>In <u><a href="https://www.facebook.com/policies/cookies/" target="_blank" rel="noopener noreferrer">questa pagina</a></u> è riportata la normativa sui cookie di Facebook Ireland. <b></b></p>
-
-                            
-
+                    <p>&nbsp;</p>              
                 </div>
             </div>
         </div>
-
     </div>
-
-
 </section>
 
 </x-layout>
