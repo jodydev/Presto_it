@@ -43,7 +43,7 @@
                     <div class="header__right">
                         @if(!auth()->user())
 
-                        <button class=" button-login" role="button"><a href="/login"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</a></button>
+                        <button class=" button-login" role="button"><a href="/login" style="color: #000000;"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</a></button>
                         <button class=" button-register" role="button" style="color: #ff5114;><a href="/register"><i class="fa-solid fa-right-to-bracket" style="color: #ff5114;"></i> Registrati</a></button>
                        
                         @else
@@ -51,24 +51,22 @@
                         
                         <div id="create-btn" class="d-flex">
 
-                             <a href="{{route('announcements.create')}}" class="button-create">Crea un Annuncio</a>
+                             <a href="{{route('announcements.create')}}" class="button-create"><i class="fa-solid fa-pen-to-square fa-shake fa-lg" style="color: #ff5114;"></i> Crea un Annuncio</a>
                             
                             
                             <form action="/logout" method="post">
                                     @csrf
-
-                                    <input type="submit" value="Logout" class="button-logout">
+                                    
+                                    <input type="submit" value="↪️ Logout" class="button-logout">
                             </form>
 
-                            <div class="canvas__open">
-                                <i class="fa fa-bars"></i>
-                            </div>
+                           
 
                         </div>
                             
                    
-                    
                         @endif
+
 
                     </div>
                 </div>

@@ -444,7 +444,7 @@ ol {
   background: var(--white);
   border-radius: 6px;
   box-sizing: border-box;
-  color: var(--black);
+  color: black !important;
   border: none;
   cursor: pointer;
   display: inline-block;
@@ -459,6 +459,7 @@ ol {
   text-transform: none;
   margin-right: 7px;
   font-family: 'Montserrat', sans-serif !important;
+
 }
 
 .button-login:hover,
@@ -511,12 +512,8 @@ ol {
 /* Button Logout */
 
 .button-logout {
-	background: red;
-	border: 2px solid var(--black);
-	border-radius: 6px;
-	box-shadow: var(--black) 2px 4px;
-	box-sizing: border-box;
-	color: white;
+	border: none;
+	color: rgb(0, 0, 0);
 	cursor: pointer;
 	display: inline-block;
 	font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
@@ -525,60 +522,19 @@ ol {
 	line-height: 16px;
 	min-height: 40px;
 	outline: 0;
-	padding: 6px 8px;
 	text-align: center;
 	text-rendering: geometricprecision;
 	text-transform: none;
-	margin-left: 25px !important;
+	margin-left: 20px !important;
 	font-family: 'Montserrat', sans-serif !important;
+	background-color: white !important;
+	
   }
   
-  .button-logout:hover,
-  .button-logout:active {
-	background-color: initial;
-	background-position: 0 0;
-	color: red;
-  }
-  
-  .button-logout:active {
-	opacity: .5;
-  }
+ 
   
 
-  /* Button Create */
 
-.button-create {
-	background: #919191;
-	border: 2px solid var(--black);
-	border-radius: 6px;
-	box-shadow: var(--black) 2px 4px;
-	box-sizing: border-box;
-	cursor: pointer;
-	display: inline-block;
-	font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-	font-size: 14px;
-	font-weight: 800;
-	line-height: 16px;
-	min-height: 40px;
-	outline: 0;
-	padding: 6px 8px;
-	text-align: center;
-	text-rendering: geometricprecision;
-	text-transform: none;
-	margin-left: 60px !important;
-	color: rgb(255, 255, 255) !important;
-  }
-  
-  .button-create:hover,
-  .button-create:active {
-	background-color: initial;
-	background-position: 0 0;
-	color: #ffffff ;
-  }
-  
-  .button-create:active {
-	opacity: .5;
-  }
 
   .d-flex a{
 	padding: 10px !important;
@@ -4650,10 +4606,6 @@ a {
 	text-decoration: none !important;
 }
 
-.header__right a{
-	color: #000 !important;
-}
-
 
 .category-title-margin ul{
 	max-width: 850px !important;
@@ -4867,15 +4819,6 @@ input[placeholder] {
 	
 }
 
-#create-btn a{
-	color: rgb(255, 255, 255) !important;
-	font-family: 'Montserrat', sans-serif !important;
-}
-
-#create-btn a:hover{
-	color: rgb(0, 0, 0) !important;
-	font-family: 'Montserrat', sans-serif !important;
-}
 
 /* ALICE_SHOW_DETAILS_REVISORE */
 
@@ -5086,15 +5029,6 @@ input[placeholder] {
 	
 }
 
-#create-btn a{
-	color: rgb(255, 255, 255) !important;
-	font-family: 'Montserrat', sans-serif !important;
-}
-
-#create-btn a:hover{
-	color: rgb(0, 0, 0) !important;
-	font-family: 'Montserrat', sans-serif !important;
-}
 
 
 	
@@ -5206,7 +5140,79 @@ input[placeholder] {
 	}
 	
 
-	body {
-		padding: 0;
-		margin: 0;
+
+
+	  /* Button Create */
+
+.button-create {
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 16px;
+	min-height: 40px;
+	outline: 0;
+	padding: 6px 8px;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	margin-left: 60px !important;
+	color: #ff5114 !important;
+	font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  .button-create:hover,
+  .button-create:active {
+	background-color: initial;
+	background-position: 0 0;
+	color: #ff5114 ;
+  }
+  
+  .button-create:active {
+	opacity: .5;
+  }
+
+  .create-btn a {
+	color: #ff5114 !important;
+  }
+
+
+  @keyframes wipe-cinematic-in {
+	0% {
+	  clip-path: inset(100% 0 100% 0);
 	}
+	30%, 70% {
+	  clip-path: inset(10% 0 10% 0);
+	}
+	100% {
+	  clip-path: inset(0 0 0 0);
+	}
+  }
+  
+  @keyframes wipe-in-right {
+	from {
+	  clip-path: inset(0 100% 0 0);
+	}
+	to {
+	  clip-path: inset(0 0 0 0);
+	}
+  }
+  
+  [transition-style="in:wipe:right"] {
+	animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+  }
+
+  @keyframes wipe-out-left {
+	from {
+	  clip-path: inset(0 0 0 0);
+	}
+	to {
+	  clip-path: inset(0 100% 0 0);
+	}
+  }
+  
+  [transition-style="out:wipe:left"] {
+	animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-out-left both;
+  }
