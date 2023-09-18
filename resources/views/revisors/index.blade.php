@@ -1,16 +1,16 @@
 <x-layout>
     <section id="annunci-da-revisionare">
-        <div class="container p-3 mt-5">
+        <div class="container py-5 mt-5">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <div class="section-title p-5">
+                    <div class="section-title py-5">
                         @if (!$announcement)
-                        <h4>Non ci sono annunci da revisionare</h4>
+                        <h4 class="py-4">Non ci sono annunci da revisionare</h4>
                        
                         @elseif ($announcement->user_id == auth()->user()->id )
-                        <h4>Ci dispiace ma non puoi revisionare i tuoi stessi annunci, <br> attendi con pazienza un tuo collega</h4>
+                        <h4 class="py-4">Ci dispiace ma non puoi revisionare i tuoi stessi annunci, attendi con pazienza un tuo collega.</h4>
                         @else 
-                        <h4>Ecco gli annunci da revisionare</h4>
+                        <h4 class="py-4">Ecco gli annunci da revisionare</h4>
                         @endif
                     </div>
                 </div>

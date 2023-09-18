@@ -3600,7 +3600,7 @@ ol {
 		background-position: center center;
 		background-attachment: fixed;
 		height: 100vh;
-		background-image: url(/public/img/background/bg-heroo.png);
+		background-image: url(/public/img/background/hero-bg.png);
 	  }
 }
 
@@ -3833,7 +3833,7 @@ ol {
 		background-position: center center;
 		background-attachment: fixed;
 		height: 100vh;
-		background-image: url(/public/img/background/bg-heroo.png) !important;
+		background-image: url(/public/img/background/hero-bg.png);
 	  }
 }
 
@@ -5085,7 +5085,7 @@ input[placeholder] {
 		background-position: center center;
 		background-attachment: fixed;
 		height: 100vh;
-		background-image: url(/public/img/background/bg-heroo.png);
+		background-image: url(/public/img/background/hero-bg.png);
 	  }
 
 	  .bg-orange{
@@ -5215,4 +5215,16 @@ input[placeholder] {
   
   [transition-style="out:wipe:left"] {
 	animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-out-left both;
+  }
+
+
+  .text-hero{
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  }
+
+  .bg-hero{
+	position: relative;
   }

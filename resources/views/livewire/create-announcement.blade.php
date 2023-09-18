@@ -42,7 +42,7 @@
                         
                         <div class="inputContainer">
 
-                            <input wire:model="price" placeholder="15.000" type="text" class="form-control shadow-lg rounded-5 mt-3">
+                            <input wire:model="price" placeholder="15.000" type="text" class="form-control shadow-lg rounded-4 mt-3">
 
                         </div>
 

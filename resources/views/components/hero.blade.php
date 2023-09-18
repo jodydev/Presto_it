@@ -1,6 +1,15 @@
 <section id="hero" class="categories">
     
-    <div class="bg-hero" > </div>
+    <div class="bg-hero">
+
+        <div class="text-hero">
+                <h2>Acquista.</h2>
+                <h3>Vendi.</h3>
+                <h4>con noi.</h4>
+                <h5>Presto.it</h5>
+        </div>
+        
+    </div>
  
 
         <div class="container-fluid">
