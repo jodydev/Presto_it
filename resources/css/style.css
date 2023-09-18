@@ -5232,7 +5232,7 @@ input[placeholder] {
   .text-hero h2,h3,h5{
 	font-size: 120px !important;
 	text-shadow: 2px solid black !important;
-	text-decoration-style: 2px solid black !important;
+	text-decoration-color: #000 !important;
   }
   .text-hero h2{
 		font-family: 'League Spartan', sans-serif !important;  
