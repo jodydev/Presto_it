@@ -57,7 +57,7 @@
                             <form action="/logout" method="post">
                                     @csrf
                                     
-                                    <input type="submit" value=" Logout" class="button-logout">
+                                    <input type="submit" value="Logout" class="button-logout">
                             </form>
 
                            
