@@ -44,7 +44,7 @@
                         @if(!auth()->user())
 
                         <button class=" button-login" role="button"><a href="/login" style="color: #000000;"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</a></button>
-                        <button class=" button-register" role="button" style="color: #ff5114;><a href="/register"><i class="fa-solid fa-right-to-bracket" style="color: #ff5114;"></i> Registrati</a></button>
+                        <button class=" button-register" role="button" ><a href="/register" style="color: #ff5114;"><i class="fa-solid fa-right-to-bracket" style="color: #ff5114;"></i> Registrati</a></button>
                        
                         @else
                         
