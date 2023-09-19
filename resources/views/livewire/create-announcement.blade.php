@@ -30,7 +30,7 @@
                 <div class="col-lg-6">
 
 
-                    <form action="/register" method="post" class="form_main_create form-main rounded-4 ms-3 shadow-lg p-5" >
+                    <form  class="form_main_create form-main rounded-4 ms-3 shadow-lg p-5" >
 
 
                         <h1 class="text-center text-dark fs-1 fw-bold ">Crea Annuncio</h1>
@@ -46,25 +46,40 @@
 
                         </div>
 
-                    <div class="inputContainer">
+                        <div class="inputContainer">
 
-                        <select wire:model.defer="category" class="dropdown form-select text-dark rounded-4 mt-3 shadow-lg" aria-label="Default select example">
-                        <option selected class="dropdown-menu">Scegli Categoria</option>
-                                @foreach($categories as $category)
-                                    <option class = "dropdown-item"value="{{$category->id}}">{{$category->title}}</option>
-                                @endforeach
-                        </select>
+                            <select wire:model.defer="category" class="dropdown form-select text-dark rounded-4 mt-3 shadow-lg" aria-label="Default select example">
+                            <option selected class="dropdown-menu">Scegli Categoria</option>
+                                    @foreach($categories as $category)
+                                        <option class = "dropdown-item"value="{{$category->id}}">{{$category->title}}</option>
+                                    @endforeach
+                            </select>
 
-                    </div>
+                        </div>
 
-                    <div class="inputContainer">
-
-                       <textarea wire:model="description" placeholder="Condizioni impeccabili..." cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
-
-                    </div>
-                                
+                        <div class="inputContainer">
+                            <textarea wire:model="description" placeholder="Condizioni impeccabili..." cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
+                        </div>
+                        <div class="inputContainer">
+                            <input type="file" wire:model="temporary_images" placeholder="Inserisci una o più immaggini" multiple class="form-control shadow-lg rounded-4 mt-3">
+                                @if($error('temporary.*images'))
+                                <p class="my-2 text-danger">{{$error}}</p>
+                                @endif
+                        </div>
+                        <!-- preview immagini -->
+                        @if(!empty($images))
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="h6">Anteprima immaggini</p>
+                                    <div class="row border border-dark borde-4 rounded shadow py-5">
+                                        @foreach($images as $key => $image)
+                                        <div class="mx-auto shadow rounded" style="max-width: 300px; max-height: 300px; background"></div>
+                                    </div>
+                                </div>
+                            </div>
                             
-                    <input wire:click="store" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Pubblica"/>
+                        
+                        <input wire:click="store" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Pubblica"/>
 
                     
 
