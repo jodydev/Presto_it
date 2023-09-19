@@ -62,9 +62,9 @@
                         </div>
                         <div class="inputContainer">
                             <input type="file" wire:model="temporary_images" placeholder="Inserisci una o più immaggini" multiple class="form-control shadow-lg rounded-4 mt-3">
-                                @if($error('temporary.*images'))
+                                @error('temporary.*images')
                                 <p class="my-2 text-danger">{{$error}}</p>
-                                @endif
+                                @enderror
                         </div>
                         <!-- preview immagini -->
                         @if(!empty($images))
@@ -74,9 +74,12 @@
                                     <div class="row border border-dark borde-4 rounded shadow py-5">
                                         @foreach($images as $key => $image)
                                         <div class="mx-auto shadow rounded" style="max-width: 300px; max-height: 300px; background"></div>
+                                        @endforeach
+                                    
                                     </div>
                                 </div>
                             </div>
+                        @endif
                             
                         
                         <input wire:click="store" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Pubblica"/>
