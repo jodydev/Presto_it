@@ -5,6 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Category;
 use App\Models\Announcement;
+use Livewire\WithFileUploads;
 use GuzzleHttp\Promise\Create;
 
 class CreateAnnouncement extends Component
@@ -14,8 +15,9 @@ class CreateAnnouncement extends Component
 
     public $title, $description, $price, $category, $message;
     public $temporary_images;
-    public $imageName;
+    public $fileName;
     public $images = []; 
+    public $imageId;
 
     
 
@@ -64,11 +66,16 @@ class CreateAnnouncement extends Component
 
         //assegno i campi all'annuncio passando per la categoria usando il metodo announcements
         $category = Category::find($this->category);
-        $announcement = $category->announcements()->create([
-            'title' => $this->title,
-            'price'=> $this->price,
-            'description' => $this->description 
-        ]);
+        $announcement= $category->announcements()->create($validated);
+            if(count($this->images)){
+                foreach($this->images as $image){
+                    $imageId = $image->id;
+                    $fileName = 'image-announcement-' . $imageId . '.' . $image->extension();
+                    $path = $image->storeAs(['public', $fileName]);
+                    $announcement->images()->create(['path' => $path ]);
+        
+                }
+            }
         //assegno l'annuncio all'utente
         auth()->user()->announcements()->save($announcement);
         //svuoto il form dopo il save
