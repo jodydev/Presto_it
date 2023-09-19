@@ -3,10 +3,11 @@
 namespace App\Models;
 
 use App\Models\User;
+use App\Models\Image;
 use App\Models\Category;
+use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Laravel\Scout\Searchable;
 
 class Announcement extends Model
 {
@@ -52,4 +53,8 @@ class Announcement extends Model
     // Define the searchable attributes of your model
     return $array;
 }
+
+    public function images(){
+        return $this->hasMany(Image::class);
+    }
 }
