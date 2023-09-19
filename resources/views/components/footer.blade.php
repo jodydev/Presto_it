@@ -5,7 +5,7 @@
             <div class="col-lg-4 col-md-6 col-sm-7">
                 <div class="footer__about">
                     <div class="footer__logo">
-                        <a href="{{route('index')}}"><img src="{{asset('img/logo/code_geeks.png')}}" alt=""></a>
+                        <a href="{{route('index')}}"><img src="{{asset('img/logo/code_geeks.png')}}" class="img-fluid" alt=""></a>
                     </div>
                 </div>
             </div>

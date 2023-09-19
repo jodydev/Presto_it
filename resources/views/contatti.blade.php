@@ -22,7 +22,11 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__content">
                         <div class="contact__address">
-                            <h5 class="ms-4">Info di contatto</h5>
+
+                            <div class="section-title">
+                                <h4>Info di Contatto</h4>
+                            </div>
+
                             <ul>
                                 <li>
                                     <h6><i class="fa fa-map-marker" style="color: #ff5114;"></i> Indirizzo</h6>
@@ -37,9 +41,10 @@
                                     <p>info@presto.it</p>
                                 </li>
                             </ul>
+
                         </div>
                         <div class="contact__form p-5 rounded-5 bg-orange shadow-lg">
-                            <h5 class="text-light">MANDACI IL TUO CURRICULUM</h5>
+                            <h5 class="fs-2 text-light">MANDACI IL TUO CURRICULUM</h5>
                             <form action="#">
                                 <input type="text" placeholder="Nome e Cognome">
                                 <input type="text" placeholder="Indirizzo email">
