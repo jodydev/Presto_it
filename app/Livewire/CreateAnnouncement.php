@@ -47,7 +47,7 @@ class CreateAnnouncement extends Component
             }
         }
         //do la possibilità a utente di eliminare le foto scelte prima di salvare l'annuncio
-        public function removeImages($key){
+        public function removeImage($key){
             if(in_array($key, array_keys($this->images))){
                 unset($this->images[$key]);
             }
@@ -66,14 +66,15 @@ class CreateAnnouncement extends Component
 
         //assegno i campi all'annuncio passando per la categoria usando il metodo announcements
         $category = Category::find($this->category);
+
         $announcement= $category->announcements()->create($validated);
             if(count($this->images)){
                 foreach($this->images as $image){
-                    $imageId = $image->id;
-                    $fileName = 'image-announcement-' . $imageId . '.' . $image->extension();
-                    $path = $image->storeAs(['public', $fileName]);
+                
+                    $newFileName = "announcements/{$announcement->id}";
+                    $path = $image->store($newFileName, 'public');
                     $announcement->images()->create(['path' => $path ]);
-        
+                    
                 }
             }
         //assegno l'annuncio all'utente

@@ -36,7 +36,7 @@
                         <h1 class="text-center text-dark fs-1 fw-bold ">Crea Annuncio</h1>
                         <div class="inputContainer">
                             
-                            <input wire:model="title" placeholder="Ducati..." type="text" class="form-control shadow-lg rounded-4">
+                            <input wire:model="title" wire:input="capitalizeTitle" placeholder="Ducati..." type="text" class="form-control shadow-lg rounded-4">
 
                         </div>
                         
@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="inputContainer">
-                            <textarea wire:model="description" placeholder="Condizioni impeccabili..." cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
+                            <textarea wire:model="description" wire:input="capitalizeDescription" placeholder="Condizioni impeccabili..." cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
                         </div>
                         <div class="inputContainer">
                             <input type="file" wire:model="temporary_images" placeholder="Inserisci una o più immaggini" multiple class="form-control shadow-lg rounded-4 mt-3">
@@ -67,19 +67,7 @@
                                 @enderror
                         </div>
                         <!-- preview immagini -->
-                        @if(!empty($images))
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="h6">Anteprima immaggini</p>
-                                    <div class="row border border-dark borde-4 rounded shadow py-5">
-                                        @foreach($images as $key => $image)
-                                        <div class="mx-auto shadow rounded" style="max-width: 300px; max-height: 300px; background"></div>
-                                        @endforeach
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
+                       
                             
                         
                         <input wire:click="store" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Pubblica"/>
@@ -87,6 +75,22 @@
                     
 
                     </form>
+                    @if(!empty($images))
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="h6">Anteprima immaggini</p>
+                                    <div class="row border border-dark borde-4 rounded shadow py-5">
+                                        @foreach($images as $key => $image)
+                                        <div class="mx-auto shadow rounded" style="max-width: 300px; max-height: 300px; background-image: url({{$image->temporaryUrl()}});"></div>
+
+                                        <input wire:click="removeImage({{$key}})" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Elimina"/>
+
+                                        @endforeach
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                    
                 </div>
         </div>
