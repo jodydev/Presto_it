@@ -39,7 +39,18 @@
                         <input type="password" name="password" class="inputField form-control rounded-4" id="password" placeholder=" Inserisci la tua password" required>
                     
                     </div>
-                            
+                    
+                    <div class="form-group d-flex justify-content-center mt-2 mb-2">                
+                    <label for="remember_me" class= "col-12 d-flex align-items-baseline">
+                    <input type="checkbox" name="remember" id="remember_me">
+                    <div class="ms-2" style= "font-size:14px">
+                        <div>
+                            Remember me  
+                        </div>
+
+                    </div>
+            </label>      
+            </div> 
                         
                     <input type="submit" class="rounded-4 button-form-login" value="Accedi"/>
 
