@@ -10,9 +10,9 @@
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul class="text-center fs-1">
-                            <nav-item><x-_locale lang='it'>IT</x-_locale></nav-item>
+                            <!-- <nav-item><x-_locale lang='it'>IT</x-_locale></nav-item>
                             <nav-item><x-_locale lang='en'>EN</x-_locale></nav-item>
-                            <nav-item><x-_locale lang='fr'>FR</x-_locale></nav-item> 
+                            <nav-item><x-_locale lang='fr'>FR</x-_locale></nav-item>  -->
                             <li class="active"><a href="{{route('index')}}">Home</a></li>
                             <li><a href="">Categorie</a>
                                 <ul class="dropdown">
@@ -22,6 +22,9 @@
                                     @endforeach    
                                 </ul>
                             </li>
+                            
+                           
+                            
 
                             <li><a href="/contatti">{{__('traduzioni.Contatti')}}</a></li>
                             @if  (auth()->check() && auth()->user()->is_revisor)
@@ -41,6 +44,21 @@
                                 </a>
                             </li>
                             @endif
+
+                           
+                            <li><a>Seleziona Lingua</a>
+                                <ul class="dropdown">
+                                    <x-_locale lang='it'></x-_locale>
+                                    <x-_locale lang='en'></x-_locale>
+                                    <x-_locale lang='fr'></x-_locale>
+
+                                    <!-- <li><a href=""><img width="20" height="20" src="https://img.icons8.com/color/15/italy-circular.png" alt="italy-circular"> Italiano</a></li>
+                                    <li><a href=""><img width="20" height="20" src="https://img.icons8.com/color/20/great-britain-circular.png" alt="great-britain-circular"/> English</a></li>
+                                    <li><a href=""><img width="20" height="20" src="https://img.icons8.com/color/20/france-circular.png" alt="france-circular"/> Français</a></li> -->
+                                </ul>
+                            </li>
+
+                     
        
                         </ul>
                     </ul>
@@ -53,7 +71,10 @@
                 <div class="col-lg-3">
                     <div class="header__right">
                         @if(!auth()->user())
+                        
 
+                      
+                        
                         <button class=" button-login" role="button"><a href="/login" style="color: #000000;"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</a></button>
                         <button class=" button-register" role="button" ><a href="/register" style="color: #ff5114;"><i class="fa-solid fa-right-to-bracket" style="color: #ff5114;"></i> Registrati</a></button>
                        
