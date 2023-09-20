@@ -23,15 +23,7 @@
                                 </ul>
                             </li>
                             
-                            <!-- <li>
-                                Lingua
-                                <ul class="dropdown">
-                                        <li><a href=""><img width="15" height="15" src="https://img.icons8.com/color/15/italy-circular.png" alt="italy-circular"> Tutte le Categorie</a></li>
-                                        
-                                        <li><a href="">{{$category->title}}</a></li>
-                                    
-                                    </ul>
-                            </li> -->
+                           
                             
 
                             <li><a href="/contatti">{{__('traduzioni.Contatti')}}</a></li>
@@ -52,6 +44,21 @@
                                 </a>
                             </li>
                             @endif
+
+                           
+                            <li><a>Seleziona Lingua</a>
+                                <ul class="dropdown">
+                                    <x-_locale lang='it'></x-_locale>
+                                    <x-_locale lang='en'></x-_locale>
+                                    <x-_locale lang='fr'></x-_locale>
+
+                                    <!-- <li><a href=""><img width="20" height="20" src="https://img.icons8.com/color/15/italy-circular.png" alt="italy-circular"> Italiano</a></li>
+                                    <li><a href=""><img width="20" height="20" src="https://img.icons8.com/color/20/great-britain-circular.png" alt="great-britain-circular"/> English</a></li>
+                                    <li><a href=""><img width="20" height="20" src="https://img.icons8.com/color/20/france-circular.png" alt="france-circular"/> Français</a></li> -->
+                                </ul>
+                            </li>
+
+                     
        
                         </ul>
                     </ul>
