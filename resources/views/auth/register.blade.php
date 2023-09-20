@@ -31,7 +31,7 @@
 	            <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
                 </svg>
 
-                <input type="text" name="name" id="nameRegister" class="inputField form-control rounded-4" placeholder=" Inserisci Nome e Cognome">
+                <input type="text" name="name" id="nameRegister" class="inputField form-control rounded-4" placeholder="Nome e Cognome" required>
                 </div>
                 
                 <div class="inputContainer">
@@ -40,7 +40,7 @@
 	            <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
                 </svg>
 
-                <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder=" Inserisci la tua email">
+                <input type="email" name="email" id="emailRegister" class="inputField form-control rounded-4" placeholder="Email" required>
                 </div>
 
             <div class="inputContainer">
@@ -49,7 +49,7 @@
                 <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
                 </svg>
 
-                <input type="password" name="password" id="passwordRegister" class="inputField form-control rounded-4" placeholder=" Inserisci la tua password">
+                <input type="password" name="password" id="passwordRegister" class="inputField form-control rounded-4" placeholder="Password" required>
             </div>
 
             <div class="inputContainer">
@@ -59,11 +59,20 @@
                 <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
                 </svg>
 
-                <input  type="password" name="password_confirmation" id="password_confirmationRegister" class="inputField form-control rounded-4" placeholder=" Conferma la tua password">
+                <input  type="password" name="password_confirmation" id="password_confirmationRegister" class="inputField form-control rounded-4" placeholder=" Conferma password" required>
 
             </div>
-                        
-                    
+            <div class="form-group d-flex justify-content-center mt-3">                
+            <label for="privacy_policy" class= "col-12 d-flex align-items-baseline">
+            <input type="checkbox" name="privacy_policy" id="privacy_policy" value="1" required>
+            <div class="ms-2" style= "font-size:12px">
+                        <div>
+                            Accetto i termini d'uso e la normativa sul trattamento dei dati personali  <a href="/privacy" style="font-size: 12px !important; padding: 0px !important;">Normativa sulla privacy</a>
+                        </div>
+
+                    </div>
+            </label>      
+            </div> 
             <input type="submit" id="button" class="rounded-4 button-form-register" value="Registrati"/>
 
             <a class="text-dark mt-3" href="/login">Hai già un'account? Accedi.</a>

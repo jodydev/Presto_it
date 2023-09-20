@@ -62,11 +62,13 @@
             @endforeach
 
             @if(!$hasAcceptedAnnouncement)
-                <div class="col-12 p-5">
+
+        
+            <div class="h3 text-center text-dark p-5">
                     <div class="alert">
-                        <p class="lead">Al momento non ci sono annunci per questa ricerca. Riprova più tardi.</p>
+                        <p class="lead">Al momento non ci sono annunci per questa ricerca <br> Torna a trovarci</p>
                     </div>
-                </div>
+            </div>
             @endif
 
             </div>

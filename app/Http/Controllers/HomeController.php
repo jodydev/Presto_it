@@ -27,4 +27,11 @@ class HomeController extends Controller
 
         return view ('privacy');
     }
+
+    public function setLanguage($lang){
+        
+        session()->put('locale',$lang);
+
+        return redirect()->back();
+    }
 }

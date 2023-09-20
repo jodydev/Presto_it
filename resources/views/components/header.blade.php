@@ -10,6 +10,9 @@
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul class="text-center fs-1">
+                            <nav-item><x-_locale lang='it'>IT</x-_locale></nav-item>
+                            <nav-item><x-_locale lang='en'>EN</x-_locale></nav-item>
+                            <nav-item><x-_locale lang='fr'>FR</x-_locale></nav-item> 
                             <li class="active"><a href="{{route('index')}}">Home</a></li>
                             <li><a href="">Categorie</a>
                                 <ul class="dropdown">
@@ -19,9 +22,11 @@
                                     @endforeach    
                                 </ul>
                             </li>
-                            <li><a href="/contatti">Contatti</a></li>
+
+                            <li><a href="/contatti">{{__('traduzioni.Contatti')}}</a></li>
                             @if  (auth()->check() && auth()->user()->is_revisor)
                             <li>
+                                
                                 <!-- se il count è zero tolgo il badge -->
                                 <a href="{{ route('revisors.index') }}">Zona Revisore  
                                     @php
@@ -36,8 +41,14 @@
                                 </a>
                             </li>
                             @endif
+       
                         </ul>
+                    </ul>
+                        
+
                     </nav>
+                    
+                    
                 </div>
                 <div class="col-lg-3">
                     <div class="header__right">

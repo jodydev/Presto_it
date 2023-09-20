@@ -19,7 +19,7 @@
     
     <div class="mt-5 p-5 bg-orange">
 
-        <p class="h2 text-center text-light mt-5">Cerca un'annuncio tra tutte le categorie!</p>
+        <p class="h2 text-center text-light mt-5">Cerca un annuncio tra tutte le categorie!</p>
 
         <form action="{{route('announcements.search')}}" method ="GET" class="d-flex justify-content-center my-5">
             <div class="searchbar">
@@ -97,11 +97,11 @@
                     
                 @empty    
 
-                <div class="col-12 p-5">
+                <div class="h3 text-center text-dark p-5">
                     <div class="alert">
-                        <p class="lead">Al momento non ci sono annunci per questa ricerca. Riprova più tardi.</p>
+                        <p class="lead">Al momento non ci sono annunci per questa ricerca <br> Riprova più tardi</p>
                     </div>
-                </div>
+                 </div>
 
         </div> 
         </div>  

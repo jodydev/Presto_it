@@ -26,7 +26,7 @@
                         <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
                         </svg>
 
-                        <input type="email" name="email" class="inputField form-control rounded-4" id="email" placeholder=" Inserisci la tua email">
+                        <input type="email" name="email" class="inputField form-control rounded-4" id="email" placeholder=" Inserisci la tua email" required>
 
                     </div>
                         
@@ -36,7 +36,7 @@
                         <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
                         </svg>
 
-                        <input type="password" name="password" class="inputField form-control rounded-4" id="password" placeholder=" Inserisci la tua password">
+                        <input type="password" name="password" class="inputField form-control rounded-4" id="password" placeholder=" Inserisci la tua password" required>
                     
                     </div>
                             

@@ -42,4 +42,6 @@ Route::patch('/revisore/rifiuta/{annuncio}', [RevisorController::class , 'declin
 Route::get('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('become.revisor');
 //route per far diventare utente revisore
 Route::get('/fai/revisore/{user}', [RevisorController::class , 'makeRevisor'])->name('make.revisor');
+//cambio lingue
+Route::post('/lingua/{lang}',[HomeController::class,'setLanguage'])->name('set_language_locale');
 
