@@ -1,5 +1,5 @@
 import './bootstrap';
 import 'bootstrap';
 import './script.js';
-import './main';
+import './main.js';
 
