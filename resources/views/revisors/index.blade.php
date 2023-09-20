@@ -17,27 +17,38 @@
                 
             </div>
         </div>
-
+        
         @if($announcement && $announcement->user_id !== auth()->user()->id)
         <!-- MODIFICARE ASSOLUTAMENTE IL CAROSELLO PERCHE è VERAMENTE BRUTTO <3 -->
-        
+       
         <div id="details_revisore">
         <div class="card mb-5">
         <div class="row">
         <div class="col-sm-12 col-md-4 border-right pr-0">
             <div class="photo">
             <div id="carouselExample" class="carousel slide">
+            @if($announcement->images->count() > 0)
+            <div class="carousel-inner rounded-4">
+                @foreach($announcement->images as $image)
+                
+                <div class="carousel-item @if ($loop->first) active @endif">
+                <img src="{{asset('storage/' . $image->path)}}" class="d-block w-100" alt="...">
+                
+                </div>
+                @endforeach
+            </div>
+            @else
+            
         <div class="carousel-inner rounded-4">
             <div class="carousel-item active">
-            <img src="https://picsum.photos/seed/picsum/200/200" class="d-block w-100" alt="...">
+            <img src="{{asset('img/logo/code_geeks.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="https://picsum.photos/seed/picsum/200/200" class="d-block w-100" alt="...">
+            <img src="{{asset('img/logo/logo.png')}}" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-            <img src="https://picsum.photos/seed/picsum/200/00" class="d-block w-100" alt="...">
-            </div>
+            
         </div>
+            @endif
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
