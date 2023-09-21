@@ -11,13 +11,13 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-5">
                 <div class="footer__widget">
-                    <h6 class="text-light">Link veloci</h6>
+                    <h6 class="text-light">{{__('traduzioni.FastLinks')}}</h6>
                     <ul>   
-                        <li><a href="/contatti">Contatti</a></li>
+                        <li><a href="/contatti">{{__('traduzioni.Contatti')}}</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="/privacy">Privacy</a></li>
                         @if (auth()->check() && !auth()->user()->is_revisor)
-                        <li><a href="{{route('become.revisor')}}">Diventa revisore</a></li>
+                        <li><a href="{{route('become.revisor')}}">{{__('traduzioni.BecomeW')}}</a></li>
                         @endif
                         
                     </ul>
@@ -28,8 +28,8 @@
                     <h6 class="text-light">Account</h6>
                     <ul>
                         <li><a href="#">My Account</a></li>
-                        <li><a href="#">Stato ordine</a></li>
-                        <li><a href="#">Lista desideri</a></li>
+                        <li><a href="#">{{__('traduzioni.Tracking')}}</a></li>
+                        <li><a href="#">{{__('traduzioni.Wishlist')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,8 +37,8 @@
                 <div class="footer__newslatter">
                     <h6 class="text-light">NEWSLETTER</h6>
                     <form action="#">
-                        <input type="email" placeholder="Inserisci la tua email">
-                        <button type="submit" class="site-btn">Iscriviti</button>
+                        <input type="email" placeholder="{{__('traduzioni.MailList')}}"> </imput>
+                        <button type="submit" class="site-btn">{{__('traduzioni.Iscriviti')}}</button>
                     </form>
                     <div class="footer__social">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>

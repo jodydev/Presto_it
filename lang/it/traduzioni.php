@@ -19,13 +19,22 @@ return [
     'Scopri!'=> 'Scopri!',
     'Opinions'=> 'Cosa dicono i nostri clienti?',
     'AboutUs'=> 'Chi siamo?',
-    'Developers'=> 'Scopri chi ha contribuito allo sviluppo di questa nuova ed affascinante piattaforma web!',
+    'Developers1'=> 'Scopri chi ha ',
+    'Developers2'=> 'contribuito allo sviluppo ',
+    'Developers3'=> 'di questa nuova ed affascinante piattaforma web!',
     'FastLinks'=> 'Link veloci',
     'Tracking'=> 'Stato ordine',
     'Wishlist'=> 'Lista desideri',
     'MailList'=> 'Inserisci la tua email',
     'Iscriviti'=> 'Iscriviti',
-
+    'ZonaRevisore'=> 'Zona Revisore',
+    'SelectLang'=> 'Seleziona Lingua',
+    'BecomeW'=> 'Diventa Revisore',
+    'Acquista'=>'Acquista',
+    'Vendi'=>'Vendi',
+    'ConNoi'=>'Con noi',
+    
+                
 
     
 ];

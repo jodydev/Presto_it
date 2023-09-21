@@ -14,9 +14,9 @@
                             <nav-item><x-_locale lang='en'>EN</x-_locale></nav-item>
                             <nav-item><x-_locale lang='fr'>FR</x-_locale></nav-item>  -->
                             <li class="active"><a href="{{route('index')}}">Home</a></li>
-                            <li><a href="">Categorie</a>
+                            <li><a href="">{{__('traduzioni.Categorie')}}</a>
                                 <ul class="dropdown">
-                                    <li><a href="{{route('announcements.index')}}">Tutte le Categorie</a></li>
+                                    <li><a href="{{route('announcements.index')}}">{{__('traduzioni.AllCategory')}}</a></li>
                                     @foreach ($categories as $category)
                                         <li><a href="{{route('categories.show', $category->id)}}">{{$category->title}}</a></li>
                                     @endforeach    
@@ -31,7 +31,7 @@
                             <li>
                                 
                                 <!-- se il count è zero tolgo il badge -->
-                                <a href="{{ route('revisors.index') }}">Zona Revisore  
+                                <a href="{{ route('revisors.index') }}">{{__('traduzioni.ZonaRevisore')}}  
                                     @php
                                     $toBeRevisionedCount = App\Models\Announcement::toBeRevisionedCount();
                                     @endphp
@@ -46,7 +46,7 @@
                             @endif
 
                            
-                            <li><a>Seleziona Lingua</a>
+                            <li><a>{{__('traduzioni.SelectLang')}}</a>
                                 <ul class="dropdown">
                                     <x-_locale lang='it'></x-_locale>
                                     <x-_locale lang='en'></x-_locale>
@@ -75,8 +75,8 @@
 
                       
                         
-                        <button class=" button-login" role="button"><a href="/login" style="color: #000000;"><i class="fa-solid fa-user" style="color: #000000;"></i> Accedi</a></button>
-                        <button class=" button-register" role="button" ><a href="/register" style="color: #ff5114;"><i class="fa-solid fa-right-to-bracket" style="color: #ff5114;"></i> Registrati</a></button>
+                        <button class=" button-login" role="button"><a href="/login" style="color: #000000;"><i class="fa-solid fa-user" style="color: #000000;"></i> {{__('traduzioni.Accedi')}}</a></button>
+                        <button class=" button-register" role="button" ><a href="/register" style="color: #ff5114;"><i class="fa-solid fa-right-to-bracket" style="color: #ff5114;"></i> {{__('traduzioni.Registrati')}}</a></button>
                        
                         @else
                         

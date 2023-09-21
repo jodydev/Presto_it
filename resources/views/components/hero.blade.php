@@ -3,9 +3,9 @@
     <div class="bg-hero">
 
         <div class="text-hero">
-                <h2>Acquista.</h2>
-                <h3>Vendi.</h3>
-                <h4>con noi.</h4>
+                <h2>{{__('traduzioni.Acquista')}}</h2> 
+                <h3>{{__('traduzioni.Vendi')}}</h3>
+                <h4>{{__('traduzioni.ConNoi')}}</h4>
                 <h5>Presto.it</h5>
         </div>
         
@@ -28,7 +28,7 @@
                             <div class="categories__text">
                                 <h4>Motori</h4>
                                 <p>Count Articoli</p>
-                                <a href="/categoria/1">Scopri</a>
+                                <a href="/categoria/1">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             <div class="categories__text">
                                 <h4>Abbigliamento</h4>
                                 <p>Count Articoli</p>
-                                <a href="/categoria/2">Scopri!</a>
+                                <a href="/categoria/2">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                             <div class="categories__text">
                                 <h4>Elettronica</h4>
                                 <p>Count Articoli</p>
-                                <a href="/categoria/3">Scopri!</a>
+                                <a href="/categoria/3">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                             <div class="categories__text">
                                 <h4>Casa</h4>
                                 <p>Count Articoli</p>
-                                <a href="/categoria/10">Scopri!</a>
+                                <a href="/categoria/10">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>
                     </div>
