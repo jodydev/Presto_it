@@ -1,0 +1,50 @@
+<?php
+return [
+    'Categorie' => 'Catégories',
+    'Contatti' => 'Contacts',
+    'Accedi' => 'Se connecter',
+    'Registrati' => 'Se reggistrer',
+    'LastAnn' => 'Gli ultimi annunci',
+    'AllCategory' => 'les dernières annoncese',
+    'Abbigliamento' => 'Vêtements',
+    'HouseArticles'=> 'Maison',
+    'Bambini'=> 'Enfants',
+    'Campeggio'=> 'Camping',
+    'Elettronica'=> 'Électronique',
+    'Giardinaggio'=> 'Jardinage',
+    'Libri'=> 'Livres',
+    'Motori'=> 'Moteurs',
+    'Sport'=> 'Sport',
+    'Videogiochi'=> 'Jeux vidéo',
+    'Scopri!'=> 'Vous découvrez !',
+    'Opinions'=> 'Que disent nos clients?',
+    'AboutUs'=> 'À propos de nous',
+    'Developers1'=> 'Découvrez qui a ',
+    'Developers2'=> 'contribué au développement ',
+    'Developers3'=> 'de cette nouvelle et fascinante plateforme web !',
+    'FastLinks'=> 'Liens rapides',
+    'Tracking'=> 'statut de la commande',
+    'Wishlist'=> 'Liste de souhaits',
+    'MailList'=> 'Insérez votre email',
+    'Iscriviti'=> "S'abonner",
+    'ZonaRevisore'=> 'Espace auditeur',
+    'SelectLang'=> 'Choisir la langue',
+    'BecomeW'=> 'Devenez auditeur',
+    'Acquista'=>'Acheter',
+    'Vendi'=>'Vendre',
+    'ConNoi'=>'avec nous',
+    'CercaC'=>'Recherchez une annonce parmi toutes les catégories !',
+    'Cerca'=>'Près',
+    'NoAnn'=>"Il n'y a actuellement aucune annonce pour cette recherche ",
+    'Riprova'=>'Essayer plus tard',
+    'AllAnn' => 'Toutes les annonces',
+    'Dettaglio'=>'Détail',
+    'LastAnn'=>'Dernières annonces',
+    'TORNA AGLI ANNUNCI'=> 'RETOUR AUX ANNONCES',
+
+
+    
+                
+
+    
+];
