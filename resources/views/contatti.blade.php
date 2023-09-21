@@ -43,14 +43,14 @@
                             </ul>
 
                         </div>
-                        <div class="contact__form p-5 rounded-5 bg-orange shadow-lg">
-                            <h5 class="fs-2 text-light">MANDACI IL TUO CURRICULUM</h5>
+                        <div class="contact__form p-5 rounded-5 bg-light shadow-lg">
+                            <h5 class="fs-3 text-dark">MANDACI IL TUO CURRICULUM</h5>
                             <form action="#">
                                 <input type="text" placeholder="Nome e Cognome">
                                 <input type="text" placeholder="Indirizzo email">
                                 <textarea placeholder="Messaggio"></textarea>
 
-                                <button type="submit" class="text-dark rounded-4 px-3 shadow-lg site-btn" style="background-color: white;">Invia</button>
+                                <button type="submit" class="rounded-4 px-3 shadow-lg button-form-contatti">Invia</button>
                             </form>
                         </div>
                     </div>

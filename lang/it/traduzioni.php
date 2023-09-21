@@ -9,7 +9,7 @@ return [
     'Abbigliamento' => 'Abbigliamento',
     'HouseArticles'=> 'Articoli per la casa',
     'Bambini'=> 'Bambini',
-    'Caampeggio'=> 'Campeggio',
+    'Campeggio'=> 'Campeggio',
     'Elettronica'=> 'Elettronica',
     'Giardinaggio'=> 'Giardinaggio',
     'Libri'=> 'Libri',
@@ -32,7 +32,18 @@ return [
     'BecomeW'=> 'Diventa Revisore',
     'Acquista'=>'Acquista',
     'Vendi'=>'Vendi',
-    'ConNoi'=>'Con noi',
+    'ConNoi'=>'con noi',
+    'CercaC'=>'Cerca un annuncio tra tutte le categorie!',
+    'Cerca'=>'Cerca',
+    'NoAnn'=>'Al momento non ci sono annunci per questa ricerca ',
+    'Riprova'=>'Riprova più tardi',
+    'AllAnn' => 'Tutti gli annunci',
+    'Dettaglio'=>'Dettaglio',
+    'LastAnn'=>'Gli ultimi annunci',
+    'TORNA AGLI ANNUNCI'=> 'TORNA AGLI ANNUNCI',
+
+
+
     
                 
 

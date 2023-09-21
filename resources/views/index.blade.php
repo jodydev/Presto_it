@@ -8,7 +8,7 @@
 @livewire('home-index')
  
 
-<!-- Recenzioni Start -->
+<!-- Recensioni Start -->
 
 <section class="discount p-5" > 
     <div class="container">

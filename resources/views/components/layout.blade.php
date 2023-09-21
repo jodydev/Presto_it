@@ -15,7 +15,7 @@
 
 
     <!-- Icona barra superiore -->
-    <!-- <link rel="Website Icon" type="png" href="./img//logo.png"> -->
+    <link rel="Website Icon" type="png" href="{{asset('img/logo/favicon.png')}}">
 
     <!-- livewire -->
     @livewireStyles

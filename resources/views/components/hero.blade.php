@@ -54,7 +54,7 @@
                         <div class="categories__item set-bg"  style="background-image:url({{ asset ('img/hero/hero-5.png') }}); background-position: center center;">
                             <div class="categories__text">
                                 <h4>Casa</h4>
-                                <p>Count Articoli</p>
+                                <p>Count Articles</p>
                                 <a href="/categoria/10">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>
