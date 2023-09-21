@@ -2323,7 +2323,7 @@ ol {
 	text-transform: uppercase;
 	padding: 14px 30px 15px;
 	border-radius: 50px;
-	float: left;
+
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
@@ -2378,7 +2378,7 @@ ol {
 	font-weight: 600;
 	color: #111111;
 	width: 150px;
-	float: left;
+
 }
 
 .product__details__widget ul li .stock__checkbox {
@@ -4561,9 +4561,8 @@ ol {
    text-shadow: 0 1px 1px rgba(0,0,0,.2);
    text-transform: uppercase;
    text-align: center;
-   outline : 5px solid  ##ff5114;
+   outline : 5px solid #ff5114;
 
- 
 }
 .ribbon::before {
    top: 0;
@@ -5594,3 +5593,9 @@ body{
   .button-form-contatti:active {
 	opacity: .5;
   }
+
+  .col-3 {
+	flex: 0 0 25%; /* Larghezza del 25% */
+	max-width: 25%; /* Larghezza massima del 25% */
+  }
+ 

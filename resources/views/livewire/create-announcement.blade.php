@@ -87,9 +87,9 @@
                                                 @foreach($images as $key => $image)
 
 
-                                                <div id="delete-image" class="col-lg-3">
+                                                <div id="delete-image" class="col-3">
 
-                                                        <div class="shadow-lg rounded-5 p-5 d-flex justify-content-center img-preview" 
+                                                        <div class="shadow-lg rounded-5 p-5 mt-3 d-flex justify-content-center img-preview" 
                                                         style="background-image: url({{$image->temporaryUrl()}});">
                                                     
                                                         
@@ -106,20 +106,22 @@
                                             
 
                                                 @endforeach
-                                                
-                                    </div>
-                                </div>
-                
-                         @endif
 
-                        <input wire:click="store" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Pubblica"/>
+                           @endif
+
+
+                         <input wire:click="store" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Pubblica"/>
+
+
+
+                     
                         
 
                         
 
                     </form>
 
-                    <!-- preview immagini -->
+         
 
                     
                    
