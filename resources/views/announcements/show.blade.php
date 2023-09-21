@@ -51,17 +51,27 @@
                       
 
                             <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
-                                <div class="carousel-inner rounded-3 shadow-lg">
-                                    <div class="carousel-item active">
-                                    <img src="https://picsum.photos/seed/picsum/200/200?random" class="d-block w-100" alt="...">
+                            @if($announcement->images->count() > 0)
+                                <div class="carousel-inner rounded-4">
+                                @foreach($announcement->images as $image)
+                                    <div class="carousel-item @if ($loop->first) active @endif">
+                                        <img src="{{asset('storage/' . $image->path)}}" class="d-block w-100" alt="...">
+                                        
                                     </div>
-                                    <div class="carousel-item">
-                                    <img src="https://picsum.photos/seed/picsum/200/200?random" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="https://picsum.photos/seed/picsum/200/200?random" class="d-block w-100" alt="...">
-                                    </div>
+                                        @endforeach
                                 </div>
+                                    @else
+                                    
+                                <div class="carousel-inner rounded-4">
+                                    <div class="carousel-item active">
+                                        <img src="{{asset('img/logo/code_geeks.png')}}" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{asset('img/logo/logo.png')}}" class="d-block w-100" alt="...">
+                                    </div>
+                                    
+                                </div>
+                                    @endif
 
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

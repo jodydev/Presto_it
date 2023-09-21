@@ -75,7 +75,11 @@
                     <div class="trend__content mt-3">                  
                         <div class="trend__item">
                             <div class="trend__item__pic">
-                                <img src="https://picsum.photos/100/100" class="img-card-annuncement rounded-4" alt="">
+                                @if($announcement->images->count() > 0)
+                                <img src="{{asset('storage/' . $announcement->images->first()->path)}}" class="img-card-annuncement rounded-4" alt="">
+                                @else
+                                <img src="{{asset('img/logo/code_geeks.png')}}" class="img-card-annuncement rounded-4" alt="">
+                                @endif
                             </div>
                             <div class="trend__item__text">
                                 <h6>{{$announcement->title}}</h6>
@@ -93,7 +97,10 @@
                             </div>
                         </div>
                         </div>
+                        
                 </div>
+
+            
                     
                 @empty    
 
@@ -107,6 +114,17 @@
         </div>  
 
     @endforelse
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="pagination justify-content-center">
+                    {{ $announcements->render() }}
+                </div>
+            </div>
+        </div>
+    </div>
+                    
+                
 
 </section>
 </x-layout>

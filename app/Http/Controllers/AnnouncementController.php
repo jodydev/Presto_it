@@ -10,7 +10,7 @@ class AnnouncementController extends Controller
 {
 
     public function index(){
-        $announcements = Announcement::where('is_accepted',true)->paginate(12);
+        $announcements = Announcement::where('is_accepted',true)->simplePaginate(12);
         $categories = Category::all();
         return view('announcements.index', [
             'announcements' => $announcements,

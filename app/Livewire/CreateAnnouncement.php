@@ -84,8 +84,8 @@ class CreateAnnouncement extends Component
         $this->price='';
         $this->description= '';
         $this->category= '';
-        $this->temporary_images =[];
-        $this->images = [];
+        $this->temporary_images =[''];
+        $this->images = [''];
         $this->message = 'Articolo aggiunto con successo!!!';
 
     }
