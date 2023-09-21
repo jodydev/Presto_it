@@ -18,7 +18,7 @@ class CreateAnnouncement extends Component
     public $fileName;
     public $images = []; 
     public $imageId;
-    public $id;
+    public $formId;
 
     
 
@@ -89,7 +89,7 @@ class CreateAnnouncement extends Component
         $this->category= '';
         $this->temporary_images =[];
 //$this->images = [];
-        $this->id =uniqid();
+        $this->formId =uniqid();
         $this->message = 'Articolo aggiunto con successo!!!';
 
     }

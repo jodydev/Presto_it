@@ -72,7 +72,7 @@
                             <textarea wire:model="description" wire:input="capitalizeDescription" placeholder="Descrizione (es. Condizioni impeccabili..)" cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
                         </div>
                         <div class="inputContainer">
-                            <input id="{{$id}}" type="file" wire:model="temporary_images" placeholder="Inserisci una o più immaggini" multiple class="form-control shadow-lg rounded-4 mt-3">
+                            <input id="{{$formId}}" type="file" wire:model="temporary_images" placeholder="Inserisci una o più immaggini" multiple class="form-control shadow-lg rounded-4 mt-3">
                                 @error('temporary.*images')
                                 <p class="my-2 text-danger">{{$error}}</p>
                                 @enderror
@@ -82,8 +82,7 @@
 
                         <h1 class="text-dark fs-6 fw-bold mt-5">*Anteprima immagini</h1>
 
-                                        <input  wire:click="removeImage({{$key}})" type="button" id="button" class="mt-5 rounded-5 button-form-register" value="Elimina"/>
-
+                                        
                                  
                                                 @foreach($images as $key => $image)
 
