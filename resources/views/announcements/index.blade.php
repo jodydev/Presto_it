@@ -19,12 +19,12 @@
     
     <div class="mt-5 p-5 bg-orange">
 
-        <p class="h2 text-center text-light mt-5">Cerca un annuncio tra tutte le categorie!</p>
+        <p class="h2 text-center text-light mt-5">{{__('traduzioni.CercaC')}}</p>
 
         <form action="{{route('announcements.search')}}" method ="GET" class="d-flex justify-content-center my-5">
             <div class="searchbar">
                 <input name="searched" placeholder="T-shirt, Tablet, Moto..." type="text">
-                <button type="submit">Cerca</button>
+                <button type="submit">{{__('traduzioni.Cerca')}}</button>
             </div>    
          </form>
 
@@ -92,7 +92,7 @@
                                     <i class="fa fa-star" style="color: #ff5114 !important"></i>
                                 </div>
                                 <div class="product__price">€{{$announcement->price}}</div>
-                                <a href="{{route('announcements.show', $announcement->id)}}">Scopri!</a>
+                                <a href="{{route('announcements.show', $announcement->id)}}"></a>
                                 <small>{{$announcement->created_at->format('d/m/y')}}</small>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
 
                 <div class="h3 text-center text-dark p-5">
                     <div class="alert">
-                        <p class="lead">Al momento non ci sono annunci per questa ricerca <br> Riprova più tardi</p>
+                        <p class="lead">{{__('traduzioni.NoAnn')}}<br>{{__('traduzioni.Riprova')}}</p>
                     </div>
                  </div>
 

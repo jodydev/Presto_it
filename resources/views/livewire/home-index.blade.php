@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4">
                 <div class="section-title">
-                    <h4>Gli ultimi annunci</h4>
+                    <h4>{{__('traduzioni.LastAnn')}}</h4>
                 </div>
             </div>
             <div class="col-lg-8 col-md-8 category-title-margin">

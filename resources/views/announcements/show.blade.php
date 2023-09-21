@@ -1,23 +1,6 @@
 
 <x-layout>
-    <!-- <br><br><br><br> -->
-
-    <!--
-        Per Marcello:
-    1: la pagina show deve contenere i dati dell'annuncio in modo dinamico
-    2: devi mettere le immagini nel carosello(vedi lorem picsum)
-    3: i dati che servono sono i seguenti:
-        - titolo annuncio
-        - descrizione annuncio
-        - categoria annuncio
-        - autore annuncio
-        - prezzo annuncio
-    4: devi lavorare solo su questa vista, hai tutto ciò che ti serve
-    5: ti consiglio di eliminare gli annunci che hai nel database e crearne di altri perché non avevi implementato le categorie
-    6: copia e incolla assoutamente vietato (puoi copiare ed incollare solo lorem picsum)
--->
-
-
+    
 <section >
 
         <div class="sezione">
@@ -27,8 +10,8 @@
                         <div class="col-lg-12">
                             <div class="breadcrumb__links">
                                 <a href="./index.html"><i class="fa fa-home"></i> Home</a>
-                                <a href="/annunci">Tutti gli annunci</a>
-                                <span>Dettaglio</span>
+                                <a href="/annunci">{{__('traduzioni.AllAnn')}}</a>
+                                <span>{{__('traduzioni.Dettaglio')}}</span>
                             </div>
                         </div>
                     </div>
