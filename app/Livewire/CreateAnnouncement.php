@@ -18,6 +18,7 @@ class CreateAnnouncement extends Component
     public $fileName;
     public $images = []; 
     public $imageId;
+    public $id;
 
     
 
@@ -43,7 +44,9 @@ class CreateAnnouncement extends Component
             ])){
                 foreach($this->temporary_images as $image){
                     $this->images[] = $image;
+                    
                 }
+                
             }
         }
         //do la possibilità a utente di eliminare le foto scelte prima di salvare l'annuncio
@@ -84,8 +87,9 @@ class CreateAnnouncement extends Component
         $this->price='';
         $this->description= '';
         $this->category= '';
-        $this->temporary_images =[''];
-        $this->images = [''];
+        $this->temporary_images =[];
+//$this->images = [];
+        $this->id =uniqid();
         $this->message = 'Articolo aggiunto con successo!!!';
 
     }
