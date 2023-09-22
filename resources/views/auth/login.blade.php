@@ -43,7 +43,7 @@
                     <div class="form-group d-flex justify-content-center mt-2 mb-2">                
                     <label for="remember_me" class= "col-12 d-flex align-items-baseline">
                     <input type="checkbox" name="remember" id="remember_me">
-                    <div  style= "font-size:14px">
+                    <div class="" style= "font-size:14px">
                         <a style="font-size: 13px !important;">
                             Ricordami
                         </a>
@@ -54,6 +54,7 @@
                         
                     <input type="submit" class="rounded-4 button-form-login" value="Accedi"/>
 
+                    <a class="text-dark mt-3" href="{{route('password.request')}}">Hai dimenticato la password?</a>
                     <a class="text-dark mt-3" href="/register">Sei nuovo? Registrati.</a>
             
                 </form>
