@@ -38,7 +38,7 @@
                                 <div class="carousel-inner rounded-4">
                                 @foreach($announcement->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">
-                                        <img src="{{asset('storage/' . $image->path)}}" class="d-block w-100" alt="...">
+                                        <img src="{{$image->getUrl(150, 150)}}" class="d-block w-100" alt="...">
                                         
                                     </div>
                                         @endforeach

@@ -76,7 +76,7 @@
                         <div class="trend__item">
                             <div class="trend__item__pic">
                                 @if($announcement->images->count() > 0)
-                                <img src="{{asset('storage/' . $announcement->images->first()->path)}}" class="img-card-annuncement rounded-4" alt="">
+                                <img src="{{$announcement->images()->first()->getUrl(150, 150)}}" class="img-card-annuncement rounded-4" alt="">
                                 @else
                                 <img src="{{asset('img/logo/code_geeks.png')}}" class="img-card-annuncement rounded-4" alt="">
                                 @endif
