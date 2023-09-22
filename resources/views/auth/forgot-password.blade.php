@@ -16,7 +16,7 @@
     <form method="POST" action="/forgot-password" class="form_main rounded-5">
         @csrf
 
-        <h2 class="text-center">RECUPERA PASSWORD</h2>
+        <h2 class="text-left<">RECUPERA PASSWORD</h2>
         <div class="inputContainer">
         <input type="email" name="email" id="email" class="inputField form-control rounded-4" placeholder="Inserisci la tua email" required>
         </div>

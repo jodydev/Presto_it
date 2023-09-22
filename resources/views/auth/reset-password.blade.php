@@ -17,7 +17,7 @@
         
         <input type="hidden" name="token" value="{{request()->route('token')}}">
 
-        <h2 class="text-center">RESET PASSWORD</h2>
+        <h2 class="text-left">RESET PASSWORD</h2>
         <div class="inputContainer">
         <input type="email" name="email" id="email" placeholder="mario.rossi@gmail.com" class="inputField form-control rounded-4 @error('email') 
         is-invalid @enderror value="{{$request->email}}"/>
