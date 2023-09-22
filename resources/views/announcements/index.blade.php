@@ -19,7 +19,7 @@
     
     <div class="mt-5 p-5 bg-orange">
 
-        <p class="h2 text-center text-light mt-5">{{__('traduzioni.CercaC')}}</p>
+        <p class="h2 text-center text-light mt-5" transition-style="in:wipe:right">{{__('traduzioni.CercaC')}}</p>
 
         <form action="{{route('announcements.search')}}" method ="GET" class="d-flex justify-content-center my-5">
             <div class="searchbar">
@@ -104,7 +104,7 @@
                     
                 @empty    
 
-                <div class="h3 text-center text-dark p-5">
+                <div class="h3 text-center text-dark p-5" transition-style="in:wipe:right">
                     <div class="alert">
                         <p class="lead">{{__('traduzioni.NoAnn')}}<br>{{__('traduzioni.Riprova')}}</p>
                     </div>

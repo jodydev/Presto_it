@@ -19,9 +19,9 @@
     <div class="contact spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6" >
                     <div class="contact__content">
-                        <div class="contact__address">
+                        <div class="contact__address" transition-style="in:wipe:right">
 
                             <div class="section-title">
                                 <h4>Info di Contatto</h4>
@@ -43,7 +43,7 @@
                             </ul>
 
                         </div>
-                        <div class="contact__form p-5 rounded-5 bg-light shadow-lg">
+                        <div class="contact__form p-5 rounded-5 bg-light shadow-lg" transition-style="in:wipe:up">
                             <h5 class="fs-3 text-dark">MANDACI IL TUO CURRICULUM</h5>
                             <form action="#">
                                 <input type="text" placeholder="Nome e Cognome">
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6" transition-style="in:wipe:up">
                     <div class="contact__map shadow-lg">
                         <div style="width: 100%"><iframe width="100%" height="800" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Gra%20Strada%20S.%20Giorgio%20Martire,%202D,%2070124%20Bari%20BA%20%20%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
                 </div>
