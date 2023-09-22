@@ -3689,6 +3689,64 @@ ol {
 	.header {
 		padding: 0 30px;
 	}
+
+	.text-hero{
+		
+		padding: 250px !important;
+	}
+
+	.text-hero h2{
+		font-family: 'League Spartan', sans-serif !important;
+		color: white;
+		position: relative !important;
+		font-size: 120px !important;
+		text-decoration-color: #000 !important;
+		font-family: 'League Spartan', sans-serif !important;
+		color: white;
+		line-height: 35px !important;
+		font-weight: 700 !important;
+		text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+		2px 2px #000000, -2px -2px #000000, 2px -2px #000000, -2px 2px #000000, 0px 0px 20px #000000 !important;
+	}
+	
+	
+	.text-hero h3{
+		font-family: 'League Spartan', sans-serif !important;
+		color: white;
+		position: relative !important;
+		font-size: 120px !important;
+		text-decoration-color: #000 !important;
+		font-weight: 700 !important;
+		text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+		2px 2px #000000, -2px -2px #000000, 2px -2px #000000, -2px 2px #000000, 0px 0px 20px #000000 !important;
+	}
+	
+	.text-hero h5{
+		font-family: 'League Spartan', sans-serif !important;
+		color: white;
+		margin-top: 50px !important ;
+		position: relative !important;
+		font-size: 120px !important;
+		text-decoration-color: #000 !important;
+		font-weight: 700 !important;
+		text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+		2px 2px #000000, -2px -2px #000000, 2px -2px #000000, -2px 2px #000000, 0px 0px 20px #000000 !important;
+	}
+	
+	
+	.text-hero h4{
+		line-height: 70px !important;
+	
+		font-family: 'League Spartan', sans-serif !important;
+		font-size: 120px !important;
+		font-family: 'Dancing Script', cursive !important;
+		transform:rotate(-10deg);
+		color: rgb(0, 0, 0);
+		text-shadow: -2px 0 #000000, -2px 0 #000000, 0 -2px #000000, 0 -2px #000000,
+		-2px -2px #000000, -2px -2px #000000, -2px -2px #000000, -2px 2px #000000, 0px 0px 10px #000000 !important;
+	}
+
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -5061,11 +5119,6 @@ a {
 		
 }
 
-.form-control{
-	background-color: #F6F6F6!important;
-	padding: 10px !important;
-	border-style: none !important;
-}
 
 .form-main h1{
 	margin-bottom: 20px;
@@ -5261,7 +5314,7 @@ input[placeholder] {
 
 .form-control{
 	background-color: #F6F6F6!important;
-	padding: 10px !important;
+	padding: 30px !important;
 	border-style: none !important;
 }
 
@@ -5593,9 +5646,3 @@ body{
   .button-form-contatti:active {
 	opacity: .5;
   }
-
-  .col-3 {
-	flex: 0 0 25%; /* Larghezza del 25% */
-	max-width: 25%; /* Larghezza massima del 25% */
-  }
- 
