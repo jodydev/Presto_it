@@ -4,9 +4,11 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Category;
+use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use Livewire\WithFileUploads;
 use GuzzleHttp\Promise\Create;
+use Illuminate\Support\Facades\File;
 
 class CreateAnnouncement extends Component
 
@@ -78,7 +80,12 @@ class CreateAnnouncement extends Component
                     $path = $image->store($newFileName, 'public');
                     $announcement->images()->create(['path' => $path ]);
                     
+
+                    //croppo l'immagine
+
+                    dispatch(new ResizeImage($path, 150, 150));
                 }
+                //ho dovuto eliminare il metodo deleteDirectory perché usciva errore in vista "This driver does not support creating temporary URLs."
             }
         //assegno l'annuncio all'utente
         auth()->user()->announcements()->save($announcement);
