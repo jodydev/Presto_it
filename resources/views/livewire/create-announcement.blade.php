@@ -15,7 +15,7 @@
         <div class="row">
 
                  
-                <div id="text" class="col-lg-6 ">
+                <div id="text" class="col-lg-6" transition-style="in:wipe:right">
             
                     
                     
@@ -40,7 +40,7 @@
                 <div class="col-lg-6 px-5">
 
 
-                    <form  class="form_main_create form-main rounded-4 ms-3 shadow-lg" >
+                    <form  class="form_main_create form-main rounded-4 ms-3 shadow-lg" transition-style="in:wipe:left">
 
 
                         <h1 class="text-center text-dark fs-3 fw-bold mt-5">Crea Annuncio<span style="color:#ff5114">.</span></h1>

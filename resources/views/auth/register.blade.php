@@ -9,7 +9,7 @@
             <div id="text" class="col-lg-6">
      
                     
-                    <h2 class="my-5">Iscriviti al nostro sito e pubblica subito il tuo primo annuncio!</h2>
+                    <h2 class="my-5" transition-style="in:wipe:right">Iscriviti al nostro sito e pubblica subito il tuo primo annuncio!</h2>
 
                     <img src="{{ asset ('img/storyset/register.png') }}" alt="" srcset="">
               
@@ -20,7 +20,7 @@
             <div class="col-lg-6 p-5">
 
 
-            <form action="/register" method="post" class="my-5 form_main_register form-main rounded-5" >
+            <form action="/register" method="post" class="my-5 form_main_register form-main rounded-5" transition-style="in:wipe:left">
 
             @csrf
 
