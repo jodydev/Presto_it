@@ -1,7 +1,6 @@
 <x-layout>
 
 <section>
-
     <div class="sezione">
             <div class="breadcrumb-option mt-5">
                 <div class="container">
@@ -19,7 +18,7 @@
     
     <div class="mt-5 p-5 bg-orange">
 
-        <p class="h2 text-center text-light mt-5" transition-style="in:wipe:right">{{__('traduzioni.CercaC')}}</p>
+        <p class="h2 text-center text-light" transition-style="in:wipe:right">{{__('traduzioni.CercaC')}}</p>
 
         <form action="{{route('announcements.search')}}" method ="GET" class="d-flex justify-content-center my-5">
             <div class="searchbar">
@@ -31,42 +30,6 @@
     </div>
        
     
-        
-        <!-- OLD 12set2023 @forelse ($announcements as $announcement)
-
-                        <div class="col-6">  
-                            <div class="mb-3"><h1>{{$announcement->title}}
-                            </h1></div>
-                            <br>
-                             <div-container>
-                            <h3 class= "card-title">{{$announcement->title}}</h3>  
-                              <p class="card-text">{{$announcement->description}}</p>
-                              <p class="card-text">{{$announcement->price}}</p>
-
-                              <p>{{$announcement->category->title }}</p> 
-        
-
-                            </div-container> 
-                         </div>
-                        
-
-                         </div>
-
-                         @empty
-
-                         <div class="col-12">
-                            <div class="alert">
-                                <p class="lead">
-                                    Non ci sono annunci per questa ricerca!!! ):
-                                </p>
-                            </div>
-                         </div>
-           
-
-
-        @endforelse
- -->
-
  <!-- CARD ELENCO ANNUNCI -->
  <div class="container p-5">
         <div class="row">

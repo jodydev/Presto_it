@@ -4,8 +4,8 @@
 
 <section id="register" class="bg-auth p-0" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
 
-    <div class="container p-5" >
-        <div class="row mt-5">
+    <div class="container" >
+        <div class="row">
             <div id="text" class="col-lg-6">
      
                     

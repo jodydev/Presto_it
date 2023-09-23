@@ -1,6 +1,6 @@
 <x-layout>
 
-<section id="categoryCards" class="mt-5">
+<section id="categoryCards">
 
         <div class="sezione">
             <div class="breadcrumb-option mt-5">

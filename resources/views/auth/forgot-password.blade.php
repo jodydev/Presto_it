@@ -1,7 +1,7 @@
 <x-layout>
 
-<section id="register" class="bg-auth p-0 mt-5 p-4" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
-        <div class="container p-5 mt-4">
+<section id="register" class="bg-auth" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
 

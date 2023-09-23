@@ -16,15 +16,15 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 mt-5">
-
+                <div class="col-lg-6">
+                
                    <video src="{{ asset ('img/hero/hero.mp4') }}" class="video-hero" autoplay loop>
                   
                     
                 </div>
 
             
-            <div class="col-lg-6 mt-5 p-5">
+            <div class="col-lg-6 p-5 mt-5">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="categories__item set-bg animated-div" style="background-image:url({{ asset ('img/hero/hero-2.png') }}); background-position: center center;">                        

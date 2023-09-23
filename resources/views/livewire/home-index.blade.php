@@ -1,5 +1,5 @@
 <section id="annunci-index">
-    <div class="container p-5 mt-4">
+    <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4">
                 <div class="section-title">

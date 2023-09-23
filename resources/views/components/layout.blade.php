@@ -26,10 +26,6 @@
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
 
 
-
-
-
-
 </head>
 <body>
 

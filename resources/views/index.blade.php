@@ -96,7 +96,7 @@
 
     <div class="p-5 section-grey">
 
-        <h2 class="fs-3 text-center">{{__('traduzioni.AboutUs')}}</h2>
+        <h2 class="fs-1 text-center">{{__('traduzioni.AboutUs')}}</h2>
         <p class=" mt-3  fs-3 text-center">{{__('traduzioni.Developers1')}}<span>{{__('traduzioni.Developers2')}}</span>{{__('traduzioni.Developers3')}}</p>
 
     </div>

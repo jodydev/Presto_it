@@ -14,7 +14,8 @@ class HomeController extends Controller
         $announcements = Announcement::take(8)->get()->sortByDesc('created_at');
         return view('index', [
             'categories' => $categories,
-            'announcements' => $announcements
+            'announcements' => $announcements,
+            
         ]);
     }
 
