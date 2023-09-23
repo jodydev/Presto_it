@@ -46,7 +46,7 @@ class Announcement extends Model
         'description' => $this->description,
         'price' => $this->price,
         'category' => $this->category,
-
+        'user_id' => $this->user_id,
 
     ];
 

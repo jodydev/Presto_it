@@ -15,7 +15,8 @@
         "livewire/livewire": "^3.0",
         "spatie/image": "*",
         "teamtnt/laravel-scout-tntsearch-driver": "^13.2",
-        "teamtnt/tntsearch": "^4.2"
+        "teamtnt/tntsearch": "^4.2",
+        "yajra/laravel-datatables-oracle": "^10.8"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
