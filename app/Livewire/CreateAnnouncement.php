@@ -86,6 +86,8 @@ class CreateAnnouncement extends Component
                     dispatch(new ResizeImage($path, 150, 150));
                 }
                 //ho dovuto eliminare il metodo deleteDirectory perché usciva errore in vista "This driver does not support creating temporary URLs."
+                //l'ho rimessa, pare funzioni ma rimangono le immagini caricate in precedenza, se funziona non si tocca xD
+                File::deleteDirectory(storage_path('livewire-tmp'));
             }
         //assegno l'annuncio all'utente
         auth()->user()->announcements()->save($announcement);
