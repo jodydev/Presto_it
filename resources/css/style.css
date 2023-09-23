@@ -3779,14 +3779,6 @@ ol {
 		width: 240px;
 	}
 
-	.bg-hero{
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-attachment: fixed;
-		height: 100vh;
-		background-image: url(/public/img/background/bg-hero-sm.png) !important;
-	  }
 
 	.text-hero{
 		display: flex;
@@ -3801,7 +3793,7 @@ ol {
 		font-family: 'League Spartan', sans-serif !important;
 		color: white;
 		position: relative !important;
-		font-size: 150px !important;
+		font-size: 100px !important;
 		text-decoration-color: #000 !important;
 		font-family: 'League Spartan', sans-serif !important;
 		color: white;
@@ -3816,7 +3808,7 @@ ol {
 		font-family: 'League Spartan', sans-serif !important;
 		color: white;
 		position: relative !important;
-		font-size: 150px !important;
+		font-size: 100px !important;
 		text-decoration-color: #000 !important;
 		font-weight: 700 !important;
 		text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
@@ -3828,7 +3820,7 @@ ol {
 		color: white;
 		margin-top: 50px !important ;
 		position: relative !important;
-		font-size: 150px !important;
+		font-size: 100px !important;
 		text-decoration-color: #000 !important;
 		font-weight: 700 !important;
 		text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
@@ -3838,9 +3830,8 @@ ol {
 	
 	.text-hero h4{
 		line-height: 70px !important;
-		font-size: 150px !important;
+		font-size: 100px !important;
 		font-family: 'League Spartan', sans-serif !important;
-		font-size: 120px !important;
 		font-family: 'Dancing Script', cursive !important;
 		transform:rotate(-10deg);
 		color: rgb(0, 0, 0);
@@ -3852,6 +3843,20 @@ ol {
 		overflow-x: hidden !important;
 	}
 	
+	.bg-hero{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100vh;
+		background-image: url(/public/img/background/hero-bg.png) !important;
+	  }
+
+	  .video-hero{
+		margin-top: 200px;
+	  }
+	  
+
 
 	
 }
@@ -4035,12 +4040,7 @@ ol {
 		border-radius: 50%;
 	}
 
-	.header__menu {
-		display: none;
-	}
-	.header__right {
-		display: none;
-	}
+	
 
 	.bg-hero{
 		background-size: cover;
@@ -4364,7 +4364,7 @@ ol {
 		background-position: center center;
 		background-attachment: fixed;
 		height: 100vh;
-		background-image: url(/public/img/background/bg-hero-sm.png) !important;
+		background-image: url(/public/img/background/bg-hero-mobile.png) !important;
 	  }
 
 	.text-hero{
@@ -4429,7 +4429,62 @@ ol {
 	body{
 		overflow-x: hidden !important;
 	}
-	  
+
+	.form_main_create{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: rgb(255, 255, 255);
+		padding: 0px !important;
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.form_main_login{
+		width: 100%;
+	}
+
+	#img-login{
+		display: none;
+	}
+
+	#text h2{
+		display: none;
+	}
+
+	#freepik_stories-blogging{
+		display: none;
+	}
+
+	#freepik_stories-online-review{
+		display: none;
+	}
+
+
+
+	.video-hero{
+		display: none;
+	}
+
+	.searchbar input{
+		width: 100% !important;
+	}
+
+	.footer__social{
+		margin-left: 80px;
+	}
+	
+	.footer__newslatter h6{
+		margin-left: 30px;
+	}
+
+	.footer__newslatter form{
+		padding: 10%;
+	}
+
 	  
 }
 
@@ -5587,15 +5642,16 @@ body{
 
 
 .button-delete {
-	width: 100% !important;
+	width: 35% !important;
 	border: none;
-	height: 30px;
+	height: 50px;
 	color: white !important;
 	font-size: .8em;
 	font-weight: 600;
 	letter-spacing: 1px;
 	cursor: pointer;
 	background-color: red;
+	margin-left: 50px;
   }
   
   .button-delete:hover,
@@ -5693,4 +5749,70 @@ body{
   
   [transition-style="in:wipe:up"] {
 	animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+  }
+
+  .button-accetta {
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 16px;
+	min-height: 40px;
+	outline: 0;
+	padding: 6px 8px;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	margin-left: 60px !important;
+	color: white !important;
+	font-family: 'Montserrat', sans-serif !important;
+	background-color: green;
+
+  }
+  
+  .button-accetta:hover,
+  .button-accetta:active {
+	background-color: initial;
+	background-position: 0 0;
+	color: green !important ;
+	border:  1px solid green !important;
+  }
+  
+  .button-accetta:active {
+	opacity: .5;
+  }
+
+  .button-rifiuta {
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 16px;
+	min-height: 40px;
+	outline: 0;
+	padding: 6px 8px;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	margin-left: 60px !important;
+	color: white !important;
+	font-family: 'Montserrat', sans-serif !important;
+	background-color: red;
+
+  }
+  
+  .button-rifiuta:hover,
+  .button-rifiuta:active {
+	background-color: initial;
+	background-position: 0 0;
+	color: red !important ;
+	border:  1px solid red !important;
+  }
+  
+  .button-rifiuta:active {
+	opacity: .5;
   }

@@ -68,20 +68,20 @@
             <h2 class= "card-text mt-2">€ {{$announcement->price}}</h1>
             <p class= "card-text">{{$announcement->description}}</p2>
             </div>
-            <div class="container my-3">
+            <div class="container p-5 bg-dark shadow-lg">
             <div class="row">
-                <div class="col-6 ms-auto">
-                    <form action="{{route('revisors.accept', $announcement)}}" method="post">
+                <div class="col-lg-6">
+                    <form id="button-accetta" action="{{route('revisors.accept', $announcement)}}" method="post">
                         @method('PATCH')
                         @csrf
-                        <input type="submit" value="Accetta" class="button-login">
+                        <input type="submit" value="Accetta" class="button-accetta rounded-4 shadow-lg">
                     </form>
                 </div>
-                <div class="col-6 me-auto">
-                    <form action="{{route('revisors.decline', $announcement)}}" method="post">
+                <div class="col-lg-6">
+                    <form id="button-rifiuta" action="{{route('revisors.decline', $announcement)}}" method="post" >
                         @method('PATCH')
                         @csrf
-                        <input type="submit" value="Rifiuta" class="button-logout">
+                        <input type="submit" value="Rifiuta" class="button-rifiuta rounded-4 shadow-lg">
                     </form>
                 </div>
                 

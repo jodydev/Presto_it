@@ -7,7 +7,7 @@
                         <a href="/"><img src="{{asset('img/logo/logo.png')}}" class="logo" alt=""></a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7">
+                <div class="col-xl-6 col-lg-7 col-md-12">
                     <nav class="header__menu">
                         <ul class="text-center fs-1">
                             <!-- <nav-item><x-_locale lang='it'>IT</x-_locale></nav-item>
@@ -68,7 +68,7 @@
                     
                     
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 ms-auto me-auto">
                     <div class="header__right">
                         @if(!auth()->user())
                         

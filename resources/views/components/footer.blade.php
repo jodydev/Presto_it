@@ -14,7 +14,7 @@
                     <h6 class="text-light">{{__('traduzioni.FastLinks')}}</h6>
                     <ul>   
                         <li><a href="/contatti">{{__('traduzioni.Contatti')}}</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="/privacy">FAQ</a></li>
                         <li><a href="/privacy">Privacy</a></li>
                         @if (auth()->check() && !auth()->user()->is_revisor)
                         <li><a href="{{route('become.revisor')}}">{{__('traduzioni.BecomeW')}}</a></li>

@@ -1,9 +1,9 @@
 <x-layout>
 
-<section id="register" class="bg-auth p-0 mt-5 p-4" style="background-image:url({{ asset ('img/background/bg-auth.png') }});">
+<section id="register" class="bg-auth p-0 mt-5 p-4" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
         <div class="container p-5 mt-4">
             <div class="row">
-                <div class="col-12 offset-3">
+                <div class="col-12">
 
     <!-- messaggio che indica lo stato del recupero password -->
     @if(session('status'))
@@ -13,15 +13,22 @@
     @endif    
     
     <!-- form recupero password -->
-    <form method="POST" action="/forgot-password" class="form_main rounded-5">
-        @csrf
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-5 my-5">
+                <form method="POST" action="/forgot-password" class="form_main_login rounded-5">
+                @csrf
 
-        <h2 class="text-left<">RECUPERA PASSWORD</h2>
-        <div class="inputContainer">
-        <input type="email" name="email" id="email" class="inputField form-control rounded-4" placeholder="Inserisci la tua email" required>
+                <h2 class="text-center">RECUPERA PASSWORD<span style="color: #ff5114">.</span></h2>
+                <div class="inputContainer mt-5">
+                <input type="email" name="email" id="email" class="inputField form-control rounded-4 w-lg-50" placeholder="Inserisci la tua email" required>
+                </div>
+                <input class="rounded-4 button-form-login mt-5" type="submit" value="Cambia password">
+            </form>
+            </div>
         </div>
-        <input class="rounded-4 button-form-login" type="submit" value="Reset password">
-    </form>
+    </div>
+   
 
     
 

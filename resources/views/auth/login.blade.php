@@ -8,11 +8,11 @@
                         
                 <h2 transition-style="in:wipe:right">Bentornato!<br>Ci sei mancato.</h2>
                 
-                <img src="{{ asset ('img/storyset/login.png') }}">
+                <img id="img-login" src="{{ asset ('img/storyset/login.png') }}">
                 
             </div>
 
-            <div class="col-lg-6 p-5 my-5" >
+            <div class="col-lg-6 p-lg-5 my-5" >
 
                 <form action="/login" method="post" class="form_main_login rounded-5" transition-style="in:wipe:left">
 
