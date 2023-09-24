@@ -1,6 +1,8 @@
 <x-layout>
 
 
+
+
 <x-hero></x-hero>
 
 
@@ -101,9 +103,13 @@
 
     </div>
 
+    @if ($lang == 'it')
+    <x-carousel-index-it/>
+    @elseif ($lang == 'en')
+    
+    @else 
 
-    <x-carousel-index/>
-
+    @endif
 </section>
 
 <!-- Sezione Chi siamo? End -->

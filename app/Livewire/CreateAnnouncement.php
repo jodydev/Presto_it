@@ -61,7 +61,7 @@ class CreateAnnouncement extends Component
     public function store(){
 
         $validated = $this->validate([
-            'title' => 'required|min:5',
+            'title' => 'required|min:2',
             'description' => 'required|min:8',
             'price' => 'required|numeric',
             'temporary_images.*' => 'image|max:1024',
@@ -99,7 +99,8 @@ class CreateAnnouncement extends Component
         $this->temporary_images =[];
 //$this->images = [];
         $this->formId =uniqid();
-        $this->message = 'Articolo aggiunto con successo!!!';
+        $this->message = 'Articolo aggiunto con successo. 
+                          Attendi la conferma da parte di un revisore.';
 
     }
         

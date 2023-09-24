@@ -23,7 +23,7 @@
         <div class="row">
             @foreach($announcements as $announcement)
                 <div class="col-lg-4 col-md-4 col-sm-6 px-5">
-                    <div class="trend__content">
+                    <div class="trend__content p-lg-5 mt-5">
                     
                         <div class="trend__item zoom-wrapper">
                             <div class="trend__item__pic">
