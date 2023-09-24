@@ -1,6 +1,5 @@
 <x-layout>
 
-</x-session>
 
 <section id="register" class="bg-auth" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
         <div class="container">
@@ -10,9 +9,10 @@
     <!-- messaggio che indica lo stato del recupero password -->
     @if(session('status'))
         <div class="mb-4 font-medium text-sm text-green-600">
-            <p>{{session('status')}}</p>
+            <p>{{session('status')}}</p>      
         </div>
     @endif    
+    
     
     <!-- form recupero password -->
     <div class="container">
@@ -30,9 +30,6 @@
             </div>
         </div>
     </div>
-   
-
-    
 
 
     </div>
