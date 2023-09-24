@@ -8,6 +8,7 @@ use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use Livewire\WithFileUploads;
 use GuzzleHttp\Promise\Create;
+use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\File;
 
 class CreateAnnouncement extends Component
@@ -84,6 +85,8 @@ class CreateAnnouncement extends Component
                     //croppo l'immagine
 
                     dispatch(new ResizeImage($path, 150, 150));
+                    //avvio la sicureszza delle immagini di google
+                    dispatch(new GoogleVisionSafeSearch($announcement->images()->id));
                 }
                 //ho dovuto eliminare il metodo deleteDirectory perché usciva errore in vista "This driver does not support creating temporary URLs."
                 //l'ho rimessa, pare funzioni ma rimangono le immagini caricate in precedenza, se funziona non si tocca xD
