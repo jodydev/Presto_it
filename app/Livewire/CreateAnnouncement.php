@@ -23,10 +23,25 @@ class CreateAnnouncement extends Component
     public $imageId;
     public $formId;
 
+        //messaggi di errore custommizzati
+        protected $rules = [
+            'title' => 'required|min:5',
+            'description' => 'required|min:8',
+            'temporary_images.*' => 'image|max:1024',
+            'price' => 'required|numeric',
+            'images.*' => 'image|max:1024'
+        ];
     
-
-   
- 
+         //messaggi di errore custommizzati
+        //'numeric'=>'Il campo :attribute deve essere numerico'
+    
+        protected $messages =
+        ['required'=>'Il campo :attribute è obbligatorio',
+        'title.required'=>'Il campo titolo è obbligatorio',
+        'min'=>'Hai inserito pochi caratteri...scrivi qualcosa di più',
+        'price.required'=>'Il prezzo deve essere un numero',
+        'description.required'=>'Meglio descrivi il tuo articolo, più successo avrà.'];
+    
     public function render()
       {
           return view('livewire.create-announcement');
@@ -61,14 +76,8 @@ class CreateAnnouncement extends Component
         //salvo l'annuncio
     public function store(){
 
-        $validated = $this->validate([
-            'title' => 'required|min:2',
-            'description' => 'required|min:8',
-            'price' => 'required|numeric',
-            'temporary_images.*' => 'image|max:1024',
-            'images.*' => 'image|max:1024'
-        
-        ]);
+        $validated = $this->validate(
+        );
 
         //assegno i campi all'annuncio passando per la categoria usando il metodo announcements
         $category = Category::find($this->category);

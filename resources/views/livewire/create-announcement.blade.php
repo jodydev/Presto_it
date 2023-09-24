@@ -25,8 +25,6 @@
     
                  </div>
             
-            
-
                 <div class="col-lg-6 col-sm-12 p-5 mt-lg-5 mb-5">
 
                     <form  class="form_main_create form-main rounded-4 me-5 shadow-lg" transition-style="in:wipe:left">
@@ -34,16 +32,11 @@
 
                         <h1 class="text-center text-dark fs-3 fw-bold mt-5">Crea Annuncio<span style="color:#ff5114">.</span></h1>
                         <div class="inputContainer">
-                            
-                          
                             <input wire:model="title" wire:input="capitalizeTitle" placeholder="Titolo (es. Iphone 15 Pro..)" type="text" class="form-control shadow-lg rounded-4">
-
                         </div>
                         
-                        <div class="inputContainer">
-                        
+                        <div class="inputContainer">                        
                             <input wire:model="price" placeholder="Prezzo (es. 1499.99)" type="text" class="form-control shadow-lg rounded-4 mt-3">
-
                         </div>
 
                         <div class="inputContainer">
@@ -59,6 +52,7 @@
 
                         <div class="inputContainer">
                             <textarea wire:model="description" wire:input="capitalizeDescription" placeholder="Descrizione (es. Condizioni impeccabili..)" cols="5" rows="1"class="form-control shadow-lg mt-3 rounded-4"></textarea>
+                           
                         </div>
                         <div class="inputContainer">
                             <input id="{{$formId}}" type="file" wire:model="temporary_images" placeholder="Inserisci una o più immaggini" multiple class="form-control shadow-lg rounded-4 mt-3">
