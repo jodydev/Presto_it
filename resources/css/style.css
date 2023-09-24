@@ -3257,3 +3257,36 @@ body{
   .navbar{
 	background-color: white !important;
   }
+
+  .button-mostra {
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 16px;
+	min-height: 40px;
+	outline: 0;
+	padding: 6px 8px;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	margin-left: 60px !important;
+	color: white !important;
+	font-family: 'Montserrat', sans-serif !important;
+	background-color: blue;
+
+  }
+  
+  .button-mostra:hover,
+  .button-mostra:active {
+	background-color: initial;
+	background-position: 0 0;
+	color: blue !important ;
+	border:  1px solid blue !important;
+  }
+  
+  .button-mostra:active {
+	opacity: .5;
+  }

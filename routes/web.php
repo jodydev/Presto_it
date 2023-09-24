@@ -38,10 +38,10 @@ Route::get('/revisore/home', [RevisorController::class , 'index'])->middleware('
 Route::patch('/revisore/accetta/{annuncio}', [RevisorController::class , 'acceptAnnouncement'])->middleware(['isRevisor'])->name('revisors.accept');
 //patch per rifiutare annuncio
 Route::patch('/revisore/rifiuta/{annuncio}', [RevisorController::class , 'declineAnnouncement'])->middleware(['isRevisor'])->name('revisors.decline');
-//patch per richiamare gli annunci all'interno della tabella del revisore
+//post per richiamare gli annunci all'interno della tabella del revisore
 Route::post('/revisore/elencoAnnunci/{user_id}', [RevisorController::class , 'tableAnnouncement'])->middleware(['isRevisor'])->name('revisors.table');
-// Route::resource('elencoAnnunci', RevisorController::class);
-
+//get per mostrare annuncio al revisore
+Route::get('/revisore/mostraAnnuncio/{id_announcement}', [RevisorController::class , 'announcement'])->middleware(['isRevisor'])->name('revisors.announcement');
 //route per richiedere di diventare revisore
 Route::get('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('become.revisor');
 //route per far diventare utente revisore

@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Artisan;
 use DataTables;
 
-
 class RevisorController extends Controller
 {
     public function index(){
@@ -22,20 +21,47 @@ class RevisorController extends Controller
             ]);
     }
 
+//richiama l'annuncio su cui clicca il revisore
+    public function announcement($id_announcement){
+
+        $show_announcement = Announcement::where('id', $id_announcement)->first();
+        return view('revisors.announcement', [
+             'announcement' => $show_announcement
+            ]);
+    }
+    
+
     //Richiama elenco annunci pubblicati
     public function tableAnnouncement(Request $request){
         if ($request->ajax()) {
         $announcement_list = Announcement::where('user_id','!=',$request->id)->get();
         return Datatables::of($announcement_list)
+        
+        // ->addColumn('categoria', function(Announcement $a){
+        //     return $a->title;
+        // })
 
         ->addIndexColumn()
         ->addColumn('azioni', function($row){
 
-               $btn = '<a href="javascript:void(0)" data-toggle="tooltip"  data-id="'.$row->id.'" data-original-title="Mostra" class="edit btn btn-primary btn-sm editPost">Mostra</a>';
-
-               $btn = $btn.'<a href="\revisors.accept'."\\".$row->id.'" data-toggle="tooltip"  data-id="'.$row->id.'" data-original-title="Accetta" class="btn btn-danger btn-sm deletePost">Accetta</a>';
-
-               $btn = $btn.' <a href="{{route(\'revisors.decline\', '.$row->id.')}}" data-toggle="tooltip"  data-id="'.$row->id.'" data-original-title="Rifiuta" class="btn btn-danger btn-sm deletePost">Rifiuta</a>';
+            $btn = '<div class="d-flex"> <button type="button" data-id="'.$row->id.'" data-original-title="Mostra" onclick="mostrAnnuncio(this)" class="button-mostra rounded-4 shadow-lg">Mostra</button>';
+           
+            if ($row->is_accepted !=1) { 
+            $btn = $btn. '<form id="button-accetta" action="/revisore/accetta/'.$row->id.'" method="post">
+            <input type="hidden" name="_token" value="'.csrf_token().'" /> 
+            <input type="hidden" name="_method" value="PATCH" />
+            <input type="submit" value="Accetta" class="button-accetta rounded-4 shadow-lg">
+            </form>';    
+            }    
+            
+            if ($row->is_accepted !=0 || $row->is_accepted === null) { 
+                $btn = $btn. '<form id="button-rifiuta" action="/revisore/rifiuta/'.$row->id.'" method="post">
+                <input type="hidden" name="_token" value="'.csrf_token().'" /> 
+                <input type="hidden" name="_method" value="PATCH" />
+                <input type="submit" value="Rifiuta" class="button-rifiuta rounded-4 shadow-lg">
+                </form>';    
+                }    
+                $btn = $btn.'</div>';
 
             return $btn;
         })

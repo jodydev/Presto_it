@@ -1,5 +1,7 @@
 <x-layout>
 
+</x-session>
+
 <section id="register" class="bg-auth" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
         <div class="container">
             <div class="row">
