@@ -47,12 +47,14 @@
                                     @endif
                                 </a>
                             </li>      
-                            
+                                                    
+                          @endif
+
+                          @if  (auth()->check())
                             <li>
                                 <a href="{{ route('profile') }}">Il Mio Profilo</a>
                             </li>
                           @endif
-                         
                           
                       </ul>
 

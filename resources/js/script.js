@@ -19,3 +19,21 @@ const swiper = new Swiper('.sample-slider', {
 )
 
 
+// Ottieni il riferimento agli elementi con gli ID
+const buttonEdit = document.getElementById('button-edit');
+const formEdit = document.getElementById('form-edit');
+
+// Aggiungi un gestore di eventi al click sul bottone
+buttonEdit.addEventListener('click', function() {
+    // Verifica lo stato corrente del contenitore
+    if (formEdit.style.display === 'none' || formEdit.style.display === '') {
+        // Se è nascosto, mostra il contenitore
+        formEdit.style.display = 'block';
+    } else {
+        // Altrimenti, nascondi il contenitore
+        formEdit.style.display = 'none';
+    }
+});
+
+
+

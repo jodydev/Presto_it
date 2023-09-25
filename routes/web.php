@@ -57,4 +57,4 @@ Route::post('/lingua/{lang}',[HomeController::class,'setLanguage'])->name('set_l
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile')->middleware('auth');
 
 //rotta user update
-Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update')->middleware('auth');
