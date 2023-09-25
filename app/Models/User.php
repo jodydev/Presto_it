@@ -3,7 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Models\Announcement;
+use App\Models\Article;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -21,7 +21,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'password',
+        'password'
     ];
 
     /**
@@ -44,7 +44,6 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function announcements(){
-        return $this->hasMany(Announcement::class);
-    }
+   
+
 }

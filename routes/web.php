@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\AnnouncementController;
@@ -49,3 +51,10 @@ Route::get('/fai/revisore/{user}', [RevisorController::class , 'makeRevisor'])->
 //cambio lingue
 Route::post('/lingua/{lang}',[HomeController::class,'setLanguage'])->name('set_language_locale');
 
+
+
+//rotta user profile
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile')->middleware('auth');
+
+//rotta user update
+Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');

@@ -965,18 +965,14 @@ ol {
 	padding-top: 55px;
 }
 
-.footer__about {
-	margin-bottom: 30px;
-	
-}
-
 .footer__about p {
 	margin-bottom: 20px;
 	margin-left: 60px;
 }
 
 .footer__logo {
-	width: 350px;
+	width: 300px;
+	
 }
 
 .footer__widget {
@@ -3290,3 +3286,20 @@ body{
   .button-mostra:active {
 	opacity: .5;
   }
+
+
+
+
+
+  /* TEST ROTTA USER */
+
+	#user{
+		height: 700px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#user .card{
+		border: 5px solid black;
+	}
+	

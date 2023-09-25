@@ -16,7 +16,7 @@
                           <li class="active"><a href="{{route('index')}}">Home</a></li>
                           <li><p class="a">{{__('traduzioni.Categorie')}}</p>
                               <ul class="dropdown">
-                                  <li class="a"><a href="{{route('announcements.index')}}">{{__('traduzioni.AllCategory')}}</a></li>
+                                  <li><a href="{{route('announcements.index')}}">{{__('traduzioni.AllCategory')}}</a></li>
                                   @foreach ($categories as $category)
                                       <li><a href="{{route('categories.show', $category->id)}}">{{$category->title}}</a></li>
                                   @endforeach    
@@ -25,6 +25,14 @@
 
                           <li><a href="/contatti">{{__('traduzioni.Contatti')}}</a></li>
                           
+                          <li><a>{{__('traduzioni.SelectLang')}}</a>
+                              <ul class="dropdown">
+                                  <x-_locale lang='it'></x-_locale>
+                                  <x-_locale lang='en'></x-_locale>
+                                  <x-_locale lang='fr'></x-_locale>
+                              </ul>
+                          </li>
+
                           @if  (auth()->check() && auth()->user()->is_revisor)
                             <li>                                                
                                 <a href="{{ route('revisors.index') }}">{{__('traduzioni.ZonaRevisore')}}  
@@ -38,16 +46,14 @@
                                     </span>
                                     @endif
                                 </a>
-                            </li>                          
+                            </li>      
+                            
+                            <li>
+                                <a href="{{ route('profile') }}">Il Mio Profilo</a>
+                            </li>
                           @endif
                          
-                          <li><a>{{__('traduzioni.SelectLang')}}</a>
-                              <ul class="dropdown">
-                                  <x-_locale lang='it'></x-_locale>
-                                  <x-_locale lang='en'></x-_locale>
-                                  <x-_locale lang='fr'></x-_locale>
-                              </ul>
-                          </li>
+                          
                       </ul>
 
                     <form id="button-header" class="d-flex justify-content-center" role="search">

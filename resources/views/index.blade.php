@@ -110,6 +110,7 @@
     @else 
     <x-carousel-index-fr/>
     @endif
+    
 </section>
 
 <!-- Sezione Chi siamo? End -->
