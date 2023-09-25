@@ -106,9 +106,9 @@
     @if ($lang == 'it')
     <x-carousel-index-it/>
     @elseif ($lang == 'en')
-    
+    <x-carousel-index-en/>
     @else 
-
+    <x-carousel-index-fr/>
     @endif
 </section>
 

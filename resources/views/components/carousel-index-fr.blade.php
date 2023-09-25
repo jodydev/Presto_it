@@ -5,10 +5,10 @@
 
             
            
-                <div class="swiper-slide"><img src="{{ asset ('img/avatar/jody.png') }}"></div>
-                <div class="swiper-slide"><img src="{{ asset ('img/avatar/claudio.png') }}"></div>
-                <div class="swiper-slide"><img src="{{ asset ('img/avatar/alice.png') }}"></div>
-                <div class="swiper-slide"><img src="{{ asset ('img/avatar/marcello.png') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/jody-fr.png') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/claudio-fr.png') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/alice-fr.png') }}"></div>
+                <div class="swiper-slide"><img src="{{ asset ('img/avatar/marcello-fr.png') }}"></div>
       
         
             </div>
