@@ -56,7 +56,7 @@
                           
                       </ul>
 
-                    <form id="button-header" class="d-flex justify-content-center" role="search">
+                    <div id="button-header" class="d-flex justify-content-center" role="search">
 
                         @if(!auth()->user())
                         
@@ -82,7 +82,7 @@
                         
                         @endif
 
-                    </form>
+                    </div>
                 </div>
             </div>
         </nav>
