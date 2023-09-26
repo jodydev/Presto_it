@@ -26,13 +26,13 @@
 
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.7/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.7.0/css/colReorder.dataTables.min.css">
 
 </head>
 <body>
 
 
-    
     <!-- Header -->
         <x-header></x-header>
  

@@ -23,6 +23,7 @@ use App\Http\Controllers\AnnouncementController;
 Route::get('/', [HomeController::class ,'index'])->name('index');
 Route::get('/contatti', [HomeController::class ,'contacts'])->name('contacts');
 Route::get('/privacy', [HomeController::class ,'privacy'])->name('privacy');
+Route::get('/faq', [HomeController::class ,'faq'])->name('faq');
 
  //routes AnnouncementController
 Route::get('/annunci', [AnnouncementController::class, 'index'])->name('announcements.index');

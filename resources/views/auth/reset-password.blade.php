@@ -5,12 +5,6 @@
             <div class="row">
                 <div class="col-12">
 
-    <!-- messaggio che indica lo stato del recupero password -->
-    <!-- @if(session('status'))
-        <div class="mb-4 font-medium text-sm text-green-600">
-            <p>{{session('status')}}</p>
-        </div>
-    @endif     -->
 
     <div class="container">
         <div class="row">

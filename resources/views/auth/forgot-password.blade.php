@@ -1,17 +1,21 @@
 <x-layout>
 
+<x-session/>
+
 
 <section id="register" class="bg-auth" style="background-image:url({{ asset ('img/background/bg-create.png') }});">
         <div class="container">
             <div class="row">
                 <div class="col-12">
 
-    <!-- messaggio che indica lo stato del recupero password -->
+
     @if(session('status'))
-        <div class="mb-4 font-medium text-sm text-green-600">
-            <p>{{session('status')}}</p>      
-        </div>
-    @endif    
+    <div class="alert alert-success mt-5 fixed-top alert-dismissible fade show d-flex align-items-center" role="alert" style="margin-top:100px !important">
+    <i class="fa-solid fa-circle-check me-3" style="color: #0f5132;"></i>  
+        {{ session('status') }} 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
     
     
     <!-- form recupero password -->

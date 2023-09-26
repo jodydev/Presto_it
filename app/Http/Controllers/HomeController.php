@@ -46,6 +46,11 @@ class HomeController extends Controller
         return view ('privacy');
     }
 
+    public function faq (){
+
+        return view ('faq');
+    }
+
     public function newsletter(Request $request){
         $email = $request->email;
 
