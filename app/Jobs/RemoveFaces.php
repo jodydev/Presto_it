@@ -3,13 +3,15 @@
 namespace App\Jobs;
 
 use App\Models\Image;
-use Spatie\Image\Image as SpatieImage;
 use Illuminate\Bus\Queueable;
+use Spatie\Image\Manipulations;
 use Illuminate\Queue\SerializesModels;
+use Spatie\Image\Image as SpatieImage;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
+use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
 class RemoveFaces implements ShouldQueue
 {
@@ -36,26 +38,26 @@ public $announcement_image_id;
             return;
         }
 
-        $srcPath = storage_path('app/public'.$i->path);
+        $srcPath = storage_path('app/public/'. $i->path);
         $image = file_get_contents($srcPath);
 
-        putenv('GOOGLE_APPLICATION_CREDENTIALS='. base_path('google_credential.json'));
+        putenv('GOOGLE_APPLICATION_CREDENTIALS=' .base_path('2023-05-11-hkpt-presto-user-story-7.json'));
 
-        $immageAnnotator = new ImageAnnotatorClient();
+        $imageAnnotator = new ImageAnnotatorClient();
             $response = $imageAnnotator->FaceDetection($image);
             $faces = $response->getFaceAnnotations();
 
             foreach ($faces as $face){
-            $vertices = $face->getBoundingPoly()->geVertices();
+            $vertices = $face->getBoundingPoly()->getVertices();
 
             $bounds = [];
             foreach($vertices as $vertex){
-                $bounds[] = [$vertex->getX(), $vertex->gety()];
+                $bounds[] = [$vertex->getX(), $vertex->getY()];
             }
             }
 
-            $w = $bounds[2][0] - [0][0];
-            $w = $bounds[2][1] - [0][1];
+            $w = $bounds[2][0] - $bounds[0][0];
+            $h = $bounds[2][1] - $bounds[0][1];
 
             $image = SpatieImage::load($srcPath);
 
@@ -64,7 +66,7 @@ public $announcement_image_id;
                 ->watermarkPadding($bounds[0][0],$bounds[0][1])
                 ->watermarkWidth($w, Manipulations::UNIT_PIXELS)
                 ->watermarkHeight($h, Manipulations::UNIT_PIXELS)
-                ->watermarkFit($w, Manipulations::FIT_STRETCH);
+                ->watermarkFit( Manipulations::FIT_STRETCH);
 
             $image->save($srcPath);
 

@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Category;
+use App\Jobs\RemoveFaces;
 use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use Livewire\WithFileUploads;
@@ -82,28 +83,28 @@ class CreateAnnouncement extends Component
 
         //assegno i campi all'annuncio passando per la categoria usando il metodo announcements
         $category = Category::find($this->category);
-
+        
         $announcement= $category->announcements()->create($validated);
-            if(count($this->images)){
-                foreach($this->images as $image){
+        if(count($this->images)){
+            foreach($this->images as $image){
+            
+                $newFileName = "announcements/{$announcement->id}";
+                $path = $image->store($newFileName, 'public');
+                $newImage = $announcement->images()->create(['path' => $path ]);
                 
-                    $newFileName = "announcements/{$announcement->id}";
-                    $path = $image->store($newFileName, 'public');
-                    $newImage = $announcement->images()->create(['path' => $path ]);
-                    
-
-                    //croppo l'immagine
-
-                    dispatch(new ResizeImage($path, 150, 150));
-                    //avvio la sicureszza delle immagini di google
-                    dispatch(new GoogleVisionSafeSearch($newImage->id));
-                    //avvio imserimento labels immagine
-                    dispatch(new GoogleVisionLabelImage($newImage->id));
-                }
-                //ho dovuto eliminare il metodo deleteDirectory perché usciva errore in vista "This driver does not support creating temporary URLs."
-                //l'ho rimessa, pare funzioni ma rimangono le immagini caricate in precedenza, se funziona non si tocca xD
-                File::deleteDirectory(storage_path('livewire-tmp'));
+             RemoveFaces::withChain([
+                //croppo l'immagine
+                new ResizeImage($path, 150, 150),
+                //avvio la sicureszza delle immagini di google
+                new GoogleVisionSafeSearch($newImage->id),
+                //avvio imserimento labels immagine
+                new GoogleVisionLabelImage($newImage->id),
+             ])->dispatch($newImage->id);
             }
+            //ho dovuto eliminare il metodo deleteDirectory perché usciva errore in vista "This driver does not support creating temporary URLs."
+            //l'ho rimessa, pare funzioni ma rimangono le immagini caricate in precedenza, se funziona non si tocca xD
+            File::deleteDirectory(storage_path('livewire-tmp'));
+        }
         //assegno l'annuncio all'utente
       
         auth()->user()->announcements()->save($announcement);
