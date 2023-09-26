@@ -29,7 +29,7 @@
                 </nav>
         
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 pr-0">
+                    <div class="col-sm-12 col-md-3" style="padding: 0px 0px 0px 20px;">
                         <div class="photo">
                       
 
@@ -71,54 +71,58 @@
                     </div>
             
 
-                <div class="col-sm-12 col-md-8">
-                    <div class="description">
+                    <div class="col-sm-12 col-md-3">
+                        <div class="description">
 
-                        <h2 class= "card-title">{{$announcement->title}}</h2>
-                        <h4 class= "card-text">{{$announcement->category->title}}</h4>
-                        <h2 class= "card-text mt-2">{{$announcement->price}} €</h1>
-                        <p class= "card-text">{{$announcement->description}}</p>
+                        <h6 style="color:#ff5114; text-transform: uppercase;">Informazioni</h6>
 
+                            <h2 class= "card-title">{{$announcement->title}}</h2>
+                            <h3 class= "card-text mt-2" style="color:#ff5114; font-size: 15px;">{{$announcement->category->title}}</h3>
+                            <h3 class= "card-text mt-2">{{$announcement->price}} €</h1>
+                            <p class= "card-text mt-2">{{$announcement->description}}</p>
+
+                        </div>
                     </div>
+
+
+
+                    @if($announcement->images->count() > 0)
+                    @foreach($announcement->images as $image)
+
+                    <div class="col-sm-12 col-md-3">
+                        <div class="description">
+                            
+                            <h6 style="color:#ff5114; text-transform: uppercase;">Revisione immagini</h6>   
+                               
+                               <h4 class= "text-dark dettaglio-revisore">Adulti: <span class="{{$image->adult}}"></span></h4>
+                               <h4 class= "text-dark dettaglio-revisore">Satira: <span class="{{$image->spoof}}"></span></h4>
+                               <h4 class= "text-dark dettaglio-revisore">Medicina: <span class="{{$image->medical}}"></span> </h4>
+                               <h4 class= "text-dark dettaglio-revisore">Violenza: <span class="{{$image->violence}}"></span></h4>
+                               <h4 class= "text-dark dettaglio-revisore">Contenuto Ammiccante: <span class="{{$image->racy}}"></span> </h4>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-3">
+                        <div class="description">
+                                              
+                                <h6 style="color:#ff5114; text-transform: uppercase;">Tags</h6>
+                                <div>
+                                    @if($image->labels)
+                                        @foreach($image->labels as $label)
+                                        <li class="text-dark dettaglio-revisore">{{$label}}</li>
+                                        @endforeach
+                                    @endif
+                                </div>
+                        </div>
+                    </div>
+            
+                    @endforeach
+                    @endif
                 </div>
-  
-            </div>
         </div>
 
-        @if($announcement->images->count() > 0)
-        @foreach($announcement->images as $image)
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="{{$image->getUrl(150,150)}}" alt="" class="img-fluid p-3 rounded ">
-                </div>
-                <div class="col-12 col-md-3 border-end">
-                    <h6>Tags</h6>
-                    <div class="p-2">
-                        @if($image->labels)
-                            @foreach($image->labels as $label)
-                            <p>{{$label}}</p>
-                            @endforeach
-                        @endif
-                    </div>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h3>Revisioni immagini</h3>
-                    <div class="description">
 
-                        <h4 class= "card-text">Adulti: <span class="{{$image->adult}}"></span></h4>
-                        <h4 class= "card-text">Satira: <span class="{{$image->spoof}}"></span></h4>
-                        <h4 class= "card-text">Medicina: <span class="{{$image->medical}}"></span> </h4>
-                        <h4 class= "card-text">Violenza: <span class="{{$image->violence}}"></span></h4>
-                        <h4 class= "card-text">Contenuto Ammiccante: <span class="{{$image->racy}}"></span> </h4>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        @endforeach
-        @endif
     </section>
         
 </x-layout>

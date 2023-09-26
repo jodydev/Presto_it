@@ -23,13 +23,20 @@
         <div class="card mb-3 w-100 rounded-4 shadow-lg">
           <div class="row g-0">
             <div class="col-md-4 text-center text-white" style="background-color: black;">
-              <img src="{{ asset(auth()->user()->profile_image) }}"class="img-fluid mt-5" style="width: 80px;" />
+              <img src="{{asset('img/avatar/test.png')}}"class="img-fluid mt-5" style="width: 80px;" />
 
 
-              <h2 class="mt-3 fs-2" style="color:#ff5114">Benvenuto,</h2>
+              <h2 class="mt-2 fs-2" style="color:#ff5114">Benvenuto,</h2>
               <h3 class="fs-3"> {{ Auth::user()->name }}</h3>
-              <p class="h-6">Sei già un revisore.</p>
-              <i class="far fa-edit fa-lg" style="color: #ff5114;"></i>
+
+              @if (auth()->user()->is_revisor)
+                  <p class="h-6">Sei già un revisore</p>
+              @else
+                  <p class="h-6" style="margin: 0px !important; padding: 0px !important;">Non sei un revisore,</p>
+                  <a href="{{route('contacts')}}" style="color: #ff5114; font-size: 9px; margin: 0px !important; padding: 0px !important;">Clicca qui per fare richiesta.</a>
+              @endif
+
+              <button id="button-edit" class="my-3 text-light fw-bold">Modifica <i class="far fa-edit fa-lg" style="color: #ff5114;"></i></button>
 
             </div>
             <div class="col-md-8">
@@ -42,11 +49,11 @@
                     <div class="row pt-1">
                     <div class="col-6 mb-3">
                         <h6>Email</h6>
-                        <p class="text-muted">{{ Auth::user()->email }}</p>
+                        <p class="text-muted">jodyossino2201@gmail.com</p>
                     </div>
                     <div class="col-6 mb-3">
                         <h6>Telefono</h6>
-                        <p class="text-muted">{{ Auth::user()->phone_number }}</p>
+                        <p class="text-muted">+39 333-696969</p>
                     </div>
                     </div>
 
@@ -55,11 +62,11 @@
                     <div class="row pt-1">
                         <div class="col-6 mb-3">
                             <h6>Città</h6>
-                            <p class="text-muted">{{ Auth::user()->city }}</p>
+                            <p class="text-muted">Bologna (BO)</p>
                         </div>
                     <div class="col-6 mb-3">
                         <h6>Indirizzo</h6>
-                        <p class="text-muted">{{ Auth::user()->address }}</p>
+                        <p class="text-muted">Via del Successo 69</p>
                     </div>
                 </div>
               </div>
@@ -68,32 +75,32 @@
         </div>    
       </div>
 
-      <div class="container contact-form p-5">
+      <div class="container contact-form p-5" id="form-edit">
             <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data" class="bg-black rounded-4">
             @csrf
                   @method('PUT')
-                <h3 class="fs-2 text-light">Aggiorna Info<span>.</span></h3>
+                <h3 class="fs-2 text-light mt-1">Aggiorna Info<span>.</span></h3>
                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 my-2">
                         <div class="form-group">
                           <label for="profile_image" class="form-label text-light">Immagine del Profilo:</label>
                           <input class="form-control" type="file" name="profile_image" id="profile_image">
                         </div>
-                        <div class="form-group">
-                          <label for="phone_number" class="form-label text-light">Numero di Telefono:</label>
+                        <div class="form-group py-3">
+                          <label for="phone_number" class="form-label text-light ">Numero di Telefono:</label>
                           <input class="form-control" type="text" name="phone_number" id="phone_number" value="{{ Auth::user()->phone_number }}">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group my-3">
                             <button type="submit" class="btn btn-success">Salva Modifiche</button>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 py-3">
                         <div class="form-group">
                           <label for="city" class="form-label text-light">Città di Provenienza:</label>
                           <input class="form-control" type="text" name="city" id="city" value="{{ Auth::user()->city }}">
                         </div>
-                        <div class="form-group">
-                          <label for="address" class="form-label text-light">Indirizzo di Casa:</label>
+                        <div class="form-group my-3">
+                          <label for="address" class="form-label text-light ">Indirizzo di Casa:</label>
                           <input class="form-control" type="text" name="address" id="address" value="{{ Auth::user()->address }}">
                         </div>
                     </div>

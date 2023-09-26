@@ -34,7 +34,7 @@
  <div class="container p-5">
         <div class="row">
             @forelse ($announcements as $announcement)
-                <div class="col-lg-4 col-md-4 col-sm-6 px-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 p-5">
                     <div class="trend__content mt-3">                  
                         <div class="trend__item">
                             <div class="trend__item__pic">
@@ -55,7 +55,7 @@
                                     <i class="fa fa-star" style="color: #ff5114 !important"></i>
                                 </div>
                                 <div class="product__price">€{{$announcement->price}}</div>
-                                <a href="{{route('announcements.show', $announcement->id)}}"></a>
+                                <a href="{{route('announcements.show', $announcement->id)}}">Scopri!</a>
                                 <small>{{$announcement->created_at->format('d/m/y')}}</small>
                             </div>
                         </div>
