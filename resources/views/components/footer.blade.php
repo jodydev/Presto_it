@@ -17,7 +17,7 @@
                         <li><a href="/privacy">FAQ</a></li>
                         <li><a href="/privacy">Privacy</a></li>
                         @if (auth()->check() && !auth()->user()->is_revisor)
-                        <li><a href="{{route('become.revisor')}}">{{__('traduzioni.BecomeW')}}</a></li>
+                        <li><a href="{{route('contacts')}}">{{__('traduzioni.BecomeW')}}</a></li>
                         @endif
                         
                     </ul>
@@ -36,8 +36,9 @@
             <div class="col-lg-4 col-md-8 col-sm-8">
                 <div class="footer__newslatter">
                     <h6 class="text-light">NEWSLETTER</h6>
-                    <form action="#">
-                        <input type="email" placeholder="{{__('traduzioni.MailList')}}"> </imput>
+                    <form method="POST"action="{{route('mail.news-letter')}}">
+                        @csrf
+                        <input type="email" name="email" placeholder="{{__('traduzioni.MailList')}}"> </input>
                         <button type="submit" class="site-btn">{{__('traduzioni.Iscriviti')}}</button>
                     </form>
                     <div class="footer__social">

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewsLetter;
 use App\Models\Category;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -44,5 +46,11 @@ class HomeController extends Controller
         return view ('privacy');
     }
 
+    public function newsletter(Request $request){
+        $email = $request->email;
+
+        Mail::to($email)->send(new NewsLetter($email));
+        return redirect()->back()->with('message', 'Controlla la tua email per vedere se la tua iscrizione è andata a buon fine');
+    }
    
 }

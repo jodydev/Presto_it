@@ -44,14 +44,34 @@
 
                         </div>
                         <div class="contact__form p-5 rounded-5 bg-light shadow-lg" transition-style="in:wipe:up">
-                            <h5 class="fs-3 text-dark">MANDACI IL TUO CURRICULUM</h5>
+                            <h5 class="fs-3 text-dark">Diventa revisore</h5>
+                            @if(!Auth::check())
                             <form action="#">
-                                <input type="text" placeholder="Nome e Cognome">
-                                <input type="text" placeholder="Indirizzo email">
-                                <textarea placeholder="Messaggio"></textarea>
+                                
+                                <input type="text" name="name" placeholder="Nome e Cognome">
+                                <input type="email" name="email"placeholder="Indirizzo email">
+                                <textarea name="user_message" placeholder="Messaggio"></textarea>
 
-                                <button type="submit" class="rounded-4 px-3 shadow-lg button-form-contatti">Invia</button>
+                                <p>Registrati per diventare revisore</p>                            
                             </form>
+                            
+                            @else
+                            <form method="POST" action="{{route('become.revisor')}}" enctype="multipart/form-data">
+                                @csrf
+                                <input type="text" name="name" placeholder="Nome e Cognome" value="{{auth()->user()->name}}">
+                                <input type="email" name="email"placeholder="Indirizzo email" value="{{auth()->user()->email}}">
+                                <textarea name="user_message" placeholder="Messaggio"></textarea>
+                                <!-- Input per il file PDF -->
+                                <label for="file">Inserisci il tuo cv in formato pdf</label>
+                                <input type="file" name="pdf_file" accept=".pdf">
+                                @if(!auth()->user()->is_revisor)
+                                <button type="submit" class="rounded-4 px-3 shadow-lg button-form-contatti">Invia</button>
+                                @else
+                                <p>Sei già Revisore</p>
+                                @endif
+                            </form>
+                            
+                            @endif
                         </div>
                     </div>
                 </div>

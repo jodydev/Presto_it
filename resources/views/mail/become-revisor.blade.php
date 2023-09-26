@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Un utente ha richiesto di diventare</h1>
+    <h1>{{$user->name}} ha richiesto di diventare Revisore</h1>
     <h2>I suoi dati:</h2>
-    <p>{{$user->name}}</p>
-    <p>{{$user->email}}</p>
-    <p>Se vuoi farlo revisore clicca qui, oppure ignora questa email</p>
-    <a href="{{route('make.revisor' , compact('user'))}}">Rendi revisore</a>
+    <h5>{{$user->name}}</h5>
+    <h5>{{$user->email}}</h5>
+    <p>{{$user_message}}</p>
+    <p>Se vuoi farlo revisore clicca qui: <a href="{{route('make.revisor' , compact('user'))}}"> Rendi revisore</a><br>Oppure ignora questa email</p>
+    
+    
+
+    <small>Scarica il CV in PDF: <a href="{{ $pdfAttachment->path() }}">Scarica CV</a></small>
 </body>
 </html>

@@ -45,11 +45,13 @@ Route::post('/revisore/elencoAnnunci/{user_id}', [RevisorController::class , 'ta
 //get per mostrare annuncio al revisore
 Route::get('/revisore/mostraAnnuncio/{id_announcement}', [RevisorController::class , 'announcement'])->middleware(['isRevisor'])->name('revisors.announcement');
 //route per richiedere di diventare revisore
-Route::get('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('become.revisor');
+Route::post('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('become.revisor');
 //route per far diventare utente revisore
 Route::get('/fai/revisore/{user}', [RevisorController::class , 'makeRevisor'])->name('make.revisor');
 //cambio lingue
 Route::post('/lingua/{lang}',[HomeController::class,'setLanguage'])->name('set_language_locale');
+//newsletter
+Route::post('/iscrizione/newsletter', [HomeController::class, 'newsletter'])->name('mail.news-letter');
 
 
 

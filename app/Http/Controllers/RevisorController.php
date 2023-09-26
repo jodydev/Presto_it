@@ -86,8 +86,16 @@ class RevisorController extends Controller
         return redirect()->back()->with('message', "L'annuncio è stato scartato con successo");
     }
 
-    public function becomeRevisor(){
-        Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
+    public function becomeRevisor(Request $request){
+        $request->validate([
+            'user_message' => 'required|string',
+            'pdf_file' => 'required|mimes:pdf|max:2048', // Accetta solo file PDF con dimensione massima di 2MB
+        ]);
+        $user_message = $request->user_message;
+        $user = Auth::user(); // Ottieni l'utente autenticato
+
+        Mail::to('admin@presto.it')->send(new BecomeRevisor($user_message, $user, $request->file('pdf_file')));
+    
 
         return redirect()->back()->with('message', "Hai richiesto di diventare Revisore presso Presto.it\nUn nostro addetto valuterà la tua candidatura" );
     }

@@ -2,7 +2,6 @@
 
 namespace App\Mail;
 
-use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
@@ -11,22 +10,19 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class BecomeRevisor extends Mailable
+class NewsLetter extends Mailable
 {
     use Queueable, SerializesModels;
 
     /**
      * Create a new message instance.
      */
-    public $user;
-    public $user_message;
-    public $pdfAttachment;
+    public $email;
     
-    public function __construct($user_message, User $user, $pdfAttachment)
+    public function __construct($email)
     {
-        $this->user_message = $user_message;
-        $this->user = $user;
-        $this->pdfAttachment = $pdfAttachment;
+        $this->email = $email;
+        
     }
 
     /**
@@ -36,7 +32,7 @@ class BecomeRevisor extends Mailable
     {
         return new Envelope(
             from: new Address('no-reply@presto.it' ,'Presto.it'),
-            subject: "L'utente vuole diventare Revisore in Presto.it",
+            subject: 'Iscrizione Newsletter Presto.it',
         );
     }
 
@@ -46,7 +42,7 @@ class BecomeRevisor extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.become-revisor',
+            view: 'mail.news-letter',
         );
     }
 
@@ -57,8 +53,6 @@ class BecomeRevisor extends Mailable
      */
     public function attachments(): array
     {
-        return [
-            $this->pdfAttachment,
-        ];
+        return [];
     }
 }
