@@ -73,7 +73,7 @@
                                             
                                                  <div id="delete-image" class="col-sm-12 col-lg-3 px-5 ms-3">
 
-                                                    <div class="shadow-lg rounded-5 mt-3 img-preview" 
+                                                    <div class="shadow-lg rounded-5 img-preview" 
                                                     style="background-image: url({{$image->temporaryUrl()}});">
 
                                                          <input wire:click="removeImage({{$key}})" type="button"  class="mt-5 rounded-5 button-delete" value="X"/>

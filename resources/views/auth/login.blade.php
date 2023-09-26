@@ -8,7 +8,7 @@
                         
                 <h2 transition-style="in:wipe:right">Bentornato!<br>Ci sei mancato.</h2>
                 
-                <img id="img-login" src="{{ asset ('img/storyset/login.png') }}">
+                <img  id="img-login" src="{{ asset ('img/storyset/login.png') }}" transition-style="in:wipe:right">
                 
             </div>
 

@@ -105,6 +105,7 @@ class CreateAnnouncement extends Component
                 File::deleteDirectory(storage_path('livewire-tmp'));
             }
         //assegno l'annuncio all'utente
+      
         auth()->user()->announcements()->save($announcement);
         //svuoto il form dopo il save
         $this->title='';
@@ -112,7 +113,7 @@ class CreateAnnouncement extends Component
         $this->description= '';
         $this->category= '';
         $this->temporary_images =[];
-//$this->images = [];
+        //$this->images = [];
         $this->formId =uniqid();
         $this->message = 'Articolo aggiunto con successo. 
                           Attendi la conferma da parte di un revisore.';

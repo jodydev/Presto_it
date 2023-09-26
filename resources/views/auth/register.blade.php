@@ -11,7 +11,7 @@
                     
                     <h2 class="my-5" transition-style="in:wipe:right">Iscriviti al nostro sito e pubblica subito il tuo primo annuncio!</h2>
 
-                    <img src="{{ asset ('img/storyset/register.png') }}" alt="" srcset="">
+                    <img src="{{ asset ('img/storyset/register.png') }}" transition-style="in:wipe:right">
               
             
             
