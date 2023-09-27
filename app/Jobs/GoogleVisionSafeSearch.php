@@ -55,8 +55,8 @@ class GoogleVisionSafeSearch implements ShouldQueue
 
 
         $likelihoodName = [
-            'text-secondary fa-solid fa-circle' ,  'text-success fa-solid fa-circle',  'text-success fa-solid fa-circle',
-            'text-warning fa-solid fa-circle',  'text-warning fa-solid fa-circle',  'text-danger fa-solid fa-circle'
+            'text-secondary' ,  'text-success',  'text-success',
+            'text-warning',  'text-warning',  'text-danger'
         ];
 
         $i->adult = $likelihoodName[$adult];

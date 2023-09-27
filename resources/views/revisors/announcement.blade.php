@@ -94,11 +94,11 @@
                             
                             <h6 style="color:#ff5114; text-transform: uppercase;">Revisione immagini</h6>   
                                
-                               <h4 class= "text-dark dettaglio-revisore">Adulti: <span class="{{$image->adult}}"></span></h4>
-                               <h4 class= "text-dark dettaglio-revisore">Satira: <span class="{{$image->spoof}}"></span></h4>
-                               <h4 class= "text-dark dettaglio-revisore">Medicina: <span class="{{$image->medical}}"></span> </h4>
-                               <h4 class= "text-dark dettaglio-revisore">Violenza: <span class="{{$image->violence}}"></span></h4>
-                               <h4 class= "text-dark dettaglio-revisore">Contenuto Ammiccante: <span class="{{$image->racy}}"></span> </h4>
+                               <h4 class= "text-dark dettaglio-revisore">Adulti: <span class="{{$image->adult}}"><i class="fa fa-circle"></i></span></h4>
+                               <h4 class= "text-dark dettaglio-revisore">Satira: <span class="{{$image->spoof}}"><i class="fa fa-circle"></i></span></h4>
+                               <h4 class= "text-dark dettaglio-revisore">Medicina: <span class="{{$image->medical}}"><i class="fa fa-circle"></i></span> </h4>
+                               <h4 class= "text-dark dettaglio-revisore">Violenza: <span class="{{$image->violence}}"><i class="fa fa-circle"></i></span></h4>
+                               <h4 class= "text-dark dettaglio-revisore">Contenuto Ammiccante: <span class="{{$image->racy}}"><i class="fa fa-circle"></i></span> </h4>
                         </div>
                     </div>
 
