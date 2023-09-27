@@ -13,11 +13,7 @@ return [
     |
     */
 
-    // 'failed' => 'Hai inserito credenziali errate',
-    // 'password' => 'La password non è corretta',
-    // 'throttle' => 'Troppi tentativi di accesso. Per favore ritenta tra :seconds secondi',
-    'failed' => 'These credentials do not match our records.',
-    'password' => 'The provided password is incorrect.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-
+'failed' => 'Hai inserito credenziali errate',
+'password' => 'La password non è corretta',
+'throttle' => 'Troppi tentativi di accesso. Per favore ritenta tra :seconds secondi',
 ];
