@@ -34,7 +34,8 @@ class RevisorController extends Controller
     //Richiama elenco annunci pubblicati
     public function tableAnnouncement(Request $request){
         if ($request->ajax()) {
-        $announcement_list = Announcement::where('user_id','!=',$request->id)->get();
+        $announcement_list = Announcement::where('user_id','!=',Auth::id())->get();
+        // $announcement_list=Announcement::all();
         return Datatables::of($announcement_list)
         
         // ->addColumn('categoria', function(Announcement $a){

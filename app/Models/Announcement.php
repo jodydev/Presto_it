@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Image;
 use App\Models\Category;
 use Laravel\Scout\Searchable;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -32,7 +33,7 @@ class Announcement extends Model
 
     public static function toBeRevisionedCount(){
         //se il valore è null il conteggio aumenta
-        return Announcement::where('is_accepted', null)->count();
+        return Announcement::where('is_accepted', null)->where('user_id','!=',Auth::id())->count();
     }
 
     public function toSearchableArray()
