@@ -46,7 +46,8 @@ public $announcement_image_id;
         $imageAnnotator = new ImageAnnotatorClient();
             $response = $imageAnnotator->FaceDetection($image);
             $faces = $response->getFaceAnnotations();
-
+        
+        try{
             foreach ($faces as $face){
             $vertices = $face->getBoundingPoly()->getVertices();
 
@@ -70,7 +71,9 @@ public $announcement_image_id;
 
             $image->save($srcPath);
 
-        $imageAnnotator->close ();
+        $imageAnnotator->close ();}catch(\Exception $e) {
+             echo "Si è verificato un errore:" . $e->getMessage();
+        }
         
     }
 }
