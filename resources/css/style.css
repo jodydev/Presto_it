@@ -3267,7 +3267,7 @@ body{
 	margin-left: 60px !important;
 	color: white !important;
 	font-family: 'Montserrat', sans-serif !important;
-	background-color: blue;
+	background-color: #ff5114;
 
   }
   
@@ -3275,8 +3275,8 @@ body{
   .button-mostra:active {
 	background-color: initial;
 	background-position: 0 0;
-	color: blue !important ;
-	border:  1px solid blue !important;
+	color: #ff5114 !important ;
+	border:  1px solid #ff5114 !important;
   }
   
   .button-mostra:active {

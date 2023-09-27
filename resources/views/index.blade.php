@@ -19,7 +19,7 @@
                 <div class="discount__pic">
                 <h3 class="text-dark fs-1 mt-5 mb-5">{{__('traduzioni.Opinions')}}</h3>
 
-                <p class="mt-5 w-75 ">Facilità di Ricerca e Navigazione: Presto.it è una piattaforma facile e intuitiva. Una ricerca avanzata semplifica la ricerca di categorie specifiche.
+                <p class="mt-5 w-75" style="font-style: italic !important;">Facilità di Ricerca e Navigazione: Presto.it è una piattaforma facile e intuitiva. Una ricerca avanzata semplifica la ricerca di categorie specifiche.
                 <br>Varietà di Prodotti: Una vasta gamma di prodotti, tante categorie tra cui scegliere.
                 <br>Convenienza: Puoi fare acquisti comodamente da casa tua o da qualsiasi luogo con una connessione internet.
                 <br>Ampia Disponibilità: Posso accedere a Presto.it online 24/7.

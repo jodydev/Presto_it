@@ -49,7 +49,7 @@
                     <div class="row pt-1">
                     <div class="col-6 mb-3">
                         <h6>Email</h6>
-                        <p class="text-muted">jodyossino2201@gmail.com</p>
+                        <p class="text-muted">{{ Auth::user()->email }}</p>
                     </div>
                     <div class="col-6 mb-3">
                         <h6>Telefono</h6>
@@ -75,7 +75,7 @@
         </div>    
       </div>
 
-      <div class="container contact-form p-5" id="form-edit">
+      <div class="container contact-form mt-5" id="form-edit">
             <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data" class="bg-black rounded-4 shadow-lg">
             @csrf
                   @method('PUT')
