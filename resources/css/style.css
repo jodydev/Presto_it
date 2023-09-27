@@ -3344,6 +3344,7 @@ body{
 	.form-group .form-control{
 		padding: 10px !important;
 		border-radius: 10px !important;
+		font-style: italic;
 	}
 
 	.form-group {
