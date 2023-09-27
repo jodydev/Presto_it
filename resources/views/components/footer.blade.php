@@ -27,9 +27,8 @@
                 <div class="footer__widget">
                     <h6 class="text-light">Account</h6>
                     <ul>
-                        <li><a href="{{ route('profile') }}">My Account</a></li>
-                        <li><a href="{{ route('profile') }}">{{__('traduzioni.Tracking')}}</a></li>
-                        <li><a href="{{ route('profile') }}">{{__('traduzioni.Wishlist')}}</a></li>
+                        <li><a href="{{ route('profile') }}">Account</a></li>
+                        
                     </ul>
                 </div>
             </div>

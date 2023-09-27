@@ -20,7 +20,7 @@
     </div>
 </section>       
 
-    <section id="annunci-da-revisionare" style="margin-top:2rem";>
+    <section id="annunci-da-revisionare" style="margin-top:2rem"; class="p-3">
         <table id="revisorTable" class="display" style="width:85%">
         <thead>
             <tr>
@@ -30,7 +30,7 @@
                 <th class="not-mobile"> Data pubblicazione</th>
                 <!-- <th>Utente</th> -->
                 <th class="not-mobile">Stato</th>
-                <th class="">Azioni</th>                
+                <th class="text-center">Azioni</th>                
             </tr>
         </thead>
         </table>
@@ -125,12 +125,13 @@ function mostrAnnuncio(button){
      { "width": "10%", "targets": 1 },
      { "width": "10%", "targets": 2 },
      { "width": "10%", "targets": 3 },
-     { "width": "10%", "targets": 4 },
+     { "width": "8%", "targets": 4 },
     ]
     });
-    $('#revisorTable_filter').css({"margin-end":"9rem","margin-bottom":"0.5rem"})
+    $('#revisorTable_filter').css({"margin-end":"9rem","margin-bottom":"0.5rem", "border-radius":"15px !important" })
     $('#revisorTable_paginate').css({"margin-end":"9rem","margin-top":"0.5rem","margin-bottom":"0.5rem"})
-    $('#revisorTable_paginate').css({"margin-end":"9rem","margin-top":"0.5rem","margin-bottom":"0.5rem"})
+    $('#revisorTable').css({"border":"5px solid black", "border-radius":"15px"})
+    $('td.child span').css({"color":"black !important",})
 });
 
 </script>

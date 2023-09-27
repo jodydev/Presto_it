@@ -43,8 +43,9 @@
                             </ul>
 
                         </div>
-                        <div class="contact__form p-5 rounded-5 bg-light shadow-lg" transition-style="in:wipe:up">
-                            <h5 class="fs-3 text-dark">Diventa revisore</h5>
+
+                        <div class="contact__form rounded-4 p-5" transition-style="in:wipe:up" style="background-color:black;">
+                            <h5 class="fs-3 text-light">Fai richiesta per <br> diventare revisore<span style="color: #ff5114;">.</span> </h5>
                             @if(!Auth::check())
                             <form action="#">
                                 
@@ -62,12 +63,13 @@
                                 <input type="email" name="email"placeholder="Indirizzo email" value="{{auth()->user()->email}}">
                                 <textarea name="user_message" placeholder="Messaggio"></textarea>
                                 <!-- Input per il file PDF -->
-                                <label for="file">Inserisci il tuo cv in formato pdf</label>
-                                <input type="file" name="pdf_file" accept=".pdf">
+
+                                <label for="file" class="form-label text-light">Inserisci il tuo cv in formato pdf</label>
+                                <input type="file" name="pdf_file" accept=".pdf" class="form-control shadow-lg rounded-4" style="padding: 15px !important; ">
                                 @if(!auth()->user()->is_revisor)
                                 <button type="submit" class="rounded-4 px-3 shadow-lg button-form-contatti">Invia</button>
                                 @else
-                                <p>Sei già Revisore</p>
+                                <p class="my-5 fs-3" style="color: #ff5114;">Sei già un Revisore.</p>
                                 @endif
                             </form>
                             
