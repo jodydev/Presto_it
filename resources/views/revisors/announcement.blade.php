@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumb__links">
-                                <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                                <a href="{{route('index')}}"><i class="fa fa-home"></i> Home</a>
                                 <a href="{{ route('revisors.index') }}">{{__('traduzioni.ZonaRevisore')}}</a>
                                 <span>{{__('traduzioni.Dettaglio')}}</span>
                             </div>
@@ -29,7 +29,7 @@
                 </nav>
         
                 <div class="row">
-                    <div class="col-sm-12 col-md-3" style="padding: 0px 0px 0px 20px;">
+                    <div class="col-sm-12 col-md-4" style="padding: 0px 0px 0px 20px;">
                         <div class="photo">
                       
 
@@ -71,10 +71,10 @@
                     </div>
             
 
-                    <div class="col-sm-12 col-md-3">
+                    <div class="col-sm-12 col-md-6">
                         <div class="description">
 
-                        <h6 style="color:#ff5114; text-transform: uppercase;">Informazioni</h6>
+                        <h6 style="color:#ff5114; text-transform: uppercase; font-size: 40px;">Informazioni</h6>
 
                             <h2 class= "card-title">{{$announcement->title}}</h2>
                             <h3 class= "card-text mt-2" style="color:#ff5114; font-size: 15px;">{{$announcement->category->title}}</h3>
@@ -84,43 +84,64 @@
                         </div>
                     </div>
 
-
-
-                    @if($announcement->images->count() > 0)
-                    @foreach($announcement->images as $image)
-
-                    <div class="col-sm-12 col-md-3">
-                        <div class="description">
-                            
-                            <h6 style="color:#ff5114; text-transform: uppercase;">Revisione immagini</h6>   
-                               
-                               <h4 class= "text-dark dettaglio-revisore">Adulti: <span class="{{$image->adult}}"><i class="fa fa-circle"></i></span></h4>
-                               <h4 class= "text-dark dettaglio-revisore">Satira: <span class="{{$image->spoof}}"><i class="fa fa-circle"></i></span></h4>
-                               <h4 class= "text-dark dettaglio-revisore">Medicina: <span class="{{$image->medical}}"><i class="fa fa-circle"></i></span> </h4>
-                               <h4 class= "text-dark dettaglio-revisore">Violenza: <span class="{{$image->violence}}"><i class="fa fa-circle"></i></span></h4>
-                               <h4 class= "text-dark dettaglio-revisore">Contenuto Ammiccante: <span class="{{$image->racy}}"><i class="fa fa-circle"></i></span> </h4>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-12 col-md-3">
-                        <div class="description">
-                                              
-                                <h6 style="color:#ff5114; text-transform: uppercase;">Tags</h6>
-                                <div>
-                                    @if($image->labels)
-                                        @foreach($image->labels as $label)
-                                        <li class="text-dark dettaglio-revisore">{{$label}}</li>
-                                        @endforeach
-                                    @endif
-                                </div>
-                        </div>
-                    </div>
-            
-                    @endforeach
-                    @endif
                 </div>
         </div>
+</div>
+
+
+
+
+
+            @if($announcement->images->count() > 0)
+                    @foreach($announcement->images as $image)
+<div class="container">
+    <div class="row">
+    <div class="col-12 col-md-6 mb-5">
+                        
+                        <img src="{{$image->getUrl(150, 150)}}" alt="" srcset="" class="d-block w-50 rounded-4">
+
+
+
+                  
+                </div>
+
+                <div class="col-sm-12 col-md-3">
+                    <div class="description">
+                        
+                        <h6 style="color:#ff5114; text-transform: uppercase;">Revisione immagini</h6>   
+                           
+                           <h4 class= "text-dark dettaglio-revisore">Adulti: <span class="{{$image->adult}}"><i class="fa fa-circle"></i></span></h4>
+                           <h4 class= "text-dark dettaglio-revisore">Satira: <span class="{{$image->spoof}}"><i class="fa fa-circle"></i></span></h4>
+                           <h4 class= "text-dark dettaglio-revisore">Medicina: <span class="{{$image->medical}}"><i class="fa fa-circle"></i></span> </h4>
+                           <h4 class= "text-dark dettaglio-revisore">Violenza: <span class="{{$image->violence}}"><i class="fa fa-circle"></i></span></h4>
+                           <h4 class= "text-dark dettaglio-revisore">Contenuto Ammiccante: <span class="{{$image->racy}}"><i class="fa fa-circle"></i></span> </h4>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-3">
+                    <div class="description">
+                                          
+                            <h6 style="color:#ff5114; text-transform: uppercase;">Tags</h6>
+                            <div>
+                                @if($image->labels)
+                                    @foreach($image->labels as $label)
+                                    <li class="text-dark dettaglio-revisore">{{$label}}</li>
+                                    @endforeach
+                                @endif
+                            </div>
+                    </div>
+                </div>
+        
+               
+    </div>
+
+</div>
+
+@endforeach
+@endif
+                    
+
 
 
     </section>
