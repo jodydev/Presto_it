@@ -28,7 +28,7 @@
                 <br>Prodotti a prezzi accessibili: ogni acquisto è un affare.
                 <br>Newsletter: Mi sono iscritto alla newsletter di Presto.it per non perdere neanche un affare.
                 <br>Acquisti in sicurezza: Gli annunci di Presto.it sono tutti controllati da un operatore reale.
-                </p>Sono diventato revisore: Collaboro con Presto.it, revisiono gli annunci degli altri utenti.
+                </p>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -112,12 +112,12 @@
 
     </div>
 
-    @if ($lang == 'it')
-    <x-carousel-index-it/>
+    @if ($lang == 'fr')
+    <x-carousel-index-fr/>
     @elseif ($lang == 'en')
     <x-carousel-index-en/>
     @else 
-    <x-carousel-index-fr/>
+    <x-carousel-index-it/>
     @endif
     
 </section>

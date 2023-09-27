@@ -130,6 +130,7 @@ function mostrAnnuncio(button){
     });
     $('#revisorTable_filter').css({"margin-end":"9rem","margin-bottom":"0.5rem"})
     $('#revisorTable_paginate').css({"margin-end":"9rem","margin-top":"0.5rem","margin-bottom":"0.5rem"})
+    $('#revisorTable_paginate').css({"margin-end":"9rem","margin-top":"0.5rem","margin-bottom":"0.5rem"})
 });
 
 </script>
