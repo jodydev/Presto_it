@@ -52,7 +52,7 @@
 
                           @if  (auth()->check())
                             <li>
-                                <a href="{{ route('profile') }}">Il Mio Profilo</a>
+                                <a href="{{ route('profile') }}">{{__('traduzioni.MioProfilo')}}</a>
                             </li>
                           @endif
                           
@@ -69,7 +69,7 @@
                         
                             <div id="create-btn" class="d-flex me-3">
 
-                                <a href="{{route('announcements.create')}}" class="button-create"><i class="fa-solid fa-pen-to-square fa-shake fa-lg" style="color: #ff5114;"></i> Crea un Annuncio</a>
+                                <a href="{{route('announcements.create')}}" class="button-create"><i class="fa-solid fa-pen-to-square fa-shake fa-lg" style="color: #ff5114;"></i> {{__('traduzioni.CreateAnn')}}</a>
                                 
                                 
                                 <form action="/logout" method="post" >

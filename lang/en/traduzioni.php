@@ -41,4 +41,16 @@ return [
     'Dettaglio'=>'Details',
     'LastAnn'=>'Last announcements',
     'TORNA AGLI ANNUNCI'=> 'GO BACK TO THE ADS',
+    'Description'=> 'Ease of search and navigation: Presto.it is an easy and intuitive platform. An advanced search makes it easy to find specific categories.
+    Variety of products: a wide range of products, many categories to choose from.
+    Convenience: You can shop from the comfort of your home or anywhere with an internet connection.
+    Wide availability: I can access Presto.it online 24 hours a day, 7 days a week.
+    Environmental savings: Purchasing used items is a form of recycling and can help reduce the environmental impact associated with the production and disposal of new products.
+    Italian, English and French: the site is accessible in 3 languages.
+    Affordable products: every purchase is a bargain.
+    Newsletter: I signed up for the Presto.it newsletter so as not to miss a single deal.
+    Safe purchases: Presto.it ads are all checked by a real operator.
+    I became a reviewer: I collaborate with Presto.it, I review other users ads.',
+    'MioProfilo' => 'User Area',
+    'CreateAnn'=> "Create Announcement",
 ];
