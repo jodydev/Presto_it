@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use Exception;
 use App\Models\Image;
 use Illuminate\Bus\Queueable;
 use Spatie\Image\Manipulations;
@@ -71,7 +72,7 @@ public $announcement_image_id;
 
             $image->save($srcPath);
 
-        $imageAnnotator->close ();}catch(\Exception $e) {
+        $imageAnnotator->close ();}catch(Exception $e) {
              echo "Si è verificato un errore:" . $e->getMessage();
         }
         

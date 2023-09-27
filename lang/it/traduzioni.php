@@ -41,6 +41,18 @@ return [
     'Dettaglio'=>'Dettaglio',
     'LastAnn'=>'Gli ultimi annunci',
     'TORNA AGLI ANNUNCI'=> 'TORNA AGLI ANNUNCI',
+    'Description'=> "Facilità di ricerca e navigazione: Presto.it è una piattaforma facile e intuitiva. Una ricerca avanzata semplifica la ricerca di categorie specifiche.
+    Varietà di prodotti: una vasta gamma di prodotti, tante categorie tra cui scegliere.
+    Comodità: puoi fare acquisti comodamente da casa tua o da qualsiasi luogo con una connessione internet.
+    Ampia disponibilità: posso accedere a Presto.it online 24 ore su 24, 7 giorni su 7.
+    Risparmio ambientale: acquistare articoli usati è una forma di riciclaggio e può contribuire a ridurre l' impatto ambientale associato alla produzione e allo smaltimento di nuovi prodotti.
+    Italiano, Inglese e Francese: il sito è accessibile in 3 lingue.
+    Prodotti a prezzi accessibili: ogni acquisto è un affare.
+    Newsletter: Mi sono iscritto alla newsletter di Presto.it per non perdere neanche un affare.
+    Acquisti in sicurezza: Gli annunci di Presto.it sono tutti controllati da un operatore reale.
+    Sono diventato revisore: Collabora con Presto.it, revisione gli annunci degli altri utenti.",
+    'MioProfilo' => 'Il mio profilo',
+    'CreateAnn'=> "Crea un Annuncio",
 
 
 

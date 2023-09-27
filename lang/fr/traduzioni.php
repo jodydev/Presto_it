@@ -41,6 +41,18 @@ return [
     'Dettaglio'=>'Détail',
     'LastAnn'=>'Dernières annonces',
     'TORNA AGLI ANNUNCI'=> 'RETOUR AUX ANNONCES',
+    'description'=> "Facilité de recherche et de navigation : Presto.it est une plateforme simple et intuitive. Une recherche avancée permet de trouver facilement des catégories spécifiques.
+    Variété de produits : une large gamme de produits, de nombreuses catégories parmi lesquelles choisir.
+    Commodité : vous pouvez faire vos achats dans le confort de votre maison ou n’importe où avec une connexion Internet.
+    Large disponibilité : je peux accéder à Presto.it en ligne 24 heures sur 24, 7 jours sur 7.
+    Économies environnementales : l'achat d'articles usagés est une forme de recyclage et peut contribuer à réduire l'impact environnemental associé à la production et à l'élimination de nouveaux produits.
+    Italien, anglais et français : le site est accessible en 3 langues.
+    Produits abordables : chaque achat est une bonne affaire.
+    Newsletter : Je me suis inscrit à la newsletter Presto.it pour ne rater aucune bonne affaire.
+    Achats sécurisés : les annonces Presto.it sont toutes vérifiées par un véritable opérateur.
+    Je suis devenu réviseur : je collabore avec Presto.it, je révise les annonces des autres utilisateurs.",
+    'MioProfilo'=>'Zone utilizateur',
+    'CreateAnn'=> "Creer une Anounce",
 
 
     
