@@ -30,7 +30,7 @@ class CreateAnnouncement extends Component
             'title' => 'required|min:5',
             'description' => 'required|min:8',
             'temporary_images.*' => 'image|max:1024',
-            'price' => 'required|numeric|max:8',
+            'price' => 'required|numeric|digits_between:1,8',
             'images.*' => 'image|max:1024'
         ];
     
@@ -42,8 +42,7 @@ class CreateAnnouncement extends Component
         'title.required'=>'Il campo titolo è obbligatorio',
         'min'=>'Hai inserito pochi caratteri...scrivi qualcosa di più',
         'price.required'=>'Il prezzo deve essere un numero',
-        'price.numeric'=>'Il prezzo deve essere un numero',
-        'price.max'=>'Diminuisci il prezzo...altrimenti non lo venderai mai!!!',
+        'price.digits_between'=>'Diminuisci il prezzo...altrimenti non lo venderai mai!!!',
         'description.required'=>'Meglio descrivi il tuo articolo, più successo avrà.'];
     
     public function render()
