@@ -76,12 +76,12 @@
       </div>
 
       <div class="container contact-form p-5" id="form-edit">
-            <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data" class="bg-black rounded-4">
+            <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data" class="bg-black rounded-4 shadow-lg">
             @csrf
                   @method('PUT')
                 <h3 class="fs-2 text-light mt-1">Aggiorna Info<span>.</span></h3>
                <div class="row">
-                    <div class="col-md-6 my-2">
+                    <div class="col-md-6 my-3">
                         <div class="form-group">
                           <label for="profile_image" class="form-label text-light">Immagine del Profilo:</label>
                           <input class="form-control" type="file" name="profile_image" id="profile_image">
