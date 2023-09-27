@@ -42,7 +42,7 @@ class CreateAnnouncement extends Component
         'title.required'=>'Il campo titolo è obbligatorio',
         'min'=>'Hai inserito pochi caratteri...scrivi qualcosa di più',
         'price.numeric'=>'Il prezzo deve essere un numero. es. 1234.56',
-        'price.between'=>'Diminuisci il prezzo...altrimenti lo venderai mai il tuo articolo!!!',
+        'price.between'=>'Diminuisci il prezzo...altrimenti non venderai mai il tuo articolo!!!',
         'description.required'=>'Meglio descrivi il tuo articolo, più successo avrà.',
         'images.max'=>'Immagine troppo pesante. '];
     
