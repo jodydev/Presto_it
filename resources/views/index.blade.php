@@ -19,7 +19,16 @@
                 <div class="discount__pic">
                 <h3 class="text-dark fs-1 mt-5 mb-5">{{__('traduzioni.Opinions')}}</h3>
 
-                <p class="mt-5 w-75 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae laudantium sunt fugit quasi, dolorem suscipit laboriosam alias qui? Nemo, cumque? Autem recusandae magni voluptas delectus sit accusantium, ullam eius a amet voluptatibus quis reprehenderit id aspernatur, est adipisci? Voluptates iste ea molestias quod praesentium voluptate, obcaecati pariatur repellendus voluptatem fugit harum aut iure voluptatum quia sint! Nemo nesciunt corrupti, repudiandae animi consectetur aliquam? Qui quis sapiente ea architecto maiores neque nobis, ex excepturi nisi praesentium distinctio quaerat minus reiciendis. Facere voluptate unde laboriosam rerum fuga excepturi architecto quam sed possimus est beatae, modi consequatur, at odio sit id aut!</p>
+                <p class="mt-5 w-75 ">Facilità di Ricerca e Navigazione: Presto.it è una piattaforma facile e intuitiva. Una ricerca avanzata semplifica la ricerca di categorie specifiche.
+                <br>Varietà di Prodotti: Una vasta gamma di prodotti, tante categorie tra cui scegliere.
+                <br>Convenienza: Puoi fare acquisti comodamente da casa tua o da qualsiasi luogo con una connessione internet.
+                <br>Ampia Disponibilità: Posso accedere a Presto.it online 24/7.
+                <br>Risparmio Ambientale: Acquistare articoli usati è una forma di riciclaggio e può contribuire a ridurre l'impatto ambientale associato alla produzione e allo smaltimento di nuovi prodotti.
+                <br>Italiano, Inglese e Francese: il sito è accessibile in 3 lingue.
+                <br>Prodotti a prezzi accessibili: ogni acquisto è un affare.
+                <br>Newsletter: Mi sono iscritto alla newsletter di Presto.it per non perdere neanche un affare.
+                <br>Acquisti in sicurezza: Gli annunci di Presto.it sono tutti controllati da un operatore reale.
+                </p>Sono diventato revisore: Collaboro con Presto.it, revisiono gli annunci degli altri utenti.
                 </div>
             </div>
             <div class="col-lg-6">
