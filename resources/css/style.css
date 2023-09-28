@@ -1586,7 +1586,7 @@ ol {
 	}
 
 	.text-hero{
-		padding-top: 150px !important;
+		padding-top: 250px !important;
 	}
 
 	.video-hero{
@@ -3391,3 +3391,8 @@ body{
 		color: black !important;
 	}
 
+
+	#annunci-da-revisionare{
+		margin-top: 150px !important;
+		margin-bottom: 150px !important;
+	}

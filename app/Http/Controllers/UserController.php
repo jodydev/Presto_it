@@ -29,16 +29,15 @@ class UserController extends Controller
          
         if ($request->file('profile_image')) {
           $imageId =uniqid();
-          $user->profile_image = 'profile-image-' . $imageId . '.' . $request->file('profile_image')->extension();
+          $user->profile_image = 'profile-image' . $imageId . '.' . $request->file('profile_image')->extension();
           $user->profile_image_id = $imageId;
           $fileName = 'profile-image' . $imageId . '.' . $request->file('profile_image')->extension();
           $profile_image = $request->file('profile_image')->storeAs('public', $fileName);
-  
           }
 
           $user->save();
 
-          return redirect()->back()->with('message' , 'Dati modificati con successo');
+          return redirect()->back()->with('message' , 'Dati profilo modificati con successo.');
 
     }
 
