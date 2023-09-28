@@ -109,7 +109,9 @@ function mostrAnnuncio(button){
      "columns": [
         {data: 'title', name: 'title', orderable: true, searchable: true},
         // {data: 'categoria', name: 'categoria', orderable: true, searchable: true},
-        {data: 'price', name: 'price', orderable: true, searchable: true},
+        {data: 'price', name: 'price', orderable: true, searchable: true, render:function(data,type){
+            return data + " €"
+        }},
         {data: 'created_at', name: 'created_at', orderable: true, searchable: false, render:function(data,type){
             return data.split('T')[0]
         }},
@@ -123,14 +125,16 @@ function mostrAnnuncio(button){
      "columnDefs": [
      { "width": "22%", "targets": 0 },
      { "width": "10%", "targets": 1 },
-     { "width": "10%", "targets": 2 },
+     { "width": "9%", "targets": 2 },
      { "width": "10%", "targets": 3 },
      { "width": "12%", "targets": 4 },
     ]
     });
     $('#revisorTable_filter').css({"margin-end":"9rem","margin-bottom":"0.5rem", "border-radius":"15px !important" })
+    $('#revisorTable_filter input').addClass("rounded-4 shadow-lg")
+    $('#revisorTable_filter label').addClass("fw-bold")
     $('#revisorTable_paginate').css({"margin-end":"9rem","margin-top":"0.5rem","margin-bottom":"0.5rem"})
-    $('#revisorTable').css({"border":"5px solid black", "border-radius":"15px"})
+    $('#revisorTable').css({"border":"2px solid black", "border-radius":"15px"})
 });
 
 </script>

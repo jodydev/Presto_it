@@ -52,7 +52,7 @@
 
                           @if  (auth()->check())
                             <li>
-                                <a href="{{ route('profile') }}">{{__('traduzioni.MioProfilo')}}</a>
+                                <a href="{{ route('users.profile') }}">{{__('traduzioni.MioProfilo')}}</a>
                             </li>
                           @endif
                           
