@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumb__links">
-                                <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                                <a href="{{route('index')}}"><i class="fa fa-home"></i> Home</a>
                                 <span>Profilo</span>
                             </div>
                         </div>
@@ -27,9 +27,9 @@
 
 
               <h2 class="mt-2 fs-2" style="color:#ff5114">Benvenuto,</h2>
-              <h3 class="fs-3"> {{ Auth::user()->name }}</h3>
+              <h3 class="fs-3"> {{ $user->name }}</h3>
 
-              @if (auth()->user()->is_revisor)
+              @if ($user->is_revisor)
                   <p class="h-6">Sei già un revisore</p>
               @else
                   <p class="h-6" style="margin: 0px !important; padding: 0px !important;">Non sei un revisore,</p>
@@ -49,7 +49,7 @@
                     <div class="row pt-1">
                     <div class="col-6 mb-3">
                         <h6>Email</h6>
-                        <p class="text-muted">{{ Auth::user()->email }}</p>
+                        <p class="text-muted">{{ $user->email }}</p>
                     </div>
                     <div class="col-6 mb-3">
                         <h6>Telefono</h6>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="form-group py-3">
                           <label for="phone_number" class="form-label text-light ">Numero di Telefono:</label>
-                          <input class="form-control" type="text" name="phone_number" id="phone_number" value="{{ Auth::user()->phone_number }}">
+                          <input class="form-control" type="text" name="phone_number" id="phone_number" value="{{ $user->phone_number }}">
                         </div>
                         <div class="form-group my-3">
                             <button type="submit" class="btn btn-success">Salva Modifiche</button>
@@ -97,11 +97,11 @@
                     <div class="col-md-6 py-3">
                         <div class="form-group">
                           <label for="city" class="form-label text-light">Città di Provenienza:</label>
-                          <input class="form-control" type="text" name="city" id="city" value="{{ Auth::user()->city }}">
+                          <input class="form-control" type="text" name="city" id="city" value="{{ $user->city }}">
                         </div>
                         <div class="form-group my-3">
                           <label for="address" class="form-label text-light ">Indirizzo di Casa:</label>
-                          <input class="form-control" type="text" name="address" id="address" value="{{ Auth::user()->address }}">
+                          <input class="form-control" type="text" name="address" id="address" value="{{ $user->address }}">
                         </div>
                     </div>
                 </div>

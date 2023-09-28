@@ -27,7 +27,7 @@
                 <div class="footer__widget">
                     <h6 class="text-light">Account</h6>
                     <ul>
-                        <li><a href="{{ route('profile') }}">Account</a></li>
+                        <li><a href="{{ route('users.profile') }}">Account</a></li>
                         
                     </ul>
                 </div>

@@ -44,7 +44,7 @@ Route::patch('/revisore/rifiuta/{annuncio}', [RevisorController::class , 'declin
 //post per richiamare gli annunci all'interno della tabella del revisore
 Route::post('/revisore/elencoAnnunci/{user_id}', [RevisorController::class , 'tableAnnouncement'])->middleware(['isRevisor'])->name('revisors.table');
 //get per mostrare annuncio al revisore
-Route::get('/revisore/mostraAnnuncio/{id_announcement}', [RevisorController::class , 'announcement'])->middleware(['isRevisor'])->name('revisors.announcement');
+Route::get('/revisore/mostra/annuncio/{id_announcement}', [RevisorController::class , 'announcement'])->middleware(['isRevisor'])->name('revisors.announcement');
 //route per richiedere di diventare revisore
 Route::post('/diventa/revisore', [RevisorController::class , 'becomeRevisor'])->middleware(['auth'])->name('become.revisor');
 //route per far diventare utente revisore
@@ -57,7 +57,7 @@ Route::post('/iscrizione/newsletter', [HomeController::class, 'newsletter'])->na
 
 
 //rotta user profile
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile')->middleware('auth');
+Route::get('/profile', [UserController::class, 'index'])->name('users.profile')->middleware('auth');
 
 //rotta user update
-Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update')->middleware('auth');
+Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update')->middleware('auth');
