@@ -55,7 +55,7 @@
                                     <i class="fa fa-star" style="color: #ff5114 !important"></i>
                                 </div>
                                 <div class="product__price">€{{$announcement->price}}</div>
-                                <a href="{{route('announcements.show', $announcement->id)}}">Scopri!</a>
+                                <a href="{{route('announcements.show', $announcement->id)}}">{{__('traduzioni.Scopri!')}}</a>
                                 <small>{{$announcement->created_at->format('d/m/y')}}</small>
                             </div>
                         </div>
