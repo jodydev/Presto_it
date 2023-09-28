@@ -44,7 +44,8 @@ class CreateAnnouncement extends Component
         'price.numeric'=>'Il prezzo deve essere un numero. es. 1234.56',
         'price.between'=>'Diminuisci il prezzo...altrimenti non venderai mai il tuo articolo!!!',
         'description.required'=>'Meglio descrivi il tuo articolo, più successo avrà.',
-        'images.max'=>'Immagine troppo pesante. '];
+        'temporary_images.*.image'=>'Formato non valido. Inserisci .jpg o .png',
+        'temporary_images.*.max'=>'Immagine troppo pesante. Max 1 MB.'];
     
     public function render()
       {
