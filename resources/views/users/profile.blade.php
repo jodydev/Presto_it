@@ -20,14 +20,22 @@
   <div class="container h-100 w-100 p-5 mt-5">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-lg-12 mb-lg-0">
-        <div class="card mb-5 w-100 rounded-4 shadow-lg">
+        <div class="card mb- w-100 rounded-4 shadow-lg">
           <div class="row g-0">
             <div class="col-md-4 text-center text-white " style="background-color: black;">
               
-          
-            
+            @if(!$user->profile_image)
+
+
+              <img src="{{asset('img/add-photo.png')}}"class="img-fluid mt-5" style="width: 80px; " />
+
+
+              @else
+
               <img src="{{ asset('storage/' . $user->profile_image) }}"class="img-fluid mt-5" style="width: 80px;" />
-              
+
+              @endif
+
               
               <h2 class="mt-2 fs-2" style="color:#ff5114">Benvenuto,</h2>
               <h3 class="fs-3"> {{ $user->name }}</h3>
