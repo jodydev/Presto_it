@@ -57,6 +57,7 @@ Route::post('/iscrizione/newsletter', [HomeController::class, 'newsletter'])->na
 
 
 //rotta user profile
+
 Route::get('/profile', [UserController::class, 'index'])->name('users.profile')->middleware('auth');
 
 //rotta user update

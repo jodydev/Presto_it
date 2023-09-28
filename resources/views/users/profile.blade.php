@@ -23,9 +23,13 @@
         <div class="card mb-3 w-100 rounded-4 shadow-lg">
           <div class="row g-0">
             <div class="col-md-4 text-center text-white" style="background-color: black;">
+              @if(!$user->profile_image)
               <img src="{{asset('img/avatar/test.png')}}"class="img-fluid mt-5" style="width: 80px;" />
-
-
+              @else
+            
+              <img src="{{asset('public/storage/' . $user->profile_image) }}"class="img-fluid mt-5" style="width: 80px;" />
+              
+              @endif
               <h2 class="mt-2 fs-2" style="color:#ff5114">Benvenuto,</h2>
               <h3 class="fs-3"> {{ $user->name }}</h3>
 
@@ -53,7 +57,7 @@
                     </div>
                     <div class="col-6 mb-3">
                         <h6>Telefono</h6>
-                        <p class="text-muted">+39 333-696969</p>
+                        <p class="text-muted">+39 {{$user->phone_number}}</p>
                     </div>
                     </div>
 
@@ -62,11 +66,11 @@
                     <div class="row pt-1">
                         <div class="col-6 mb-3">
                             <h6>Città</h6>
-                            <p class="text-muted">Bologna (BO)</p>
+                            <p class="text-muted">{{$user->city}}</p>
                         </div>
                     <div class="col-6 mb-3">
                         <h6>Indirizzo</h6>
-                        <p class="text-muted">Via del Successo 69</p>
+                        <p class="text-muted">{{$user->address}}</p>
                     </div>
                 </div>
               </div>
