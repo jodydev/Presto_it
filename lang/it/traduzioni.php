@@ -41,7 +41,8 @@ return [
     'Dettaglio'=>'Dettaglio',
     'LastAnn'=>'Gli ultimi annunci',
     'TORNA AGLI ANNUNCI'=> 'TORNA AGLI ANNUNCI',
-    'Description'=> "Facilità di ricerca e navigazione: Presto.it è una piattaforma facile e intuitiva. Una ricerca avanzata semplifica la ricerca di categorie specifiche.
+    'Description'=> "Facilità di ricerca e navigazione: Presto.it è una piattaforma facile e intuitiva.
+    Una ricerca avanzata semplifica la ricerca di categorie specifiche.
     Varietà di prodotti: una vasta gamma di prodotti, tante categorie tra cui scegliere.
     Comodità: puoi fare acquisti comodamente da casa tua o da qualsiasi luogo con una connessione internet.
     Ampia disponibilità: posso accedere a Presto.it online 24 ore su 24, 7 giorni su 7.
