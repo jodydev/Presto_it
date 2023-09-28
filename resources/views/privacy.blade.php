@@ -45,12 +45,12 @@
                     <p>7.&nbsp;&nbsp;&nbsp; Revoca del consenso</p>
                     <p>8.&nbsp;&nbsp;&nbsp; Periodo di conservazione dei dati</p>
                     <p>9.&nbsp;&nbsp;&nbsp; Diritti dell’interessato<u></u></p>
-                    <p>10. Reclamo al Garante per la protezione dei dati personali</p>
-                    <p>11. Dati personali dei minori</p>
-                    <p>12. Aggiornamenti e modifiche</p>
-                    <p>13. Collegamenti ad altri siti</p>
-                    <p>14. Interazioni con social network</p>
-                    <p>15. Contitolarità del trattamento dati statistici con Facebook</p>
+                    <p>10. &nbsp; Reclamo al Garante per la protezione dei dati personali</p>
+                    <p>11. &nbsp; Dati personali dei minori</p>
+                    <p>12. &nbsp; Aggiornamenti e modifiche</p>
+                    <p>13. &nbsp; Collegamenti ad altri siti</p>
+                    <p>14. &nbsp; Interazioni con social network</p>
+                    <p>15. &nbsp; Contitolarità del trattamento dati statistici con Facebook</p>
                     <p>&nbsp;</p>
                     <p><b>1.&nbsp;&nbsp;&nbsp; Titolare del Trattamento</b><br>
                     </p>
