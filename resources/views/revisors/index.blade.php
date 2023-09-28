@@ -49,7 +49,7 @@
 
 function mostrAnnuncio(button){
         var id=button.dataset.id;
-        window.location.href="/revisore/mostraAnnuncio/" + id ;
+        window.location.href="/revisore/mostra/annuncio/" + id ;
     };
 
 
