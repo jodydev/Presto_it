@@ -37,7 +37,7 @@
                     <h6 class="text-light">NEWSLETTER</h6>
                     <form method="POST"action="{{route('mail.news-letter')}}">
                         @csrf
-                        <input type="email" name="email" placeholder="{{__('traduzioni.MailList')}}"> </input>
+                        <input type="email" name="email" placeholder="{{__('traduzioni.MailList')}}" required> </input>
                         <button type="submit" class="site-btn">{{__('traduzioni.Iscriviti')}}</button>
                     </form>
                     <div class="footer__social">
