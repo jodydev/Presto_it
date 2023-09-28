@@ -11,7 +11,7 @@
                     
                     <h2 class="my-5" transition-style="in:wipe:right">Iscriviti al nostro sito e pubblica subito il tuo primo annuncio!</h2>
 
-                    <img src="{{ asset ('img/storyset/register.png') }}" transition-style="in:wipe:right">
+                    <img src="{{ asset ('img/storyset/register.png') }}" id="img-register" transition-style="in:wipe:right">
               
             
             
@@ -65,17 +65,18 @@
 
             </div>
             <div class="form-group d-flex justify-content-center mt-3">                
-            <label for="privacy_policy" class= "col-12 d-flex align-items-baseline">
-            <input type="checkbox" name="privacy_policy" id="privacy_policy" value="1" required>
-            <div class="ms-2" style= "font-size:12px">
-                        <div>
+            
+            <div for="privacy_policy" class="ms-2" style= "font-size:12px">
+                        <div class="text-center">
+
+                            <input type="checkbox" name="privacy_policy" id="privacy_policy" value="1" required class="ms-2" style="margin-top: 10px !important;">
                             Accetto i termini d'uso e la normativa sul trattamento dei dati personali  <a href="/privacy" style="font-size: 12px !important; padding: 0px !important;">Normativa sulla privacy</a>
                         </div>
 
-                    </div>
-            </label>      
+            </div>
+          
             </div> 
-            <input type="submit" id="button" class="rounded-4 button-form-register" value="Registrati"/>
+            <input type="submit" id="button" class="rounded-4 button-form-register mt-3" value="Registrati"/>
 
             <a class="text-dark mt-3" href="/login">Hai già un'account? Accedi.</a>
 

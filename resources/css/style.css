@@ -1770,6 +1770,10 @@ ol {
 
 @media only screen and (max-width: 767px) {
 
+	#img-register{
+		display: none;
+	}
+
 	.navbar-collapse{
 		margin-top: 10px !important;
 	}
@@ -1855,7 +1859,6 @@ ol {
 		justify-content: center;
 		background-color: rgb(255, 255, 255);
 		padding: 0px !important;
-		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
 		position: relative;
 		overflow: hidden;
 	}
@@ -1905,10 +1908,7 @@ ol {
 		margin-left: 20px !important;
 	}
 
-	#button-header button{
-		padding: 10% !important;
-		
-	}
+	
 
 	.navbar-toggler{
 		border: none !important;
@@ -1920,11 +1920,19 @@ ol {
 	#text h3 {
 		display: none;
 	}
+
+	.button-login{
+		padding:  0px !important;
+	}
 }
 
 /* Small Device = 320px */
 
 @media only screen and (max-width: 479px) {
+
+	#img-register{
+		display: none;
+	}
 
 	.header__logo {
 		max-width: 320px!important;
@@ -2149,7 +2157,7 @@ ol {
 	justify-content: center;
 	background-color: rgb(255, 255, 255);
 	padding: 0px 0px 50px 0px;
-	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+	
 	position: relative;
 	overflow: hidden;
   }
@@ -2163,7 +2171,6 @@ ol {
 	justify-content: center;
 	background-color: rgb(255, 255, 255);
 	padding: 0px 0px 50px 0px;
-	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
 	position: relative;
 	overflow: hidden;
   }
@@ -2464,7 +2471,7 @@ a {
 .zoom-wrapper{
 	overflow: hidden;
 	border-radius: 16px;
-	height: 200px;
+	
 }
 
 .zoom-wrapper img{
@@ -2956,7 +2963,6 @@ input[placeholder] {
 		justify-content: center;
 		background-color: rgb(255, 255, 255);
 		padding: 0px 0px 50px 0px;
-		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
 		position: relative;
 		overflow: hidden;
 	}
@@ -3384,3 +3390,4 @@ body{
 	td.child span{
 		color: black !important;
 	}
+

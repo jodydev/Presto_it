@@ -29,7 +29,7 @@
                 </nav>
         
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 pr-0">
+                    <div class="col-sm-12 col-md-3 pr-0">
                         <div class="photo">
                       
 

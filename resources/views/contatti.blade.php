@@ -53,7 +53,7 @@
                                 <input type="email" name="email"placeholder="Indirizzo email">
                                 <textarea name="user_message" placeholder="Messaggio"></textarea>
 
-                                <p>Registrati per diventare revisore</p>                            
+                                <p class="my-5 fs-4" style="color: #ff5114;"> <a style="color: #ff5114;" href="/register">Registrati per diventare revisore.</a></p>                            
                             </form>
                             
                             @else

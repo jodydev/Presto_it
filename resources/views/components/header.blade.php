@@ -14,7 +14,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="text-center fs-1 me-auto ms-auto mb-3">           
                           <li class="active"><a href="{{route('index')}}">Home</a></li>
-                          <li><p class="a">{{__('traduzioni.Categorie')}}</p>
+                          <li><p style="margin: 0px !important; font-size: 15px !important;" class="a">{{__('traduzioni.Categorie')}}</p>
                               <ul class="dropdown">
                                   <li><a href="{{route('announcements.index')}}">{{__('traduzioni.AllCategory')}}</a></li>
                                   @foreach ($categories as $category)

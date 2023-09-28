@@ -36,8 +36,8 @@
             @forelse ($announcements as $announcement)
                 <div class="col-lg-4 col-md-4 col-sm-6 p-5">
                     <div class="trend__content mt-3">                  
-                        <div class="trend__item">
-                            <div class="trend__item__pic">
+                        <div class="trend__item ">
+                            <div class="trend__item__pic zoom-wrapper">
                                 @if($announcement->images->count() > 0)
                                 <img src="{{$announcement->images()->first()->getUrl(150, 150)}}" class="img-card-annuncement rounded-4" alt="">
                                 @else
