@@ -3190,7 +3190,7 @@ body{
 	text-align: center;
 	text-rendering: geometricprecision;
 	text-transform: none;
-	margin-left: 60px !important;
+	/* margin-lft: 60px !important; */
 	color: white !important;
 	font-family: 'Montserrat', sans-serif !important;
 	background-color: green;
@@ -3223,7 +3223,7 @@ body{
 	text-align: center;
 	text-rendering: geometricprecision;
 	text-transform: none;
-	margin-left: 60px !important;
+	/* margn-left: 60px !important; */
 	color: white !important;
 	font-family: 'Montserrat', sans-serif !important;
 	background-color: red;
@@ -3264,7 +3264,7 @@ body{
 	text-align: center;
 	text-rendering: geometricprecision;
 	text-transform: none;
-	margin-left: 60px !important;
+	/* margn-left: 60px !important; */
 	color: white !important;
 	font-family: 'Montserrat', sans-serif !important;
 	background-color: #ff5114;
@@ -3379,4 +3379,8 @@ body{
 		border: none !important;
 		background-color: #000 !important;
 		font-size: 13px;
+	}
+
+	td.child span{
+		color: black !important;
 	}

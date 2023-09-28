@@ -45,21 +45,21 @@ class RevisorController extends Controller
         ->addIndexColumn()
         ->addColumn('azioni', function($row){
 
-            $btn = '<div class="d-flex"> <button type="button" data-id="'.$row->id.'" data-original-title="Mostra" onclick="mostrAnnuncio(this)" class="button-mostra rounded-4 shadow-lg">Mostra</button>';
+            $btn = '<div class=""> <button type="button" data-id="'.$row->id.'" data-original-title="Mostra" onclick="mostrAnnuncio(this)" class="button-mostra rounded-4 shadow-lg m-1">Mostra</button>';
            
             if ($row->is_accepted !=1) { 
-            $btn = $btn. '<form id="button-accetta" action="/revisore/accetta/'.$row->id.'" method="post">
+            $btn = $btn. '<form style="display: inline-block" id="button-accetta" action="/revisore/accetta/'.$row->id.'" method="post">
             <input type="hidden" name="_token" value="'.csrf_token().'" /> 
             <input type="hidden" name="_method" value="PATCH" />
-            <input type="submit" value="Accetta" class="button-accetta rounded-4 shadow-lg">
+            <input type="submit" value="Accetta" class="button-accetta rounded-4 shadow-lg m-1">
             </form>';    
             }    
             
             if ($row->is_accepted !=0 || $row->is_accepted === null) { 
-                $btn = $btn. '<form id="button-rifiuta" action="/revisore/rifiuta/'.$row->id.'" method="post">
+                $btn = $btn. '<form style="display: inline-block" id="button-rifiuta" action="/revisore/rifiuta/'.$row->id.'" method="post">
                 <input type="hidden" name="_token" value="'.csrf_token().'" /> 
                 <input type="hidden" name="_method" value="PATCH" />
-                <input type="submit" value="Rifiuta" class="button-rifiuta rounded-4 shadow-lg">
+                <input type="submit" value="Rifiuta" class="button-rifiuta rounded-4 shadow-lg m-1">
                 </form>';    
                 }    
                 $btn = $btn.'</div>';

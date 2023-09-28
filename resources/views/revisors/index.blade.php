@@ -125,13 +125,12 @@ function mostrAnnuncio(button){
      { "width": "10%", "targets": 1 },
      { "width": "10%", "targets": 2 },
      { "width": "10%", "targets": 3 },
-     { "width": "8%", "targets": 4 },
+     { "width": "12%", "targets": 4 },
     ]
     });
     $('#revisorTable_filter').css({"margin-end":"9rem","margin-bottom":"0.5rem", "border-radius":"15px !important" })
     $('#revisorTable_paginate').css({"margin-end":"9rem","margin-top":"0.5rem","margin-bottom":"0.5rem"})
     $('#revisorTable').css({"border":"5px solid black", "border-radius":"15px"})
-    $('td.child span').css({"color":"black !important",})
 });
 
 </script>
