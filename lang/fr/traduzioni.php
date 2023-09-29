@@ -53,10 +53,6 @@ return [
     Je suis devenu réviseur : je collabore avec Presto.it, je révise les annonces des autres utilisateurs.",
     'MioProfilo'=>'Zone utilizateur',
     'CreateAnn'=> "Creer une Anounce",
-
-
-    
-                
-
-    
+    'NoAnn' => 'Il n y a actuellement aucune annonce pour cette recherche',  
+    'Torna' => 'Revenez nous rendre visite!',
 ];

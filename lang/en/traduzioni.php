@@ -53,4 +53,6 @@ return [
     I became a reviewer: I collaborate with Presto.it, I review other users ads.',
     'MioProfilo' => 'User Area',
     'CreateAnn'=> "Create Announcement",
+    'NoAnn' => 'There are currently no adverts for this search',
+    'Torna' => 'Come back to visit us!',
 ];

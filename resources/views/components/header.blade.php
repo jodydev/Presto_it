@@ -18,7 +18,10 @@
                               <ul class="dropdown">
                                   <li><a href="{{route('announcements.index')}}">{{__('traduzioni.AllCategory')}}</a></li>
                                   @foreach ($categories as $category)
-                                      <li><a href="{{route('categories.show', $category->id)}}">{{$category->title}}</a></li>
+                                     @if($lang == 'it') <li><a href="{{route('categories.show', $category->id)}}">{{$category->title}}</a></li>
+                                     @elseif ($lang == 'en') <li><a href="{{route('categories.show', $category->id)}}">{{$category->en}}</a></li>
+                                     @else  <li><a href="{{route('categories.show', $category->id)}}">{{$category->fr}}</a></li>
+                                    @endif
                                   @endforeach    
                               </ul>
                           </li>

@@ -8,7 +8,7 @@
                         <div class="col-lg-12">
                             <div class="breadcrumb__links">
                                 <a href="{{route('index')}}"><i class="fa fa-home"></i> Home</a>
-                                <span>Tutte le categorie</span>
+                                <span>{{__('traduzioni.AllCategory')}}</span>
                             </div>
                         </div>
                     </div>

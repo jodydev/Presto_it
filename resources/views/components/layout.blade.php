@@ -1,3 +1,6 @@
+@php
+    $lang = session('locale');
+@endphp
 <!DOCTYPE html>
 <html lang="it">
 
@@ -34,7 +37,7 @@
 
 
     <!-- Header -->
-        <x-header></x-header>
+    <x-header :lang="$lang" />
  
         <x-error/>
         <x-session/>

@@ -54,6 +54,8 @@ return [
     Sono diventato revisore: Collabora con Presto.it, revisione gli annunci degli altri utenti.",
     'MioProfilo' => 'Il mio profilo',
     'CreateAnn'=> "Crea un Annuncio",
+    'NoAnn' => 'Al momento non ci sono annunci per questa ricerca',  
+    'Torna' => 'Torna a trovarci!',
 
 
 
