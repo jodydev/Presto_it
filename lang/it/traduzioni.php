@@ -56,11 +56,13 @@ return [
     'CreateAnn'=> "Crea un Annuncio",
     'NoAnn' => 'Al momento non ci sono annunci per questa ricerca',  
     'Torna' => 'Torna a trovarci!',
+    'Welcome'=>'Benvenuto su Presto.it!',
+    'First' => 'È il momento di pubblicare il tuo primo annuncio!',
+    'Scegli' => 'Scegli Categoria',
+    'Prezzo' => 'Prezzo',
+    'Titolo' => 'Titolo',
+    'Descrizione' => 'Descrizione',
+    'Condizioni' => 'Condizioni impeccabili...',
+    'Pubblica' => 'Pubblica',
 
-
-
-    
-                
-
-    
 ];

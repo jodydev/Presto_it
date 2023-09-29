@@ -55,4 +55,12 @@ return [
     'CreateAnn'=> "Create Announcement",
     'NoAnn' => 'There are currently no adverts for this search',
     'Torna' => 'Come back to visit us!',
+    'Welcome'=>'Welcome on Presto.it!',
+    'First' => "It's time to post your first ad!",
+    'Scegli' => 'Choose Category',
+    'Prezzo' => 'Price',
+    'Titolo' => 'Title',
+    'Descrizione' => 'Description',
+    'Condizioni' => 'Flawless condition...',
+    'Pubblica' => 'Pubblica',
 ];

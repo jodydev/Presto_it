@@ -1,3 +1,6 @@
+@php
+    $lang = session('locale');
+@endphp
 <x-layout>
 
 <section id="categoryCards">

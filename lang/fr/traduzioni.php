@@ -55,4 +55,12 @@ return [
     'CreateAnn'=> "Creer une Anounce",
     'NoAnn' => 'Il n y a actuellement aucune annonce pour cette recherche',  
     'Torna' => 'Revenez nous rendre visite!',
+    'Welcome'=>'Bienvenue sur Presto.it !',
+    'First' => 'Il est temps de publier votre première annonce !',
+    'Scegli' => 'Choisir une catégorie',
+    'Prezzo' => 'Prix',
+    'Titolo' => 'Titre',
+    'Descrizione' => 'Description',
+    'Condizioni' => 'Etat Impeccable...',
+    'Pubblica' => 'Pubblie',
 ];
