@@ -42,7 +42,7 @@
                 <div class="instagram__item set-bg" style="background-image:url({{ asset ('img/banner-categorie/foto-1.jpg') }});">
                     <div class="instagram__text">
                         <i class="fa fa-shirt"></i>
-                        <a href="/categoria/2">Abbigliamento</a>
+                        <a href="/categoria/2">{{__('traduzioni.Abbigliamento')}}</a>
                     </div>
                 </div>
             </div>

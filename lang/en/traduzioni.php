@@ -13,7 +13,7 @@ return [
     'Elettronica'=> 'Electronics',
     'Giardinaggio'=> 'Gardening',
     'Libri'=> 'Books',
-    'Motori'=> 'Moto',
+    'Motori'=> 'Motors',
     'Sport'=> 'Sport',
     'Videogiochi'=> 'Videogames',
     'Scopri!'=> 'Discover!',

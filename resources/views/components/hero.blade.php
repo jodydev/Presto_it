@@ -29,7 +29,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="categories__item set-bg animated-div" style="background-image:url({{ asset ('img/hero/hero-2.png') }}); background-position: center center;">                        
                             <div class="categories__text">
-                                <h4>Motori</h4>
+                                <h4>{{__('traduzioni.Motori')}}</h4>
                                 
                                 <a href="/categoria/1">{{__('traduzioni.Scopri!')}}</a>
                             </div>
@@ -38,7 +38,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="categories__item set-bg" style="background-image:url({{ asset ('img/hero/hero-3.png') }}); background-position: center center;">
                             <div class="categories__text">
-                                <h4>Abbigliamento</h4>
+                                <h4>{{__('traduzioni.Abbigliamento')}}</h4>
                                 <a href="/categoria/2">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="categories__item set-bg"  style="background-image:url({{ asset ('img/hero/hero-4.png') }}); background-position: center center;">
                             <div class="categories__text">
-                                <h4>Elettronica</h4>
+                                <h4>{{__('traduzioni.Elettronica')}}</h4>
                                 <a href="/categoria/3">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="categories__item set-bg"  style="background-image:url({{ asset ('img/hero/hero-5.png') }}); background-position: center center;">
                             <div class="categories__text">
-                                <h4>Casa</h4>
+                                <h4>{{__('traduzioni.HouseArticles')}}</h4>
                                 <a href="/categoria/10">{{__('traduzioni.Scopri!')}}</a>
                             </div>
                         </div>

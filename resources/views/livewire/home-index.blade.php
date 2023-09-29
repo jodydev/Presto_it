@@ -1,3 +1,6 @@
+@php
+    $lang = session('locale');
+@endphp
 <section id="annunci-index">
     <div class="container">
         <div class="row">
@@ -9,9 +12,15 @@
             <div class="col-lg-8 col-md-8 category-title-margin">
                 <ul class="filter__controls">
                     <!-- assegno il valore alla variabile selectCategory al click dell'utente con il metodo nativo livewire $set e con un if else in line assegno o tolgo la classe active -->
-                <li wire:click="$set('selectedCategory', null)" class="{{ !$selectedCategory ? 'active' : '' }}">Tutte le categorie</li>
+                <li wire:click="$set('selectedCategory', null)" class="{{ !$selectedCategory ? 'active' : '' }}">{{__('traduzioni.AllCategory')}}</li>
             @foreach ($categories as $category)
+                @if($lang == 'it')
                 <li wire:click="$set('selectedCategory', {{ $category->id }})" class="{{ $selectedCategory == $category->id ? 'active' : '' }} ">{{ $category->title }}</li>
+                @elseif($lang == 'en')
+                <li wire:click="$set('selectedCategory', {{ $category->id }})" class="{{ $selectedCategory == $category->id ? 'active' : '' }} ">{{ $category->en }}</li>
+                @else
+                <li wire:click="$set('selectedCategory', {{ $category->id }})" class="{{ $selectedCategory == $category->id ? 'active' : '' }} ">{{ $category->fr }}</li>
+                @endif
             @endforeach
                 </ul>
             </div>
