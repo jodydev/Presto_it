@@ -25,7 +25,7 @@ Route::get('/contatti', [HomeController::class ,'contacts'])->name('contacts');
 Route::get('/privacy', [HomeController::class ,'privacy'])->name('privacy');
 Route::get('/faq', [HomeController::class ,'faq'])->name('faq');
 
- //routes AnnouncementController
+//routes AnnouncementController
 Route::get('/annunci', [AnnouncementController::class, 'index'])->name('announcements.index');
 Route::get('/annunci/crea', [AnnouncementController::class, 'create'])->name('announcements.create')->middleware(['auth']);
 Route::get('/annunci/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
@@ -54,10 +54,7 @@ Route::post('/lingua/{lang}',[HomeController::class,'setLanguage'])->name('set_l
 //newsletter
 Route::post('/iscrizione/newsletter', [HomeController::class, 'newsletter'])->name('mail.news-letter');
 
-
-
 //rotta user profile
-
 Route::get('/profile', [UserController::class, 'index'])->name('users.profile')->middleware('auth');
 
 //rotta user update
